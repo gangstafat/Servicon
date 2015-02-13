@@ -1,0 +1,314 @@
+@import settings
+@import foundation
+
+.top-bar
+    border-bottom: solid 1px #ccc
+
+.logo
+    h1
+        display: inline-block
+        font-size: 1.6rem
+        font-weight: bold
+        position: relative
+        top: 9px
+        left: 9px
+        text-transform: uppercase
+    img
+        display: inline-block
+        margin-left: 8px
+        margin-top: 8px
+        height: 41px
+        width: 28px
+
+.button
+    text-transform: uppercase
+    letter-spacing: 2px
+
+.heading
+    margin: 3rem 0
+    text-align: center
+
+.sub-heading
+    display: block
+    font-size: 1.125rem
+
+.header-hero .intro,
+.featured-items,
+.success-stories,
+.how-it-work,
+.updates
+    text-align: center
+
+.header-hero
+    height: 560px
+    background-size: cover
+    background-position: center
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-image: linear-gradient(to bottom, black, black)
+        opacity: 0.4
+        height: 490px
+
+.intro
+    position: relative
+    h1
+        padding: 0rem
+        color: white
+        text-transform: uppercase
+        font-weight: bold
+    .sub-heading
+        color: white
+
+.search-tool,
+.updates
+    position: relative
+    input,
+    select,
+    .button
+        margin: 0 0 0.4rem 0
+        height: 3.125rem
+
+input.location
+    padding-left: 36px
+
+.featured-item-card
+    height: 225px
+    background-size: cover
+    background-position: center
+    position: relative
+    &:hover
+        cursor: pointer
+        .middle-container
+            margin-top: -2%
+            // &:before
+            //   opacity: .1
+
+.middle-container
+    display: table
+    height: 100%
+    width: 100%
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-image: linear-gradient(to bottom, black, black)
+        opacity: 0.2
+        height: 225px
+
+.middle
+    position: relative
+    display: table-cell
+    vertical-align: middle
+    color: white
+
+.how-it-work
+    text-align: center
+    h3
+        text-transform: uppercase
+        font-size: 24px
+        margin: 0.2rem 0
+
+.updates
+    margin-top: 2rem
+    background-color: #E8ECF0
+    height: 260px
+    padding: 2.225rem
+    p
+        text-align: left
+
+.story-card
+    text-align: left
+    h3
+        margin: 2rem 0 1rem
+    p
+        color: #8D8F92
+
+// FILTER FORM
+.filter
+    .item
+        margin: 1rem 0
+    .form-heading
+        background-color: $primary-color
+        border-radius: 20px 20px 0 0
+        padding: 0.725rem
+        h3
+            color: $white
+            text-align: center
+    .form-content
+        background: $white
+        padding: 2rem 0
+        border-right: solid 1px $smoke
+        border-left: solid 1px $smoke
+
+//RECOMMENDATION
+.recommendation,
+.profile
+    .item
+        background: $white
+        padding: 1rem 0
+        border: solid 1px #ccc
+        border-bottom: none
+        &:last-child
+            border-bottom: solid 1px #ccc
+        .th
+            margin-bottom: 1rem
+        h4
+            display: inline-block
+            color: $primary-color
+            font-weight: 500
+            margin: 0
+        .location
+            .address
+                color: $aluminum 
+                display: block
+        .description
+            p
+                margin-bottom: 0.725rem
+        span.price
+            font-size: 2rem
+        a.review
+            color: $oil
+        .rating
+            display: block
+            margin-bottom: 0.725rem
+            a
+                display: block
+            i
+                color: #FEC72E
+        .view-profile
+            display: block
+            text-align: center
+        .no-price
+            margin-top: 1.5rem
+    .more
+        text-align: center
+        margin-top: 2rem
+        span
+            display: block
+            line-height: 2.125rem
+    .best-match
+        .heading
+            background-color: $primary-color
+            border-radius: 20px 20px 0 0
+            padding: 0.125rem
+            text-align: left
+            h3
+                color: $white
+                text-transform: uppercase
+                margin: 0.425rem 2rem
+                i
+                    color: yellow
+.sorter
+    background: $smoke
+    padding-top: 1.125rem
+    border: solid 1px #ccc
+    border-bottom: none
+    border-radius: 20px 20px 0 0
+ul.pagination
+    float: right
+    margin-right: 5%
+.right-filter
+    .heading
+        background: $primary-color
+        padding: 1rem
+        h4
+            color: $white
+    .new-search
+        background: $white
+        padding: 1rem
+//QUESTION-PAGE
+ul.accordion
+    margin-left: 0
+.accordion li
+    padding: 0.325rem 0
+    .content
+        border-radius: 8px
+.accordion li > a 
+    border-radius: 8px
+.other-question label
+    line-height: 3rem
+    font-size: 1.2rem
+.other-question span
+    display: inline-block
+    position: relative
+    right: 1rem
+    top: 0.295rem
+//PROFILE-PAGE
+.book
+    margin: 1rem 0
+    .button
+        margin-bottom: 0px
+.map
+    margin-top: 2rem
+.more-details
+    padding-top: 1.125rem
+    h5
+        text-transform: uppercase
+        font-size: 1rem
+.tabs
+    border-bottom: solid 4px $primary-color
+
+
+// li.accordion-navigation
+//     padding: 0.325rem 0
+// li.accordion-navigation
+//     a 
+//         padding: 0.725rem
+//     &.active a
+//         // background: $primary-color !important
+//         border-radius: 8px 8px 0 0
+//     .content
+//         border-radius: 0 0 8px 8px
+
+
+footer
+    margin-top: 4rem
+    text-align: center
+    padding: 2rem
+    background: #212121
+    color: white
+    height: 60px
+
+@media only screen and (min-width: 64.063em)
+    .top-bar
+        padding: 0 9rem
+    .top-bar-section ul li
+        background: transparent
+    .header-hero
+        height: 440px
+        &:before
+            height: 440px
+    .intro
+        margin: 3rem 0
+        h1
+            padding: 0 4rem
+    .items
+        margin: 2.125rem auto
+    .updates
+        height: 120px
+    ul.pagination
+        display: block
+        margin: 0 8rem
+    .right-filter
+        padding-left: 2rem
+        .heading
+            border-radius: 20px 20px 0 0
+    .map
+        margin-top: 0rem
+
+
+// ICONS
+.location-icon
+    position: absolute
+    display: inline-block
+    color: #A9A9A9
+    top: 9px
+    left: 27px
