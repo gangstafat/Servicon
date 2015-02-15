@@ -6162,7 +6162,7 @@ th.hide-for-touch {
   border-bottom: solid 1px #ccc; }
 
 .logo h1 {
-  background-image: url("/img/servicon-name.png");
+  background-image: url("img/servicon-name.png");
   background-size: 127px 24px;
   text-indent: -9999px;
   background-repat: no-repeat;
