@@ -1,16 +1,26 @@
 @import settings
 @import foundation
-
+.full-width 
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    max-width: initial
 .top-bar
     border-bottom: solid 1px #ccc
 
 .logo
     h1
+        background-image: url('/img/servicon-name.png')
+        background-size: 127px 24px
+        text-indent: -9999px
+        background-repat: no-repeat
+        height: 24px
+        width: 127px
         display: inline-block
         font-size: 1.6rem
         font-weight: bold
         position: relative
-        top: 9px
+        top: 15px
         left: 9px
         text-transform: uppercase
     img
@@ -40,7 +50,7 @@
     text-align: center
 
 .header-hero
-    height: 560px
+    height: 580px
     background-size: cover
     background-position: center
     &:before
@@ -52,7 +62,7 @@
         left: 0
         background-image: linear-gradient(to bottom, black, black)
         opacity: 0.4
-        height: 490px
+        height: 580px
 
 .intro
     position: relative
@@ -72,6 +82,12 @@
     .button
         margin: 0 0 0.4rem 0
         height: 3.125rem
+.sticky-search
+    background: $white
+    padding: 1rem
+    border-bottom: solid 1px #ccc
+.stuck 
+    display: none
 
 input.location
     padding-left: 36px
@@ -303,6 +319,16 @@ footer
             border-radius: 20px 20px 0 0
     .map
         margin-top: 0rem
+    .stuck 
+        display: block
+        position: fixed
+        top: 0
+        z-index: 999
+        left: 45%
+        background: $white
+        padding: 1rem
+        margin-left: -35.60rem
+        border-bottom: solid 1px #ccc
 
 
 // ICONS
