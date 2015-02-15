@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/screens.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -15,7 +16,8 @@
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="logo">
-          <img src="img/servicon-logo.png" alt=""><h1>Servicon</h1>
+          <img src="img/servicon-logo.png" alt="">
+          <h1>Servicon</h1>
         </li>
       </ul>
 
@@ -29,12 +31,14 @@
     <div class="row">
       <div class="intro">
         <div class="heading">
-          <h1>Tired of Lousy Services?</h1>
-          <span class="sub-heading">Learn from and engage the services of the best service providers near you</span>
+          <h1 class="animated fadeInDown">Tired of Lousy Services?</h1>
+          <span class="sub-heading animated fadeInDown">Learn from and engage the services of the best service providers near you</span>
         </div>
-        <a href="#" data-reveal-id="howitwork" class="secondary button small radius">How It Works</a>
+        <a href="#" data-reveal-id="howitwork" class="animated fadeInDown secondary button small radius">How It Works</a>
       </div>
-      <div class="search-tool">
+    </div>
+    <div id="search-tool" class="row full-width">
+      <div class="search-tool animated pulse">
         <div class="large-4 columns">
             <input class="radius" type="text" placeholder="What do you want to find?" />
         </div>
@@ -175,6 +179,13 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/jquery-waypoints/lib/jquery.waypoints.js"></script>
+    <script src="bower_components/jquery-waypoints/lib/shortcuts/sticky.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      var sticky = new Waypoint.Sticky({
+        element: $('#search-tool')[0]
+      })
+    </script>
   </body>
 </html>

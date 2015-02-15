@@ -1,1 +1,1 @@
-$(document).foundation(),$(document).ready(function(){$("#myAccordionGroup").on("toggled",function(o,n){console.log(n)})});
+$(document).foundation();
