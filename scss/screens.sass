@@ -7,6 +7,22 @@
     max-width: initial
 .top-bar
     border-bottom: solid 1px #ccc
+.navigation
+    position: relative
+    top: -3rem
+    right: 1rem
+    li 
+        display: inline-block
+        margin-top: 1.1rem
+        margin-right: 1rem
+        &:last-child
+            margin-right: 0
+    a.sign-up
+        background: green
+        color: $white
+        padding: 0.4rem 1.5rem
+        border-radius: 4px
+
 
 .logo
     h1
@@ -169,7 +185,62 @@ input.location
 //RECOMMENDATION
 .recommendation,
 .profile
+    .tabs-content
+        margin-bottom: 0
+    .left-sidebar
+        border-right: solid 1px #eee
+        .qualification,
+        .teaching,
+        .other-details,
+            h3
+                text-transform: uppercase
+                font-size: .8rem
+                font-weight: 700
+                background: #f3f3f3
+                padding: .5rem
+                padding-left: 1.2rem
+                position: relative
+                margin-bottom: 0
+                &:before
+                    position: absolute
+                    font-family: FontAwesome
+                    top: 9px
+                    left: 8px
+                    content: ""
+            .details
+                border-bottom: dashed 1px #eee
+                padding-top: .6rem
+                padding-left: .8rem
+                &:last-child
+                    border-bottom: 0px
+                h4
+                    font-size: 1rem
+    .client-reviews
+        border-bottom: 0
+        h3
+            text-transform: uppercase
+            font-weight: 700
+            font-size: 1rem
+            margin: 0
+            padding-top: 1rem
+        border-top: solid 1px #eee
+        .item
+            border: 0
+            border-bottom: solid 1px #eee
+            margin: 0
+            padding-bottom: 0
+            .review-title
+                display: inline-block
+                margin-left: 0.4rem
+            .review-meta
+                display: block
+                color: #838991
+                font-size: .9rem
+                a
+                    display: inline-block
+
     .item
+        margin-top: 2rem
         background: $white
         padding: 1rem 0
         border: solid 1px #ccc
@@ -295,7 +366,7 @@ footer
     color: white
     height: 60px
 
-@media only screen and (min-width: 64.063em)
+@media only screen and (min-width: 40.063em)
     .top-bar
         padding: 0 9rem
     .top-bar-section ul li
@@ -332,6 +403,10 @@ footer
         background: $white
         margin: 0 auto
         border-bottom: solid 1px #ccc
+    .navigation
+        position: relative
+        top: 0
+        right: 0
 
 
 // ICONS
