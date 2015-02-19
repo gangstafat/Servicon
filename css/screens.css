@@ -6173,7 +6173,7 @@ th.hide-for-touch {
     .navigation li:last-child {
       margin-right: 0; }
   .navigation a.sign-up {
-    background: green;
+    background: #314f8c;
     color: #FFFFFF;
     padding: 0.4rem 1.5rem;
     border-radius: 4px; }
@@ -6337,6 +6337,59 @@ input.location {
   border-right: solid 1px #EEEEEE;
   border-left: solid 1px #EEEEEE; }
 
+.profile {
+  padding-top: 2rem; }
+
+.return {
+  padding: 1rem 0; }
+
+.recommendation .label,
+.profile .label {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase; }
+  .recommendation .label:hover,
+  .profile .label:hover {
+    cursor: pointer; }
+.recommendation .label-list,
+.profile .label-list {
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  background: #eee;
+  margin-left: -15px;
+  padding: 0.7rem;
+  border-radius: 4px;
+  transition: all 0.3s ease; }
+  .recommendation .label-list:before,
+  .profile .label-list:before {
+    position: absolute;
+    top: -25px;
+    left: 120px;
+    color: #eee;
+    font-size: 1.8rem;
+    content: "";
+    font-family: FontAwesome; }
+.recommendation .enable,
+.profile .enable {
+  opacity: 1; }
+.recommendation .legend,
+.profile .legend {
+  background-color: #F39A35; }
+.recommendation .hall,
+.profile .hall {
+  background-color: #E6413D; }
+.recommendation .super,
+.profile .super {
+  background-color: #314f8c; }
+.recommendation .all-star,
+.profile .all-star {
+  background-color: #1A7C7B; }
+.recommendation .pro,
+.profile .pro {
+  background-color: #55C1CB; }
 .recommendation .tabs-content,
 .profile .tabs-content {
   margin-bottom: 0; }
@@ -6391,6 +6444,41 @@ input.location {
     .profile .left-sidebar .teaching .details h4,
     .profile .left-sidebar .other-details .details h4 {
       font-size: 1rem; }
+    .recommendation .left-sidebar .qualification .details ul,
+    .recommendation .left-sidebar .teaching .details ul,
+    .recommendation .left-sidebar .other-details .details ul,
+    .profile .left-sidebar .qualification .details ul,
+    .profile .left-sidebar .teaching .details ul,
+    .profile .left-sidebar .other-details .details ul {
+      margin-left: 0; }
+    .recommendation .left-sidebar .qualification .details ul li,
+    .recommendation .left-sidebar .teaching .details ul li,
+    .recommendation .left-sidebar .other-details .details ul li,
+    .profile .left-sidebar .qualification .details ul li,
+    .profile .left-sidebar .teaching .details ul li,
+    .profile .left-sidebar .other-details .details ul li {
+      list-style: none; }
+      .recommendation .left-sidebar .qualification .details ul li i,
+      .recommendation .left-sidebar .teaching .details ul li i,
+      .recommendation .left-sidebar .other-details .details ul li i,
+      .profile .left-sidebar .qualification .details ul li i,
+      .profile .left-sidebar .teaching .details ul li i,
+      .profile .left-sidebar .other-details .details ul li i {
+        position: relative;
+        color: #ccc;
+        font-size: 0.8rem;
+        top: -2px;
+        margin-right: 3px; }
+.recommendation .price,
+.profile .price {
+  color: #314f8c;
+  font-size: 2.4rem;
+  text-align: center; }
+  .recommendation .price span,
+  .profile .price span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
 .recommendation .client-reviews,
 .profile .client-reviews {
   border-bottom: 0;
@@ -6422,7 +6510,6 @@ input.location {
         display: inline-block; }
 .recommendation .item,
 .profile .item {
-  margin-top: 2rem;
   background: #FFFFFF;
   padding: 1rem 0;
   border: solid 1px #ccc;
@@ -6439,10 +6526,51 @@ input.location {
     color: #314f8c;
     font-weight: 500;
     margin: 0; }
-  .recommendation .item .location .address,
-  .profile .item .location .address {
-    color: #999999;
-    display: block; }
+  .recommendation .item .location,
+  .profile .item .location {
+    margin-bottom: 1rem;
+    border-bottom: solid 1px #eee;
+    padding-bottom: 2rem; }
+    .recommendation .item .location span,
+    .profile .item .location span {
+      padding: 0.5rem 0; }
+    .recommendation .item .location .address,
+    .profile .item .location .address {
+      color: #999999;
+      display: block; }
+  .recommendation .item .availability h4,
+  .profile .item .availability h4 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 1px; }
+  .recommendation .item .availability .tabs,
+  .profile .item .availability .tabs {
+    border: 0; }
+  .recommendation .item .availability .tabs-content,
+  .profile .item .availability .tabs-content {
+    padding-left: 1rem; }
+  .recommendation .item .availability ul,
+  .profile .item .availability ul {
+    margin-left: 0px;
+    margin-top: 1rem; }
+  .recommendation .item .availability ul li,
+  .profile .item .availability ul li {
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 0.3rem 0.7rem; }
+    .recommendation .item .availability ul li.tab-title:hover a,
+    .profile .item .availability ul li.tab-title:hover a {
+      background: #314f8c; }
+    .recommendation .item .availability ul li.tab-title a,
+    .profile .item .availability ul li.tab-title a {
+      background: green;
+      color: #fff; }
+    .recommendation .item .availability ul li.un-available a,
+    .profile .item .availability ul li.un-available a {
+      background: grey;
+      color: #fff;
+      pointer: disabled; }
   .recommendation .item .description p,
   .profile .item .description p {
     margin-bottom: 0.725rem; }
