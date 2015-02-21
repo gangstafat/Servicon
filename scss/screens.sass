@@ -166,12 +166,13 @@ input.location
         color: #8D8F92
 
 // FILTER FORM
-.filter
+.filter,
+.checkout
     .item
         margin: 1rem 0
     .form-heading
         background-color: $primary-color
-        border-radius: 20px 20px 0 0
+        border-radius: 5px 5px 0 0
         padding: 0.725rem
         h3
             color: $white
@@ -181,6 +182,84 @@ input.location
         padding: 2rem 0
         border-right: solid 1px $smoke
         border-left: solid 1px $smoke
+// CHECKOUT
+.checkout
+    .item
+    padding: 1rem
+    label
+        font-size: 1rem
+        margin: .5rem 1rem
+    .control-indicator
+        top: .1rem
+    .packages
+        .columns
+            padding: 0 .2rem
+            .pricing-table 
+                .most-popular
+                    color: #F77109
+                .best-value
+                    color: $primary-color
+                .description
+                    height: 1rem !important
+                .price
+                    font-weight: 900
+                .pack-price,
+                .save-rate
+                    font-size: 1rem
+                    font-weight: 400
+                    color: #ccc
+                .save-rate
+                    color: #43AC6A
+.right-bar
+    ul.qualification
+        margin-left: 0
+        li
+            list-style: none
+
+    .columns
+        padding: .5rem
+    .checkout-wrapper
+        padding: -.9rem
+    .accordion-navigation
+        margin: 0
+        padding: .1rem 0
+    .accordion-navigation a
+        color: #333
+        background: #eee
+        border-radius: 0
+        padding: .5rem
+        &:hover
+            color: #fff
+    li.accordion-navigation 
+        &.active a
+            color: #fff
+    .testimonial
+        margin-top: 1rem
+        background: #fff
+        padding: 1rem
+        h4
+            font-size: 1rem
+            font-weight: 900
+
+.checkout-heading
+    background: $primary-color
+    border-radius: 5px 5px 0 0
+    border: solid 1px #3D6089
+    border-bottom: 0
+    h3
+        font-size: 1.2rem
+        padding: 1rem
+        color: white
+        margin: 0
+.checkout-wrapper
+    background: #fff
+    border: solid 1px #3D6089
+.checkout-content
+    padding: 1rem
+    h4
+        text-transform: uppercase
+        font-size: 1rem
+        font-weight: 900
 
 //RECOMMENDATION
 .profile
@@ -359,13 +438,14 @@ input.location
             margin-bottom: 0.725rem
             a
                 display: block
-            i
-                color: #FEC72E
         .view-profile
             display: block
             text-align: center
         .no-price
             margin-top: 1.5rem
+.rating
+    i
+    color: #FEC72E
     .more
         text-align: center
         margin-top: 2rem

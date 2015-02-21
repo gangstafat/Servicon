@@ -3677,14 +3677,14 @@ ul.pagination {
 
 /* Pricing Tables */
 .pricing-table {
-  border: solid 1px #DDDDDD;
+  border: solid 1px #314f8c;
   margin-left: 0;
   margin-bottom: 1.25rem; }
   .pricing-table * {
     list-style: none;
     line-height: 1; }
   .pricing-table .title {
-    background-color: #333333;
+    background-color: #314f8c;
     padding: 0.9375rem 1.25rem;
     text-align: center;
     color: #EEEEEE;
@@ -3692,12 +3692,12 @@ ul.pagination {
     font-size: 1rem;
     font-family: "Source Sans Pro", sans-serif; }
   .pricing-table .price {
-    background-color: #F6F6F6;
-    padding: 0.9375rem 1.25rem;
+    background-color: transparent;
+    padding: 0.3125rem 0.625rem;
     text-align: center;
     color: #333333;
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 1.875rem;
     font-family: "Source Sans Pro", sans-serif; }
   .pricing-table .description {
     background-color: #FFFFFF;
@@ -3707,7 +3707,7 @@ ul.pagination {
     font-size: 0.75rem;
     font-weight: normal;
     line-height: 1.4;
-    border-bottom: dotted 1px #DDDDDD; }
+    border-bottom: dotted 0px #DDDDDD; }
   .pricing-table .bullet-item {
     background-color: #FFFFFF;
     padding: 0.9375rem;
@@ -6322,20 +6322,99 @@ input.location {
   .story-card p {
     color: #8D8F92; }
 
-.filter .item {
+.filter .item,
+.checkout .item {
   margin: 1rem 0; }
-.filter .form-heading {
+.filter .form-heading,
+.checkout .form-heading {
   background-color: #314f8c;
-  border-radius: 20px 20px 0 0;
+  border-radius: 5px 5px 0 0;
   padding: 0.725rem; }
-  .filter .form-heading h3 {
+  .filter .form-heading h3,
+  .checkout .form-heading h3 {
     color: #FFFFFF;
     text-align: center; }
-.filter .form-content {
+.filter .form-content,
+.checkout .form-content {
   background: #FFFFFF;
   padding: 2rem 0;
   border-right: solid 1px #EEEEEE;
   border-left: solid 1px #EEEEEE; }
+
+.checkout {
+  padding: 1rem; }
+  .checkout label {
+    font-size: 1rem;
+    margin: 0.5rem 1rem; }
+  .checkout .control-indicator {
+    top: 0.1rem; }
+  .checkout .packages .columns {
+    padding: 0 0.2rem; }
+    .checkout .packages .columns .pricing-table .most-popular {
+      color: #F77109; }
+    .checkout .packages .columns .pricing-table .best-value {
+      color: #314f8c; }
+    .checkout .packages .columns .pricing-table .description {
+      height: 1rem !important; }
+    .checkout .packages .columns .pricing-table .price {
+      font-weight: 900; }
+    .checkout .packages .columns .pricing-table .pack-price,
+    .checkout .packages .columns .pricing-table .save-rate {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #ccc; }
+    .checkout .packages .columns .pricing-table .save-rate {
+      color: #43AC6A; }
+
+.right-bar ul.qualification {
+  margin-left: 0; }
+  .right-bar ul.qualification li {
+    list-style: none; }
+.right-bar .columns {
+  padding: 0.5rem; }
+.right-bar .checkout-wrapper {
+  padding: -0.9rem; }
+.right-bar .accordion-navigation {
+  margin: 0;
+  padding: 0.1rem 0; }
+.right-bar .accordion-navigation a {
+  color: #333;
+  background: #eee;
+  border-radius: 0;
+  padding: 0.5rem; }
+  .right-bar .accordion-navigation a:hover {
+    color: #fff; }
+.right-bar li.accordion-navigation.active a {
+  color: #fff; }
+.right-bar .testimonial {
+  margin-top: 1rem;
+  background: #fff;
+  padding: 1rem; }
+  .right-bar .testimonial h4 {
+    font-size: 1rem;
+    font-weight: 900; }
+
+.checkout-heading {
+  background: #314f8c;
+  border-radius: 5px 5px 0 0;
+  border: solid 1px #3D6089;
+  border-bottom: 0; }
+  .checkout-heading h3 {
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: white;
+    margin: 0; }
+
+.checkout-wrapper {
+  background: #fff;
+  border: solid 1px #3D6089; }
+
+.checkout-content {
+  padding: 1rem; }
+  .checkout-content h4 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 900; }
 
 .profile {
   padding-top: 2rem; }
@@ -6587,9 +6666,6 @@ input.location {
     .recommendation .item .rating a,
     .profile .item .rating a {
       display: block; }
-    .recommendation .item .rating i,
-    .profile .item .rating i {
-      color: #FEC72E; }
   .recommendation .item .view-profile,
   .profile .item .view-profile {
     display: block;
@@ -6597,28 +6673,26 @@ input.location {
   .recommendation .item .no-price,
   .profile .item .no-price {
     margin-top: 1.5rem; }
-.recommendation .more,
-.profile .more {
-  text-align: center;
-  margin-top: 2rem; }
-  .recommendation .more span,
-  .profile .more span {
-    display: block;
-    line-height: 2.125rem; }
-.recommendation .best-match .heading,
-.profile .best-match .heading {
-  background-color: #314f8c;
-  border-radius: 20px 20px 0 0;
-  padding: 0.125rem;
-  text-align: left; }
-  .recommendation .best-match .heading h3,
-  .profile .best-match .heading h3 {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin: 0.425rem 2rem; }
-    .recommendation .best-match .heading h3 i,
-    .profile .best-match .heading h3 i {
-      color: yellow; }
+
+.rating {
+  color: #FEC72E; }
+  .rating .more {
+    text-align: center;
+    margin-top: 2rem; }
+    .rating .more span {
+      display: block;
+      line-height: 2.125rem; }
+  .rating .best-match .heading {
+    background-color: #314f8c;
+    border-radius: 20px 20px 0 0;
+    padding: 0.125rem;
+    text-align: left; }
+    .rating .best-match .heading h3 {
+      color: #FFFFFF;
+      text-transform: uppercase;
+      margin: 0.425rem 2rem; }
+      .rating .best-match .heading h3 i {
+        color: yellow; }
 
 .sorter {
   background: #EEEEEE;
