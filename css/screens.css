@@ -6366,33 +6366,35 @@ input.location {
     .checkout .packages .columns .pricing-table .save-rate {
       color: #43AC6A; }
 
-.right-bar ul.qualification {
-  margin-left: 0; }
-  .right-bar ul.qualification li {
-    list-style: none; }
-.right-bar .columns {
-  padding: 0.5rem; }
-.right-bar .checkout-wrapper {
-  padding: -0.9rem; }
-.right-bar .accordion-navigation {
-  margin: 0;
-  padding: 0.1rem 0; }
-.right-bar .accordion-navigation a {
-  color: #333;
-  background: #eee;
-  border-radius: 0;
-  padding: 0.5rem; }
-  .right-bar .accordion-navigation a:hover {
+.right-bar {
+  margin-top: 1rem; }
+  .right-bar ul.qualification {
+    margin-left: 0; }
+    .right-bar ul.qualification li {
+      list-style: none; }
+  .right-bar .columns {
+    padding: 0.5rem; }
+  .right-bar .checkout-wrapper {
+    padding: -0.9rem; }
+  .right-bar .accordion-navigation {
+    margin: 0;
+    padding: 0.1rem 0; }
+  .right-bar .accordion-navigation a {
+    color: #333;
+    background: #eee;
+    border-radius: 0;
+    padding: 0.5rem; }
+    .right-bar .accordion-navigation a:hover {
+      color: #fff; }
+  .right-bar li.accordion-navigation.active a {
     color: #fff; }
-.right-bar li.accordion-navigation.active a {
-  color: #fff; }
-.right-bar .testimonial {
-  margin-top: 1rem;
-  background: #fff;
-  padding: 1rem; }
-  .right-bar .testimonial h4 {
-    font-size: 1rem;
-    font-weight: 900; }
+  .right-bar .testimonial {
+    margin-top: 1rem;
+    background: #fff;
+    padding: 1rem; }
+    .right-bar .testimonial h4 {
+      font-size: 1rem;
+      font-weight: 900; }
 
 .checkout-heading {
   background: #314f8c;
@@ -6811,7 +6813,10 @@ footer {
   .navigation {
     position: relative;
     top: 0;
-    right: 0; } }
+    right: 0; }
+
+  .right-bar {
+    margin-top: 0rem; } }
 .location-icon {
   position: absolute;
   display: inline-block;
