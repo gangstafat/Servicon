@@ -6341,30 +6341,39 @@ input.location {
   border-right: solid 1px #EEEEEE;
   border-left: solid 1px #EEEEEE; }
 
-.checkout {
-  padding: 1rem; }
-  .checkout label {
+.checkout label {
+  font-size: 1rem;
+  margin: 0.5rem 1rem; }
+.checkout .control-indicator {
+  top: 0.1rem; }
+.checkout .packages .columns {
+  padding: 0 0.2rem; }
+  .checkout .packages .columns .pricing-table .most-popular {
+    color: #F77109; }
+  .checkout .packages .columns .pricing-table .best-value {
+    color: #314f8c; }
+  .checkout .packages .columns .pricing-table .description {
+    height: 1rem !important; }
+  .checkout .packages .columns .pricing-table .price {
+    font-weight: 900; }
+  .checkout .packages .columns .pricing-table .pack-price,
+  .checkout .packages .columns .pricing-table .save-rate {
     font-size: 1rem;
-    margin: 0.5rem 1rem; }
-  .checkout .control-indicator {
-    top: 0.1rem; }
-  .checkout .packages .columns {
-    padding: 0 0.2rem; }
-    .checkout .packages .columns .pricing-table .most-popular {
-      color: #F77109; }
-    .checkout .packages .columns .pricing-table .best-value {
-      color: #314f8c; }
-    .checkout .packages .columns .pricing-table .description {
-      height: 1rem !important; }
-    .checkout .packages .columns .pricing-table .price {
-      font-weight: 900; }
-    .checkout .packages .columns .pricing-table .pack-price,
-    .checkout .packages .columns .pricing-table .save-rate {
-      font-size: 1rem;
-      font-weight: 400;
-      color: #ccc; }
-    .checkout .packages .columns .pricing-table .save-rate {
-      color: #43AC6A; }
+    font-weight: 400;
+    color: #ccc; }
+  .checkout .packages .columns .pricing-table .save-rate {
+    color: #43AC6A; }
+
+ul.checkout-cost {
+  margin-left: 0; }
+  ul.checkout-cost li {
+    list-style: none; }
+  ul.checkout-cost li.sub-item {
+    margin-left: 2rem;
+    font-style: italic; }
+
+.subtotal {
+  font-weight: 900; }
 
 .right-bar {
   margin-top: 1rem; }

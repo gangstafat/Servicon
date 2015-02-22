@@ -1,0 +1,209 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/screens.css">
+    <link rel="stylesheet" href="css/wtf-forms.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body style="background-color: #F3F6F8">
+  
+  <section>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="logo">
+          <img src="css/img/servicon-logo.png" alt="">
+          <h1>Servicon</h1>
+        </li>
+      </ul>
+      <ul class="navigation right">
+        <li><a href="">Sign In</a></li>
+        <li><a href="" class="sign-up">Sign Up</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section class="checkout">
+    <div class="row">
+      <div class="heading">
+        <h1>Check Out</h1>
+        <span class="sub-heading">we'll recommend some great coaches for you</span>
+      </div>
+      <div class="large-8 columns">
+        <div class="checkout-heading">
+          <h3>Check Out</h3>
+        </div>
+        <div class="checkout-wrapper">
+          <div class="checkout-content">
+            <h4>Order Summary</h4>
+            <div class="row item">
+              <ul class="checkout-cost">
+                <li class="item">Light package with Coach Elmer F. (3 sessions for 2 athletes)
+                  <span class="cost right">$200</span></li>
+                <li class="edit-cart"><a href="">Edit </a></li>
+                <li class="sub-item">Covered by Servicon Guarantee <span data-tooltip aria-haspopup="true" class="has-tip" title="Tooltips are awesome, you should totally use them!"><i class="fa fa-question-circle"></i></span></li>
+                <li class="item">Servicon Service Fee (7%) <span data-tooltip aria-haspopup="true" class="has-tip" title="Tooltips are awesome, you should totally use them!"><i class="fa fa-question-circle"></i></span>
+                  <span class="cost right">$15</span></li>
+                <li class="item">One-time Fee <span data-tooltip aria-haspopup="true" class="has-tip" title="Tooltips are awesome, you should totally use them!"><i class="fa fa-question-circle"></i></span>
+                  <span class="cost right">$15</span></li>
+                <li class="item">Run a background check? <span data-tooltip aria-haspopup="true" class="has-tip" title="Tooltips are awesome, you should totally use them!"><i class="fa fa-question-circle"></i></span>
+                  <div id="background-check-price" class="cost right">
+                    <span style="display:none">$15.00</span>
+                    <span>---</span>
+                  </div>
+                </li>
+                <li id="background-check" class="edit-cart background-check">
+                  <a>Add <i class="fa fa-plus-circle"></i></a>
+                  <a style="display:none">Remove <i class="fa fa-minus-circle"></i></a>
+                </li>
+                <li id="subtotal"class="subtotal item">Your Total 
+                  <span class="cost right">$300</span>
+                  <span class="cost right" style="display:none">$315</span>
+                </li>
+              </ul>
+              <div class="row">
+                <label for=""> Enter your promotion code here</label>
+                <div class="large-9 columns">
+                  <input type="text">
+                </div>
+                <div class="large-3 columns">
+                  <a href="" class="button radius tiny">Apply</a>
+                </div>
+              </div>
+            </div>
+            <h4><i class="fa fa-lock"></i> Payment Information</h4>
+            <span>Enter your credit card information below. CoachUp uses industry standard, 256-bit SSL encryption to process payments.</span>
+            <div class="row item">
+                  <div class="card-wrapper"></div>
+            </div>
+            <div class="row item">
+                <div class="form-container active">
+                    <form action="">
+                      <div class="row collapse">
+                        <div class="large-6 columns">
+                          <input placeholder="Card number" type="text" name="number">  
+                        </div>    
+                        <div class="large-6 columns">
+                          <input placeholder="Full name" type="text" name="name">
+                        </div>                        
+                      </div>
+                      <div class="row collapse">
+                        <div class="large-3 columns">
+                          <input placeholder="MM/YY" type="text" name="expiry">
+                        </div>    
+                        <div class="large-3 columns">
+                          <input placeholder="CVC" type="text" name="cvc">
+                        </div>
+                        <div class="large-6 columns">
+                          <a href="" class="button expand success tiny postfix">Request Coach</a>        
+                        </div>                        
+                      </div>
+                    </form>
+                </div>
+            </div>
+            <h4>Note</h4>
+            <span>Upon checkout, we will place an authorization hold on your credit card to ensure the funds are available for your coach. This hold typically appears as a pending charge or temporary authorization on your statement. Your coach will have 24 hours to accept the booking request, at which time we will finalize the transaction. If your coach declines the request or 24 hours elapses, we will release the authorization hold so your credit card company knows to remove the pending charge from your account.</span>          
+          </div>
+        </div>
+      </div>
+      <div class="large-4 columns right-bar">
+        <div class="checkout-heading">
+          <h3>Your Coach</h3>
+        </div>
+        <div class="checkout-wrapper">
+          <div class="checkout-content">
+            <div class="row">
+            <div class="large-6 columns">
+              <a class="th" href="https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?q=75&w=1080&h=1080&fit=max&fm=jpg&s=4a294400a04811c06ba14774a7b28c62">
+                <img src="https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?q=75&w=1080&h=1080&fit=max&fm=jpg&s=4a294400a04811c06ba14774a7b28c62">
+              </a>
+            </div>
+            <div class="large-6 columns">
+              <h4>Godswill</h4>
+              <div class="location">
+                <span class="address"><i class="fa fa-map-marker"></i> Lagos, Nigeria</span>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+            </div>
+            <div class="large-12">
+              <ul class="qualification">
+                <li><i class="fa fa-check-square-o"></i> Curabitur sodales velit</li>
+                <li><i class="fa fa-check-square-o"></i> A est dapibus bibendum</li>
+                <li><i class="fa fa-check-square-o"></i> A est dapibus bibendum</li>
+              </ul>
+            </div>
+            <div class="large-12">
+              <ul class="accordion" data-accordion>
+                <li class="accordion-navigation">
+                  <h4>FAQ</h4>
+                </li>
+                <li class="accordion-navigation">
+                  <a href="#panel1a"><i class="fa fa-caret-right"></i>
+   How much do you charge?</a>
+                  <div id="panel1a" class="content">
+                    Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </li>
+                <li class="accordion-navigation">
+                  <a href="#panel2a"><i class="fa fa-caret-right"></i>
+   How much do you charge?</a>
+                  <div id="panel2a" class="content">
+                    Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </li>
+                <li class="accordion-navigation">
+                  <a href="#panel3a"><i class="fa fa-caret-right"></i>
+   How much do you charge?</a>
+                  <div id="panel3a" class="content">
+                    Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </li>
+              </ul>              
+            </div>
+          </div>
+        </div>
+        <div class="panel callout radius testimonial">
+            <h4>COACHUP TESTIMONIAL</h4>
+            <p>"There is no substitute for a great private coach — someone who can really teach you the intricacies of the game, and break down the fundamentals that make all the difference. I highly recommend CoachUp — it's an excellent choice for any athlete looking to take his or her game to the next level!"</p>
+            <div class="author">
+              <strong>Cam Neely</strong>
+              <p>President of the Boston Bruins,
+hockey legend (and sports dad)</p>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    © Servicon.
+  </footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/card.js"></script>
+    <script>
+      $("#background-check").click(function(){
+        $(".background-check > a").toggle();
+        $("#background-check-price > span").toggle();
+        $("#subtotal > span").toggle();
+      });
+
+        new Card({
+            form: document.querySelector('form'),
+            container: '.card-wrapper'
+        });
+    </script>
+  </body>
+</html>
