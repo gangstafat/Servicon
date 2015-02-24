@@ -6153,6 +6153,9 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+.none {
+  display: none; }
+
 .full-width {
   width: 100%;
   margin-left: auto;
@@ -6364,11 +6367,47 @@ input.location {
   .checkout .packages .columns .pricing-table .save-rate {
     color: #43AC6A; }
 
+.user-cards {
+  font-size: 1rem; }
+  .user-cards .heading {
+    border: solid 0px #ccc !important;
+    padding: 0;
+    text-align: left;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #aaa; }
+    .user-cards .heading h3 {
+      font-size: 0.8rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0; }
+  .user-cards .item {
+    border-bottom: solid 1px #ccc;
+    padding: 0.7rem 0;
+    border-radius: 5px; }
+    .user-cards .item img {
+      position: relative;
+      top: -0.1rem; }
+    .user-cards .item:first-child {
+      padding: 0; }
+    .user-cards .item:last-child {
+      border-bottom: none; }
+  .user-cards .card-wrapper {
+    margin-bottom: 1rem; }
+  .user-cards .columns {
+    padding-left: 0;
+    padding-right: 0; }
+  .user-cards .control-indicator {
+    top: -0.25rem;
+    width: 1rem;
+    height: 1rem; }
+
 .group-name .columns {
   padding-left: 0;
   padding-right: 0; }
   .group-name .columns label {
-    margin: 0.5rem 0.5rem !important; }
+    margin: 0.5rem 0.7rem !important; }
 
 ul.checkout-cost {
   margin-left: 0; }

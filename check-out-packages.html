@@ -47,7 +47,7 @@
                 Single athlete session <span data-tooltip aria-haspopup="true" class="has-tip" title="Tooltips are awesome, you should totally use them!"><i class="fa fa-question-circle"></i></span>
               </label>
               <label class="control radio">
-                <input id="radio1" name="radio" type="radio">
+                <input id="radio2" name="radio" type="radio">
                 <span class="control-indicator small"></span>
                 Group session (2 athletes) <span data-tooltip aria-haspopup="true" class="has-tip" title="Tooltips are awesome, you should totally use them!"><i class="fa fa-question-circle"></i></span>
               </label>  
@@ -62,22 +62,22 @@
             </label>
           </div>
           <div class="row group-name">
-            <div class="large-3 columns">
+            <div id="athletes-1" class="large-3 columns">
               <label for="">Athletes Name #1
               <input type="text" class="radius">
               </label>
             </div>
-            <div class="large-3 columns">
+            <div id="athletes-2" class="large-3 columns none">
               <label for="">Athletes Name #2
               <input type="text" class="radius">
               </label>
             </div>
-            <div class="large-3 columns">
+            <div id="athletes-3" class="large-3 columns none">
               <label for="">Athletes Name #3
               <input type="text" class="radius">
               </label>
             </div>
-            <div class="large-3 columns">
+            <div id="athletes-4" class="large-3 columns none">
               <label for="">Athletes Name #4
               <input type="text" class="radius">
               </label>
@@ -217,5 +217,17 @@ hockey legend (and sports dad)</p>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      $("input#radio1").click(function(){
+       $("#athletes-2").addClass("none");  
+       $("#athletes-3").addClass("none"); 
+       $("#athletes-4").addClass("none"); 
+      });
+      $("input#radio2").click(function(){
+       $("#athletes-2").removeClass("none");  
+       $("#athletes-3").removeClass("none"); 
+       $("#athletes-4").removeClass("none"); 
+      });
+    </script>
   </body>
 </html>

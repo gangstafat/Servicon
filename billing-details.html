@@ -76,33 +76,102 @@
             </div>
             <h4><i class="fa fa-lock"></i> Payment Information</h4>
             <span>Enter your credit card information below. CoachUp uses industry standard, 256-bit SSL encryption to process payments.</span>
-            <div class="row item">
-                  <div class="card-wrapper"></div>
-            </div>
-            <div class="row item">
-                <div class="form-container active">
-                    <form action="">
-                      <div class="row collapse">
-                        <div class="large-6 columns">
-                          <input placeholder="Card number" type="text" name="number">  
-                        </div>    
-                        <div class="large-6 columns">
-                          <input placeholder="Full name" type="text" name="name">
-                        </div>                        
-                      </div>
-                      <div class="row collapse">
-                        <div class="large-3 columns">
-                          <input placeholder="MM/YY" type="text" name="expiry">
-                        </div>    
-                        <div class="large-3 columns">
-                          <input placeholder="CVC" type="text" name="cvc">
-                        </div>
-                        <div class="large-6 columns">
-                          <a href="" class="button expand success tiny postfix">Request Coach</a>        
-                        </div>                        
-                      </div>
-                    </form>
+            <div class="user-cards">
+              <div class="row item heading">
+                <div class="selection large-7 columns">
+                  <h3>Your cards</h3>
                 </div>
+                <div class="name-on-card large-3 columns">
+                  <span>Name on card</span>
+                </div>
+                <div class="expire-time large-2 columns">
+                  <span>Expire on</span>
+                </div>
+              </div>
+              <div class="row item">
+                <div class="selection large-1 columns">
+                  <label class="control radio">
+                    <input id="radio1" name="radio" type="radio">
+                    <span class="control-indicator small"></span>
+                  </label> 
+                </div>
+                <div class="card-type large-1 columns">
+                  <img src="https://images-na.ssl-images-amazon.com/images/G/01/checkout/payselect/card-logos-small/visa._V196106248_.gif" alt="">
+                </div>
+                <div class="card-info large-5 columns">
+                  <strong>Visa</strong>
+                  <span>ending in 4649</span>
+                </div>
+                <div class="name-on-card large-3 columns">
+                  <span>Huy Nguyen</span>
+                </div>
+                <div class="expire-time large-2 columns">
+                  <span>07/2017</span>
+                </div>
+              </div>
+              <div class="row item">
+                <div class="selection large-1 columns">
+                  <label class="control radio">
+                    <input id="radio1" name="radio" type="radio">
+                    <span class="control-indicator small"></span>
+                  </label> 
+                </div>
+                <div class="card-type large-1 columns">
+                  <img src="https://images-na.ssl-images-amazon.com/images/G/01/checkout/payselect/card-logos-small/visa._V196106248_.gif" alt="">
+                </div>
+                <div class="card-info large-5 columns">
+                  <strong>Visa</strong>
+                  <span>ending in 4649</span>
+                </div>
+                <div class="name-on-card large-3 columns">
+                  <span>Huy Nguyen</span>
+                </div>
+                <div class="expire-time large-2 columns">
+                  <span>07/2017</span>
+                </div>
+              </div>
+<!--               <div class="row item heading">
+                <div class="selection large-7 columns">
+                  <h3>Add your card</h3>
+                </div>
+              </div> -->
+              <div class="row item add-card">
+                <ul class="accordion" data-accordion>
+                  <li class="accordion-navigation">
+                    <a href="#add-card">Add your card</a>
+                    <div id="add-card" class="content">
+                      <div class="row">
+                        <div class="card-wrapper"></div>
+                      </div>
+                      <div class="row">
+                        <div class="form-container active">
+                            <form action="">
+                              <div class="row collapse">
+                                <div class="large-6 columns">
+                                  <input placeholder="Card number" type="text" name="number">  
+                                </div>    
+                                <div class="large-6 columns">
+                                  <input placeholder="Full name" type="text" name="name">
+                                </div>                        
+                              </div>
+                              <div class="row collapse">
+                                <div class="large-3 columns">
+                                  <input placeholder="MM/YY" type="text" name="expiry">
+                                </div>    
+                                <div class="large-3 columns">
+                                  <input placeholder="CVC" type="text" name="cvc">
+                                </div>
+                                <div class="large-6 columns">
+                                  <a href="" class="button expand success tiny postfix">Request Coach</a>        
+                                </div>                        
+                              </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
             <h4>Note</h4>
             <span>Upon checkout, we will place an authorization hold on your credit card to ensure the funds are available for your coach. This hold typically appears as a pending charge or temporary authorization on your statement. Your coach will have 24 hours to accept the booking request, at which time we will finalize the transaction. If your coach declines the request or 24 hours elapses, we will release the authorization hold so your credit card company knows to remove the pending charge from your account.</span>          

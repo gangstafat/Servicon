@@ -1,5 +1,7 @@
 @import settings
 @import foundation
+.none
+    display: none
 .full-width 
     width: 100%
     margin-left: auto
@@ -208,6 +210,41 @@ input.location
                     color: #ccc
                 .save-rate
                     color: #43AC6A
+.user-cards
+    .heading
+        border: solid 0px #ccc !important
+        padding: 0
+        text-align: left
+        font-size: .8rem
+        text-transform: uppercase
+        color: #aaa
+        h3
+            font-size: .8rem
+            font-weight: 900
+            text-transform: uppercase
+            margin: 0
+            padding: 0
+    .item
+        img
+            position: relative
+            top: -.1rem
+        border-bottom: solid 1px #ccc
+        padding: .7rem 0
+        border-radius: 5px
+        &:first-child
+            padding: 0
+        &:last-child
+            border-bottom: none
+    .card-wrapper
+        margin-bottom: 1rem
+    .columns
+        padding-left: 0
+        padding-right: 0
+    font-size: 1rem
+    .control-indicator
+        top: -.25rem
+        width: 1rem
+        height: 1rem
 .group-name
     .columns
         padding-left: 0
