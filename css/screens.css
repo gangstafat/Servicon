@@ -6331,7 +6331,7 @@ input.location {
 .filter .form-heading,
 .checkout .form-heading {
   background-color: #314f8c;
-  border-radius: 5px 5px 0 0;
+  border-radius: 4px 4px 0 0;
   padding: 0.725rem; }
   .filter .form-heading h3,
   .checkout .form-heading h3 {
@@ -6452,7 +6452,7 @@ ul.checkout-cost {
 
 .checkout-heading {
   background: #314f8c;
-  border-radius: 5px 5px 0 0;
+  border-radius: 4px 4px 0 0;
   border: solid 1px #3D6089;
   border-bottom: 0; }
   .checkout-heading h3 {
@@ -6740,7 +6740,7 @@ ul.checkout-cost {
       line-height: 2.125rem; }
   .rating .best-match .heading {
     background-color: #314f8c;
-    border-radius: 20px 20px 0 0;
+    border-radius: 4px 4px 0 0;
     padding: 0.125rem;
     text-align: left; }
     .rating .best-match .heading h3 {
@@ -6755,7 +6755,7 @@ ul.checkout-cost {
   padding-top: 1.125rem;
   border: solid 1px #ccc;
   border-bottom: none;
-  border-radius: 20px 20px 0 0; }
+  border-radius: 4px 4px 0 0; }
 
 ul.pagination {
   float: right;
@@ -6776,10 +6776,10 @@ ul.accordion {
 .accordion li {
   padding: 0.325rem 0; }
   .accordion li .content {
-    border-radius: 8px; }
+    border-radius: 4px; }
 
 .accordion li > a {
-  border-radius: 8px; }
+  border-radius: 4px; }
 
 .other-question label {
   line-height: 3rem;
@@ -6846,7 +6846,7 @@ footer {
   .right-filter {
     padding-left: 2rem; }
     .right-filter .heading {
-      border-radius: 20px 20px 0 0; }
+      border-radius: 4px 4px 0 0; }
 
   .map {
     margin-top: 0rem; }
