@@ -6730,25 +6730,26 @@ ul.checkout-cost {
   .profile .item .no-price {
     margin-top: 1.5rem; }
 
-.rating {
+.rating i {
   color: #FEC72E; }
-  .rating .more {
-    text-align: center;
-    margin-top: 2rem; }
-    .rating .more span {
-      display: block;
-      line-height: 2.125rem; }
-  .rating .best-match .heading {
-    background-color: #314f8c;
-    border-radius: 4px 4px 0 0;
-    padding: 0.125rem;
-    text-align: left; }
-    .rating .best-match .heading h3 {
-      color: #FFFFFF;
-      text-transform: uppercase;
-      margin: 0.425rem 2rem; }
-      .rating .best-match .heading h3 i {
-        color: yellow; }
+  .rating i span {
+    display: block;
+    line-height: 2.125rem; }
+.rating .best-match .heading {
+  background-color: #314f8c;
+  border-radius: 4px 4px 0 0;
+  padding: 0.125rem;
+  text-align: left; }
+  .rating .best-match .heading h3 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0.425rem 2rem; }
+    .rating .best-match .heading h3 i {
+      color: yellow; }
+
+.more {
+  text-align: center;
+  margin-top: 2rem; }
 
 .sorter {
   background: #EEEEEE;
