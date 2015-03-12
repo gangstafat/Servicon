@@ -7021,6 +7021,55 @@ a.share:hover {
 .circle-feeds {
   border-left: solid 1px #eee;
   padding: 1rem; }
+  .circle-feeds .update-stt textarea {
+    min-height: 5rem;
+    margin-bottom: 0.5rem; }
+  .circle-feeds .update-stt .columns {
+    padding: 0.5rem;
+    margin: 0; }
+  .circle-feeds .user-post-item .columns {
+    padding: 0 0.2rem; }
+  .circle-feeds .user-post-item .user-ava {
+    padding: 0.5rem; }
+    .circle-feeds .user-post-item .user-ava img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px; }
+  .circle-feeds .user-post-item .user-post-content-detail p {
+    font-size: 1rem;
+    margin-bottom: 0.3rem; }
+  .circle-feeds .user-post-item .user-post-actions span a {
+    font-size: 0.8rem;
+    margin-right: 1rem; }
+    .circle-feeds .user-post-item .user-post-actions span a:hover {
+      border-bottom: solid 1px #314f8c; }
+  .circle-feeds .user-post-stats {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    border-top: solid 1px #eee;
+    padding-top: 0.5rem; }
+    .circle-feeds .user-post-stats i {
+      margin-right: 0.3rem; }
+  .circle-feeds .comments .comment-item {
+    margin-top: 0.7rem;
+    padding-left: 1rem; }
+    .circle-feeds .comments .comment-item .columns {
+      padding: 0; }
+    .circle-feeds .comments .comment-item .user-comment-ava a {
+      display: block;
+      padding: 0; }
+    .circle-feeds .comments .comment-item .user-comment-ava img {
+      border-radius: 2px;
+      width: 30px;
+      height: 30px; }
+    .circle-feeds .comments .comment-item p.user-comment-content {
+      padding: 4px 0 0 0;
+      font-size: 0.9rem;
+      margin-bottom: 0; }
+      .circle-feeds .comments .comment-item p.user-comment-content span {
+        margin-right: 0.3rem; }
+    .circle-feeds .comments .comment-item .comment-box {
+      padding-right: 0.5rem; }
 
 .related-profile {
   display: block;
