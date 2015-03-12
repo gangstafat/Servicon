@@ -2320,7 +2320,7 @@ button::-moz-focus-inner {
   font-size: 0.875rem;
   z-index: 89;
   margin-top: 2px;
-  max-width: 200px; }
+  max-width: 140px; }
   .f-dropdown > *:first-child {
     margin-top: 0; }
   .f-dropdown > *:last-child {
@@ -2370,7 +2370,7 @@ button::-moz-focus-inner {
     z-index: 89;
     margin-top: 0;
     margin-left: 2px;
-    max-width: 200px; }
+    max-width: 140px; }
     .f-dropdown.drop-right > *:first-child {
       margin-top: 0; }
     .f-dropdown.drop-right > *:last-child {
@@ -2414,7 +2414,7 @@ button::-moz-focus-inner {
     z-index: 89;
     margin-top: 0;
     margin-left: -2px;
-    max-width: 200px; }
+    max-width: 140px; }
     .f-dropdown.drop-left > *:first-child {
       margin-top: 0; }
     .f-dropdown.drop-left > *:last-child {
@@ -2460,7 +2460,7 @@ button::-moz-focus-inner {
     z-index: 89;
     margin-top: -2px;
     margin-left: 0;
-    max-width: 200px; }
+    max-width: 140px; }
     .f-dropdown.drop-top > *:first-child {
       margin-top: 0; }
     .f-dropdown.drop-top > *:last-child {
@@ -2520,7 +2520,7 @@ button::-moz-focus-inner {
     border: solid 1px #cccccc;
     font-size: 0.875rem;
     z-index: 89;
-    max-width: 200px; }
+    max-width: 140px; }
     .f-dropdown.content > *:first-child {
       margin-top: 0; }
     .f-dropdown.content > *:last-child {
@@ -6156,6 +6156,13 @@ th.hide-for-touch {
 .none {
   display: none; }
 
+span.center {
+  display: block;
+  text-align: center; }
+
+hr {
+  border: solid 1px #eee; }
+
 .full-width {
   width: 100%;
   margin-left: auto;
@@ -6164,6 +6171,25 @@ th.hide-for-touch {
 
 .top-bar {
   border-bottom: solid 1px #ccc; }
+
+.sub-bar {
+  background: #314f8c;
+  color: white; }
+  .sub-bar ul {
+    margin: 0;
+    padding: 0; }
+  .sub-bar ul li,
+  .sub-bar span {
+    display: inline-block;
+    list-style: none;
+    padding: 0.6rem; }
+    .sub-bar ul li a,
+    .sub-bar span a {
+      color: white; }
+      .sub-bar ul li a:hover, .sub-bar ul li a:active,
+      .sub-bar span a:hover,
+      .sub-bar span a:active {
+        color: #eee; }
 
 .navigation {
   position: relative;
@@ -6180,6 +6206,31 @@ th.hide-for-touch {
     color: #FFFFFF;
     padding: 0.4rem 1.5rem;
     border-radius: 4px; }
+
+.counter {
+  position: relative; }
+
+.counter[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 0.7em;
+  background: #AF2812;
+  color: white;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #111; }
+
+#profile-dropdown li a {
+  color: #333; }
+#profile-dropdown li:hover {
+  background-color: transparent !important; }
+  #profile-dropdown li:hover a {
+    color: #314f8c; }
 
 .logo h1 {
   background-image: url("img/servicon-name.png");
@@ -6207,11 +6258,13 @@ th.hide-for-touch {
   letter-spacing: 2px; }
 
 .heading {
-  margin: 3rem 0;
-  text-align: center; }
+  margin: 2rem 0;
+  text-align: center;
+  color: #314f8c; }
 
 .sub-heading {
   display: block;
+  text-align: center;
   font-size: 1.125rem; }
 
 .header-hero .intro,
@@ -6450,12 +6503,14 @@ ul.checkout-cost {
       font-size: 1rem;
       font-weight: 900; }
 
-.checkout-heading {
+.checkout-heading,
+.panel-heading {
   background: #314f8c;
   border-radius: 4px 4px 0 0;
   border: solid 1px #3D6089;
   border-bottom: 0; }
-  .checkout-heading h3 {
+  .checkout-heading h3,
+  .panel-heading h3 {
     font-size: 1.2rem;
     padding: 1rem;
     color: white;
@@ -6808,6 +6863,468 @@ ul.accordion {
 
 .tabs {
   border-bottom: solid 4px #314f8c; }
+
+.dashboard label {
+  font-size: 1rem; }
+.dashboard input[type="checkbox"] {
+  font-size: 2rem;
+  margin-bottom: 0.5rem; }
+.dashboard .item {
+  margin: 2rem auto;
+  border: solid 1px #eee;
+  background: #fff;
+  padding: 0 2rem; }
+.dashboard .heading {
+  margin: 0;
+  margin-top: 1rem; }
+.dashboard .faq ul li {
+  list-style: none;
+  padding: 0.5rem;
+  text-align: center; }
+
+.dashboard-panel {
+  margin: 2rem 0; }
+
+.reminder {
+  border: solid 1px #FDB92B;
+  background-color: #FFF9EA; }
+  .reminder h5, .reminder p {
+    color: #95721F; }
+
+.update {
+  margin-top: 1rem; }
+
+.share {
+  margin-top: 1rem;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.7rem; }
+
+a.share:hover {
+  color: #fff; }
+
+.facebook {
+  background: #3C5A96; }
+  .facebook:hover {
+    background: #3C5A96; }
+
+.twitter {
+  background: #55ACEE; }
+  .twitter:hover {
+    background: #55ACEE; }
+
+.mail {
+  background: #FC5B63; }
+  .mail:hover {
+    background: #FC5B63; }
+
+.refcode {
+  padding: 0rem !important;
+  background: #fff;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #44B254; }
+
+.messages-wrapper {
+  margin-top: 2rem; }
+  .messages-wrapper .conversation-types ul {
+    list-style-type: none; }
+    .messages-wrapper .conversation-types ul li a {
+      color: #aaa; }
+      .messages-wrapper .conversation-types ul li a.active, .messages-wrapper .conversation-types ul li a:hover {
+        color: #111; }
+  .messages-wrapper .conversation-list {
+    background: #fff;
+    border: solid 1px #eee;
+    padding-top: 1rem; }
+  .messages-wrapper .messages-item table, .messages-wrapper .messages-item table tr.even, .messages-wrapper .messages-item table tr:nth-of-type(even) {
+    border-spacing: 0px;
+    background: #fff; }
+  .messages-wrapper .messages-item table tr:hover {
+    background: #fbfbfb; }
+  .messages-wrapper .messages-item a {
+    color: #333; }
+  .messages-wrapper .messages-item td {
+    border-bottom: solid 1px #eee; }
+  .messages-wrapper .messages-item tr:last-child td {
+    border-bottom: 0px; }
+  .messages-wrapper .messages-item .sender,
+  .messages-wrapper .messages-item .last-message,
+  .messages-wrapper .messages-item .update-time {
+    cursor: pointer; }
+  .messages-wrapper .messages-item .sender a.th {
+    border: 0;
+    margin-right: 5px; }
+  .messages-wrapper .messages-item .last-message {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 460px; }
+
+.profile-details {
+  border-left: solid 1px #eee; }
+  .profile-details h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700; }
+    .profile-details h3 i {
+      position: relative;
+      top: -1px;
+      left: -3px;
+      font-size: 0.2rem !important; }
+  .profile-details .item-detail {
+    font-size: 0.9rem;
+    display: block;
+    margin: 1rem 0; }
+  .profile-details .services-details {
+    border-left: dashed 1px #eee;
+    padding-top: 1rem; }
+  .profile-details .full-name,
+  .profile-details .personal-details {
+    padding: 1rem; }
+  .profile-details .full-name {
+    border-bottom: solid 1px #eee; }
+
+.account-wrapper {
+  border: solid 1px #eee;
+  border-top: 0px;
+  background: #fff;
+  padding-top: 0; }
+
+.profile-picture {
+  border-bottom: solid 1px #eee; }
+  .profile-picture .edit-avatar {
+    display: block;
+    margin: 3.5rem auto 1rem auto;
+    max-width: 60%; }
+  .profile-picture .cover-bg {
+    text-align: center;
+    margin: 0;
+    height: 80px;
+    margin-bottom: 2.5rem; }
+  .profile-picture a {
+    margin: 1rem 0; }
+  .profile-picture a.th {
+    margin-bottom: -0.5rem; }
+    .profile-picture a.th img {
+      width: 100px; }
+
+.phone-number .number-item, .phone-number .emails-item, .phone-number .locations-item, .emails .number-item, .emails .emails-item, .emails .locations-item, .locations .number-item, .locations .emails-item, .locations .locations-item {
+  display: block; }
+.phone-number .edit-link, .emails .edit-link, .locations .edit-link {
+  display: inline-block;
+  padding: 0.5rem;
+  padding-left: 0rem; }
+
+.circle-feeds {
+  border-left: solid 1px #eee;
+  padding: 1rem; }
+
+.related-profile {
+  display: block;
+  margin: 0 auto; }
+  .related-profile .columns {
+    padding: 0;
+    margin: 0; }
+  .related-profile a.tiny-pp {
+    width: 60px;
+    margin: 7.5px; }
+  .related-profile a.th {
+    border: 0px;
+    box-shadow: none;
+    border-radius: 4px; }
+    .related-profile a.th img {
+      border-radius: 4px; }
+  .related-profile a.view-more {
+    font-size: 0.7rem; }
+
+#all-related-profile {
+  width: 60%;
+  padding: 0.5rem; }
+  #all-related-profile .profile-item {
+    padding: 1rem 0;
+    border-bottom: solid 1px #eee; }
+    #all-related-profile .profile-item .columns {
+      padding: 0 0.5rem;
+      margin: 0; }
+  #all-related-profile .profile-item-description .user-name {
+    font-weight: 700; }
+  #all-related-profile .profile-item-description .user-self-description {
+    margin-bottom: 0.1rem; }
+  #all-related-profile .profile-item-description .user-skills ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 0.5rem; }
+  #all-related-profile .profile-item-description .user-skills li {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #617891;
+    display: inline-block;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out; }
+    #all-related-profile .profile-item-description .user-skills li a {
+      color: #fff; }
+    #all-related-profile .profile-item-description .user-skills li:hover {
+      background: #314f8c; }
+  #all-related-profile a.follow, #all-related-profile a.unfollow {
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 1rem; }
+  #all-related-profile a.follow {
+    background: #49B158; }
+    #all-related-profile a.follow:hover {
+      background: #489759; }
+  #all-related-profile a.unfollow {
+    background: #AD291B; }
+    #all-related-profile a.unfollow:hover {
+      background: #922D1E; }
+
+.profile-completion {
+  text-align: center;
+  padding: 2rem; }
+  .profile-completion span {
+    display: block; }
+
+.pie {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  font-size: 7em;
+  text-align: center;
+  border-radius: 50%; }
+
+.slice-right {
+  position: absolute;
+  z-index: 11;
+  background-color: #44B254;
+  width: 100%;
+  height: 100%;
+  clip: rect(0, 0.5em, 0.5em, 0.5em);
+  border-radius: 50%; }
+
+.slice-left {
+  position: absolute;
+  z-index: 11;
+  background-color: #44B254;
+  width: 100%;
+  height: 100%;
+  clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  border-radius: 50%; }
+
+.percent {
+  position: absolute;
+  z-index: 20;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  background: white;
+  border-radius: 50%; }
+
+.number {
+  position: absolute;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  padding-top: 50%;
+  line-height: 0;
+  font-size: 0.3em;
+  color: #44B254; }
+
+.slice-right {
+  -webkit-animation-delay: 1.2s;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-name: right-slice;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards; }
+
+.slice-left {
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-name: left-slice;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards; }
+
+@-webkit-keyframes right-slice {
+  from {
+    clip: rect(0, 50%, 0.5em, 0.5em); }
+  50% {
+    clip: rect(0, 1em, 0.5em, 0.5em); }
+  to {
+    clip: rect(0, 1em, 1em, 0.5em); } }
+@-webkit-keyframes left-slice {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em); }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0); }
+  to {
+    clip: rect(0.3em, 0.5em, 1em, 0); } }
+.profile-stats .statItem {
+  padding: 0.5rem;
+  border-bottom: solid 1px #eee; }
+  .profile-stats .statItem .statLabel {
+    padding: 0.1rem 0; }
+  .profile-stats .statItem .statNumber {
+    padding: 0;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #eee; }
+
+.services-details h3 {
+  border-bottom: dashed 1px #eee;
+  padding-bottom: 0.5rem; }
+.services-details h4 {
+  font-size: 0.9rem;
+  font-weight: bold; }
+.services-details a.th {
+  border: 0px; }
+.services-details .columns {
+  padding-left: 0;
+  padding-right: 0; }
+.services-details .job-details strong {
+  display: block; }
+
+table.payment-history, table.card-management, table.coupon-list, table tr.even, table tr:nth-of-type(even) {
+  margin: 0 auto;
+  border-spacing: 0px;
+  background: #fff;
+  border: 0px; }
+  table.payment-history thead, table.card-management thead, table.coupon-list thead, table tr.even thead, table tr:nth-of-type(even) thead {
+    background: transparent; }
+  table.payment-history .order-id,
+  table.payment-history .order-date,
+  table.payment-history .order-item,
+  table.payment-history .order-price,
+  table.payment-history .order-stt,
+  table.payment-history .order-more-details,
+  table.payment-history .billing-item,
+  table.payment-history .session-number,
+  table.payment-history .session-type,
+  table.payment-history .card-type,
+  table.payment-history .last-digits,
+  table.payment-history .exp-date,
+  table.payment-history .billing-address,
+  table.payment-history .card-actions,
+  table.payment-history .coupon-code,
+  table.payment-history .coupon-exp-date,
+  table.payment-history .coupon-value,
+  table.payment-history .coupon-stt, table.card-management .order-id,
+  table.card-management .order-date,
+  table.card-management .order-item,
+  table.card-management .order-price,
+  table.card-management .order-stt,
+  table.card-management .order-more-details,
+  table.card-management .billing-item,
+  table.card-management .session-number,
+  table.card-management .session-type,
+  table.card-management .card-type,
+  table.card-management .last-digits,
+  table.card-management .exp-date,
+  table.card-management .billing-address,
+  table.card-management .card-actions,
+  table.card-management .coupon-code,
+  table.card-management .coupon-exp-date,
+  table.card-management .coupon-value,
+  table.card-management .coupon-stt, table.coupon-list .order-id,
+  table.coupon-list .order-date,
+  table.coupon-list .order-item,
+  table.coupon-list .order-price,
+  table.coupon-list .order-stt,
+  table.coupon-list .order-more-details,
+  table.coupon-list .billing-item,
+  table.coupon-list .session-number,
+  table.coupon-list .session-type,
+  table.coupon-list .card-type,
+  table.coupon-list .last-digits,
+  table.coupon-list .exp-date,
+  table.coupon-list .billing-address,
+  table.coupon-list .card-actions,
+  table.coupon-list .coupon-code,
+  table.coupon-list .coupon-exp-date,
+  table.coupon-list .coupon-value,
+  table.coupon-list .coupon-stt, table tr.even .order-id,
+  table tr.even .order-date,
+  table tr.even .order-item,
+  table tr.even .order-price,
+  table tr.even .order-stt,
+  table tr.even .order-more-details,
+  table tr.even .billing-item,
+  table tr.even .session-number,
+  table tr.even .session-type,
+  table tr.even .card-type,
+  table tr.even .last-digits,
+  table tr.even .exp-date,
+  table tr.even .billing-address,
+  table tr.even .card-actions,
+  table tr.even .coupon-code,
+  table tr.even .coupon-exp-date,
+  table tr.even .coupon-value,
+  table tr.even .coupon-stt, table tr:nth-of-type(even) .order-id,
+  table tr:nth-of-type(even) .order-date,
+  table tr:nth-of-type(even) .order-item,
+  table tr:nth-of-type(even) .order-price,
+  table tr:nth-of-type(even) .order-stt,
+  table tr:nth-of-type(even) .order-more-details,
+  table tr:nth-of-type(even) .billing-item,
+  table tr:nth-of-type(even) .session-number,
+  table tr:nth-of-type(even) .session-type,
+  table tr:nth-of-type(even) .card-type,
+  table tr:nth-of-type(even) .last-digits,
+  table tr:nth-of-type(even) .exp-date,
+  table tr:nth-of-type(even) .billing-address,
+  table tr:nth-of-type(even) .card-actions,
+  table tr:nth-of-type(even) .coupon-code,
+  table tr:nth-of-type(even) .coupon-exp-date,
+  table tr:nth-of-type(even) .coupon-value,
+  table tr:nth-of-type(even) .coupon-stt {
+    padding: 1rem;
+    vertical-align: top;
+    border-top: solid 1px #eee;
+    font-size: 1rem; }
+  table.payment-history .order-item, table.card-management .order-item, table.coupon-list .order-item, table tr.even .order-item, table tr:nth-of-type(even) .order-item {
+    min-width: 350px; }
+  table.payment-history .billing-item, table.card-management .billing-item, table.coupon-list .billing-item, table tr.even .billing-item, table tr:nth-of-type(even) .billing-item {
+    min-width: 200px; }
+  table.payment-history .session-number, table.payment-history .session-type, table.card-management .session-number, table.card-management .session-type, table.coupon-list .session-number, table.coupon-list .session-type, table tr.even .session-number, table tr.even .session-type, table tr:nth-of-type(even) .session-number, table tr:nth-of-type(even) .session-type {
+    width: 60px; }
+  table.payment-history .order-stt, table.payment-history .coupon-stt, table.payment-history .coupon-code, table.card-management .order-stt, table.card-management .coupon-stt, table.card-management .coupon-code, table.coupon-list .order-stt, table.coupon-list .coupon-stt, table.coupon-list .coupon-code, table tr.even .order-stt, table tr.even .coupon-stt, table tr.even .coupon-code, table tr:nth-of-type(even) .order-stt, table tr:nth-of-type(even) .coupon-stt, table tr:nth-of-type(even) .coupon-code {
+    font-weight: 600; }
+  table.payment-history .paid, table.payment-history .available, table.card-management .paid, table.card-management .available, table.coupon-list .paid, table.coupon-list .available, table tr.even .paid, table tr.even .available, table tr:nth-of-type(even) .paid, table tr:nth-of-type(even) .available {
+    color: #49B158; }
+  table.payment-history .cancelled, table.payment-history .used, table.card-management .cancelled, table.card-management .used, table.coupon-list .cancelled, table.coupon-list .used, table tr.even .cancelled, table tr.even .used, table tr:nth-of-type(even) .cancelled, table tr:nth-of-type(even) .used {
+    color: #AF2812; }
+  table.payment-history .processing, table.card-management .processing, table.coupon-list .processing, table tr.even .processing, table tr:nth-of-type(even) .processing {
+    color: #111; }
+  table.payment-history .card-type, table.card-management .card-type, table.coupon-list .card-type, table tr.even .card-type, table tr:nth-of-type(even) .card-type {
+    min-width: 110px; }
+    table.payment-history .card-type img, table.card-management .card-type img, table.coupon-list .card-type img, table tr.even .card-type img, table tr:nth-of-type(even) .card-type img {
+      display: block; }
+  table.payment-history .billing-address, table.card-management .billing-address, table.coupon-list .billing-address, table tr.even .billing-address, table tr:nth-of-type(even) .billing-address {
+    min-width: 350px;
+    line-height: 1.4rem; }
+    table.payment-history .billing-address .location span, table.payment-history .billing-address .zipcode, table.payment-history .billing-address .country, table.card-management .billing-address .location span, table.card-management .billing-address .zipcode, table.card-management .billing-address .country, table.coupon-list .billing-address .location span, table.coupon-list .billing-address .zipcode, table.coupon-list .billing-address .country, table tr.even .billing-address .location span, table tr.even .billing-address .zipcode, table tr.even .billing-address .country, table tr:nth-of-type(even) .billing-address .location span, table tr:nth-of-type(even) .billing-address .zipcode, table tr:nth-of-type(even) .billing-address .country {
+      padding-right: 8px; }
+  table.payment-history .card-actions ul, table.card-management .card-actions ul, table.coupon-list .card-actions ul, table tr.even .card-actions ul, table tr:nth-of-type(even) .card-actions ul {
+    list-style-type: none;
+    margin-left: 0px; }
+  table.payment-history .coupon-code, table.card-management .coupon-code, table.coupon-list .coupon-code, table tr.even .coupon-code, table tr:nth-of-type(even) .coupon-code {
+    min-width: 520px; }
+  table.payment-history .coupon-exp-date, table.card-management .coupon-exp-date, table.coupon-list .coupon-exp-date, table tr.even .coupon-exp-date, table tr:nth-of-type(even) .coupon-exp-date {
+    min-width: 180px; }
+  table.payment-history .coupon-stt, table.payment-history .coupon-value, table.card-management .coupon-stt, table.card-management .coupon-value, table.coupon-list .coupon-stt, table.coupon-list .coupon-value, table tr.even .coupon-stt, table tr.even .coupon-value, table tr:nth-of-type(even) .coupon-stt, table tr:nth-of-type(even) .coupon-value {
+    min-width: 100px; }
 
 footer {
   margin-top: 4rem;

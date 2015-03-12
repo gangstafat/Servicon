@@ -1,0 +1,301 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/screens.css">
+    <link rel="stylesheet" href="css/wtf-forms.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body style="background-color: #F3F6F8">
+  
+  <section>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="logo">
+          <img src="css/img/servicon-logo.png" alt="">
+          <h1>Servicon</h1>
+        </li>
+      </ul>
+      <ul class="navigation right">
+        <li><a href="dashboard-messages.html" class="counter" data-badge="6"><i class="fa fa-envelope-o"></i> Inbox</a></li>
+        <li><a href=""><i class="fa fa-cog"></i> Dashboard</a></li>
+        <li><a href="">Sign Out</a></li>
+      </ul>
+    </nav>
+    <nav class="sub-bar">
+      <div class="row">
+        <div class="large-4 columns">
+          <span>Hello, <a href="">Godswill</a></span>
+        </div>
+        <ul class="large-5 columns account-settings">
+          <!-- <li><a href="">My Servicon</a></li> -->
+          <li><a href="dashboard-account.html">Profile</a></li>
+          <li><a href="dashboard-billing.html">Billing</a></li>
+          <li><a href="dashboard-sessions.html">Sessions</a></li>
+          <li><a href="dashboard-circles.html">Circles</a></li>
+
+          <!-- <li><a href="dashboard-coaches.html">Coaches</a></li> -->
+          <!-- <li><a href="dashboard-coaches-requests.html">Coaching Requests</a></li> -->
+          <li><a href="dashboard-notifications.html" class="counter" data-badge="12"><i class="fa fa-bell"></i></a></li>
+          <li>
+            <a data-dropdown="profile-dropdown" aria-controls="profile-dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
+            <ul id="profile-dropdown" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#">Invitations</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Account Settings</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </li>
+        </ul> 
+      </div>    
+    </nav>
+  </section>
+  <section class="dashboard">
+    <div class="row account-wrapper">
+      <div class="large-3 columns left-sidebar">
+        <div class="profile-picture row">
+          <div class="cover-bg" style="background-image: url('https://pbs.twimg.com/profile_banners/93328058/1425372854/600x200');">
+            <a href="" class="th radius">
+              <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
+            </a>
+          </div>
+          <a href="" class="edit-avatar tiny button radius">Change Avatar</a>
+        </div>
+        <div class="profile-stats">
+          <div class="statItem row">
+            <span class="statLabel small-10 columns">Connections</span>
+            <span class="statNumber small-2 columns">50</span>
+          </div>
+          <div class="statItem row">
+            <span class="statLabel small-10 columns">Following</span>
+            <span class="statNumber small-2 columns">50</span>
+          </div>
+          <div class="statItem row">
+            <span class="statLabel small-10 columns">Followers</span>
+            <span class="statNumber small-2 columns">50</span>
+            <div class="related-profile large-12">
+              <div class="small-4 columns">
+                <a href="" class="tiny-pp th radius">
+                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
+                </a>                
+              </div>
+              <div class="small-4 columns">
+                <a href="" class="tiny-pp th radius">
+                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
+                </a>                
+              </div>
+              <div class="small-4 columns">
+                <a href="" class="tiny-pp th radius">
+                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
+                </a>                
+              </div>
+            </div>
+            <div class="related-profile large-12">
+              <div class="small-4 columns">
+                <a href="" class="tiny-pp th radius">
+                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
+                </a>                
+              </div>
+              <div class="small-4 columns">
+                <a href="" class="tiny-pp th radius">
+                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
+                </a>                
+              </div>
+              <div class="small-4 columns">
+                <a href="" class="tiny-pp th radius">
+                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
+                </a>                
+              </div>
+            </div>
+            <a href="#" data-reveal-id="all-related-profile" class="view-more right">View More</a>
+          </div>
+        </div>
+      </div>
+      <div class="large-9 circle-feeds columns">
+        <div class="row update-stt">
+          <span>What's on your mind?</span>
+        </div>
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+    <div class="row item">
+      <div class="heading">
+        <h3>Let Us Find Your Perfect Service</h3>
+        <span class="sub-heading">Answer some basic question, and we will recommend the perfect private coach for you.</span>
+      </div>
+      <div id="search-tool" class="row full-width">
+        <div class="search-tool animated pulse">
+          <div class="large-4 columns">
+              <input class="radius" type="text" placeholder="What do you want to find?" />
+          </div>
+          <div class="large-4 columns">
+              <i class="location-icon fa fa-map-marker fa-2x"></i>
+              <input class="radius location" type="text" placeholder="Your Location" >
+          </div>
+          <div class="large-4 columns">
+              <a href="process-page.html" class="button expand radius">Search</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row item">
+      <div class="heading">
+        <h3>Share & Win</h3>
+        <span class="sub-heading">Send a friend $20 Servicon credit. You'll get $20!</span>
+      </div>
+      <div class="row">
+        <div class="large-4 large-offset-4">
+          <div class="panel radius refcode">
+            huyn1
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 column">
+          <a href="" class="button share facebook expand"><i class="fa fa-facebook-official"></i> Share On Facebook</a>
+        </div>
+        <div class="large-4 column">
+          <a href="" class="button share twitter expand"><i class="fa fa-twitter-square"></i> Share On twitter</a>
+        </div>
+        <div class="large-4 column">
+          <a href="" class="button share mail expand"><i class="fa fa-envelope-o"></i> Share Via Mail</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    © Servicon.
+  </footer>
+
+<!-- all-related-profile-modal -->
+  <div id="all-related-profile" class="reveal-modal" data-reveal>
+    <div class="profile-item row">
+      <div class="profile-item-ava large-2 columns">
+        <a href="" class="tiny-pp th radius">
+          <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847" alt="">
+        </a>         
+      </div>
+      <div class="profile-item-description large-8 columns">
+        <span class="user-name">
+          Huy Nguyễn
+        </span>
+        <p class="user-self-description">
+          Designer. Illustrator. Human. Friend of science. Reader of comics.
+        </p>
+        <span class="user-skills">
+          <ul>
+            <li><a href="">Ruby</a></li>
+            <li><a href="">HTML/CSS</a></li>
+            <li><a href="">Javascript</a></li>
+          </ul>
+        </span>
+        <span class="user-location">
+          <i class="fa fa-map-marker"></i> San Diego
+        </span>
+      </div>
+      <div class="profile-item-actions large-2 columns">
+        <a href="" class="follow"><i class="fa fa-user-plus"></i> Follow</a>
+      </div>
+    </div>
+    <div class="profile-item row">
+      <div class="profile-item-ava large-2 columns">
+        <a href="" class="tiny-pp th radius">
+          <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847" alt="">
+        </a>         
+      </div>
+      <div class="profile-item-description large-8 columns">
+        <span class="user-name">
+          Huy Nguyễn
+        </span>
+        <p class="user-self-description">
+          Designer. Illustrator. Human. Friend of science. Reader of comics.
+        </p>
+        <span class="user-skills">
+          <ul>
+            <li><a href="">Ruby</a></li>
+            <li><a href="">HTML/CSS</a></li>
+            <li><a href="">Javascript</a></li>
+          </ul>
+        </span>
+        <span class="user-location">
+          <i class="fa fa-map-marker"></i> San Diego
+        </span>
+      </div>
+      <div class="profile-item-actions large-2 columns">
+        <a href="" class="follow"><i class="fa fa-user-plus"></i> Follow</a>
+      </div>
+    </div>
+    <div class="profile-item row">
+      <div class="profile-item-ava large-2 columns">
+        <a href="" class="tiny-pp th radius">
+          <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847" alt="">
+        </a>         
+      </div>
+      <div class="profile-item-description large-8 columns">
+        <span class="user-name">
+          Huy Nguyễn
+        </span>
+        <p class="user-self-description">
+          Designer. Illustrator. Human. Friend of science. Reader of comics.
+        </p>
+        <span class="user-skills">
+          <ul>
+            <li><a href="">Ruby</a></li>
+            <li><a href="">HTML/CSS</a></li>
+            <li><a href="">Javascript</a></li>
+          </ul>
+        </span>
+        <span class="user-location">
+          <i class="fa fa-map-marker"></i> San Diego
+        </span>
+      </div>
+      <div class="profile-item-actions large-2 columns">
+        <a href="" class="unfollow"><i class="fa fa-user-times"></i> Unfollow</a>
+      </div>
+    </div>
+    <div class="profile-item row">
+      <div class="profile-item-ava large-2 columns">
+        <a href="" class="tiny-pp th radius">
+          <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847" alt="">
+        </a>         
+      </div>
+      <div class="profile-item-description large-8 columns">
+        <span class="user-name">
+          Huy Nguyễn
+        </span>
+        <p class="user-self-description">
+          Designer. Illustrator. Human. Friend of science. Reader of comics.
+        </p>
+        <span class="user-skills">
+          <ul>
+            <li><a href="">Ruby</a></li>
+            <li><a href="">HTML/CSS</a></li>
+            <li><a href="">Javascript</a></li>
+          </ul>
+        </span>
+        <span class="user-location">
+          <i class="fa fa-map-marker"></i> San Diego
+        </span>
+      </div>
+      <div class="profile-item-actions large-2 columns">
+        <a href="" class="follow"><i class="fa fa-user-plus"></i> Follow</a>
+      </div>
+    </div>
+    <div class="row">
+      <a href="" class="expand button secondary radius">Load More</a>
+    </div>
+  </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/card.js"></script>
+  </body>
+</html>

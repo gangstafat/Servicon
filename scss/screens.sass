@@ -2,6 +2,11 @@
 @import foundation
 .none
     display: none
+span.center
+    display: block
+    text-align: center
+hr
+    border: solid 1px #eee
 .full-width 
     width: 100%
     margin-left: auto
@@ -9,6 +14,22 @@
     max-width: initial
 .top-bar
     border-bottom: solid 1px #ccc
+.sub-bar
+    background: $primary-color
+    color: white
+    ul
+        margin: 0
+        padding: 0
+    ul li,
+    span
+        display: inline-block
+        list-style: none
+        padding: .6rem
+        a 
+            color: white
+            &:hover,
+            &:active
+                color: #eee
 .navigation
     position: relative
     top: -3rem
@@ -24,7 +45,29 @@
         color: $white
         padding: 0.4rem 1.5rem
         border-radius: 4px
-
+.counter
+    position: relative
+.counter[data-badge]:after 
+    content: attr(data-badge)
+    position: absolute
+    top: -10px
+    right: -10px
+    font-size: .7em
+    background: #AF2812
+    color: white
+    width: 18px
+    height: 18px
+    text-align: center
+    line-height: 18px
+    border-radius: 50%
+    box-shadow: 0 0 1px #111
+#profile-dropdown
+    li a
+        color: #333
+    li:hover
+        background-color: transparent !important
+        a
+            color: $primary-color
 
 .logo
     h1
@@ -53,11 +96,13 @@
     letter-spacing: 2px
 
 .heading
-    margin: 3rem 0
+    margin: 2rem 0
     text-align: center
+    color: $primary-color
 
 .sub-heading
     display: block
+    text-align: center
     font-size: 1.125rem
 
 .header-hero .intro,
@@ -169,7 +214,7 @@ input.location
 
 // FILTER FORM
 .filter,
-.checkout
+.checkout,
     .item
         margin: 1rem 0
     .form-heading
@@ -292,7 +337,8 @@ ul.checkout-cost
             font-size: 1rem
             font-weight: 900
 
-.checkout-heading
+.checkout-heading,
+.panel-heading
     background: $primary-color
     border-radius: 4px 4px 0 0
     border: solid 1px #3D6089
@@ -550,7 +596,7 @@ ul.accordion
     position: relative
     right: 1rem
     top: 0.295rem
-//PROFILE-PAGE
+//SERVICE-DETAILS-PAGE
 .book
     margin: 1rem 0
     .button
@@ -577,7 +623,405 @@ ul.accordion
 //     .content
 //         border-radius: 0 0 8px 8px
 
+// DASHBOARD
+.dashboard
+    label
+        font-size: 1rem
+    input[type="checkbox"]
+        font-size: 2rem
+        margin-bottom: .5rem
+    .item
+        margin: 2rem auto
+        border: solid 1px #eee
+        background: #fff
+        padding: 0 2rem
+    .heading
+        margin: 0
+        margin-top: 1rem
+    .faq
+        ul li
+            list-style: none
+            padding: .5rem
+            text-align: center
+.dashboard-panel
+    margin: 2rem 0
+.reminder
+    border: solid 1px #FDB92B
+    background-color: #FFF9EA
+    h5,p
+        color: #95721F
+.update
+    margin-top: 1rem
+.share
+    margin-top: 1rem
+    border-radius: 5px
+    color: #fff
+    padding: .7rem
+a.share:hover
+    color: #fff
+.facebook
+    background: #3C5A96
+    &:hover
+        background: #3C5A96
+.twitter
+    background: #55ACEE
+    &:hover
+        background: #55ACEE
+.mail
+    background: #FC5B63
+    &:hover
+        background: #FC5B63
+.refcode
+    padding: 0rem !important
+    background: #fff
+    margin-top: 1rem
+    text-align: center
+    font-weight: 900
+    font-size: 3rem
+    color: #44B254
+//CONVERSATIONS
+.messages-wrapper
+    margin-top: 2rem
+    .conversation-types
+        ul
+            list-style-type: none
+            li a
+                color: #aaa
+                &.active,
+                &:hover
+                    color: #111
+    .conversation-list
+        background: #fff
+        border: solid 1px #eee
+        padding-top: 1rem
+    .messages-item
+        table, table tr.even, table tr:nth-of-type(even)
+            border-spacing: 0px
+            background: #fff
+        table tr:hover
+            background: #fbfbfb
+        a
+            color: #333
+        td
+            border-bottom: solid 1px #eee
+        tr:last-child 
+            td
+                border-bottom: 0px
+        .sender,
+        .last-message,
+        .update-time
+            cursor: pointer
+        .sender
+            a.th
+                border: 0
+                margin-right: 5px
+        .last-message
+            overflow: hidden
+            white-space: nowrap
+            text-overflow: ellipsis
+            max-width: 460px
+//PROFILE
+.profile-details
+    border-left: solid 1px #eee
+    h3
+        font-size: .8rem
+        text-transform: uppercase
+        font-weight: 700
+        i
+            position: relative
+            top: -1px
+            left: -3px
+            font-size: .2rem !important
+    .item-detail
+        font-size: .9rem
+        display: block
+        margin: 1rem 0
+    .personal-details
+    .services-details
+        border-left: dashed 1px #eee
+        padding-top: 1rem
+    .full-name,
+    .personal-details,
+        padding: 1rem
+    .full-name
+        border-bottom: solid 1px #eee
+.account-wrapper
+    border: solid 1px #eee
+    border-top: 0px
+    background: #fff
+    padding-top: 0
+.left-sidebar
+.profile-picture
+    border-bottom: solid 1px #eee
+    .edit-avatar
+        display: block
+        margin: 3.5rem auto 1rem auto
+        max-width: 60%
+    .cover-bg
+        text-align: center
+        margin: 0 
+        height: 80px
+        margin-bottom: 2.5rem
+    a
+        margin: 1rem 0
+    a.th
+        margin-bottom: -.5rem
+        img
+            width: 100px
+.phone-number, .emails, .locations
+    .number-item, .emails-item, .locations-item
+        display: block
+    .edit-link
+        display: inline-block
+        padding: .5rem
+        padding-left: 0rem
+//CIRCLES
+.circle-feeds
+    border-left: solid 1px #eee
+    padding: 1rem
+.related-profile
+    display: block
+    margin: 0 auto
+    .columns
+        padding: 0
+        margin: 0
+    a.tiny-pp
+        width: 60px
+        margin: 7.5px
+    a.th
+        border: 0px
+        box-shadow: none
+        border-radius: 4px
+        img
+            border-radius: 4px
+    a.view-more
+        font-size: .7rem
+#all-related-profile
+    width: 60%
+    padding: .5rem
+    .profile-item
+        padding: 1rem 0
+        border-bottom: solid 1px #eee
+        .columns
+            padding: 0 .5rem
+            margin: 0
+    .profile-item-description
+        .user-name
+            font-weight: 700
+        .user-self-description
+            margin-bottom: .1rem
+        .user-skills
+            ul
+                list-style-type: none
+                margin-left: 0
+                margin-bottom: .5rem
+            li
+                font-size: .7rem
+                letter-spacing: 1px
+                text-transform: uppercase
+                background: #617891
+                display: inline-block
+                color: #fff
+                padding: 4px 8px
+                border-radius: 4px
+                transition: all .2s ease-in-out
+                a
+                    color: #fff
+                &:hover
+                    background: $primary-color
+    a.follow, a.unfollow
+        color: #fff
+        display: block
+        text-align: center
+        padding: 8px 10px
+        border-radius: 4px
+        transition: all .2s ease-in-out
+        margin-top: 1rem
+    a.follow
+        background: #49B158
+        &:hover
+            background: #489759
+    a.unfollow
+        background: #AD291B
+        &:hover
+            background: #922D1E
+//PIE 
+.profile-completion
+    text-align: center
+    padding: 2rem
+    span
+        display: block
+.pie
+    display: inline-block
+    position: relative
+    width: 1em
+    height: 1em
+    background-color: white
+    font-size: 7em
+    text-align: center
+    border-radius: 50%
 
+.slice-right
+    position: absolute
+    z-index: 11
+    background-color: #44B254
+    width: 100%
+    height: 100%
+    clip: rect(0, 0.5em, 0.5em, 0.5em)
+    border-radius: 50%
+
+.slice-left
+    position: absolute
+    z-index: 11
+    background-color: #44B254
+    width: 100%
+    height: 100%
+    clip: rect(0.5em, 0.5em, 1em, 0.5em)
+    border-radius: 50%
+
+.percent
+    position: absolute
+    z-index: 20
+    top: 3px
+    right: 3px
+    bottom: 3px
+    left: 3px
+    background: white
+    border-radius: 50%
+
+.number
+    position: absolute
+    z-index: 30
+    width: 100%
+    height: 100%
+    padding-top: 50%
+    line-height: 0
+    font-size: .3em
+    color: #44B254
+
+$animation-speed: 0.3s
+
+.slice-right
+    -webkit-animation-delay: $animation-speed * 4
+    -webkit-animation-duration: $animation-speed
+    -webkit-animation-name: right-slice
+    -webkit-animation-iteration-count: 1
+    -webkit-animation-fill-mode: forwards
+
+.slice-left
+    -webkit-animation-delay: $animation-speed * 5
+    -webkit-animation-duration: $animation-speed
+    -webkit-animation-name: left-slice
+    -webkit-animation-iteration-count: 1
+    -webkit-animation-timing-function: ease-out
+    -webkit-animation-fill-mode: forwards
+
+@-webkit-keyframes right-slice
+    from
+        clip: rect(0, 50%, 0.5em, 0.5em)
+    50%
+        clip: rect(0, 1em, 0.5em, 0.5em)
+    to
+        clip: rect(0, 1em, 1em, 0.5em)
+
+
+@-webkit-keyframes left-slice
+    from
+        clip: rect(0.5em, 0.5em, 1em, 0.5em)
+    50%
+        clip: rect(0.5em, 0.5em, 1em, 0)
+    to
+        clip: rect(0.3em, 0.5em, 1em, 0)
+
+.profile-stats
+    .statItem
+        padding: .5rem
+        border-bottom: solid 1px #eee
+        .statLabel
+            padding: .1rem 0 
+        .statNumber
+            padding: 0
+            text-align: center
+            border-radius: 4px
+            border: solid 1px #eee
+.services-details
+    h3
+        border-bottom: dashed 1px #eee
+        padding-bottom: .5rem
+    h4
+        font-size: .9rem
+        font-weight: bold
+    a.th
+        border: 0px
+    .columns
+        padding-left: 0
+        padding-right: 0
+    .job-details
+        strong
+            display: block
+//PAYMENT-HISTORY
+table.payment-history, table.card-management, table.coupon-list, table tr.even, table tr:nth-of-type(even)
+    margin: 0 auto
+    border-spacing: 0px
+    background: #fff
+    border: 0px
+    thead
+        background: transparent
+    .order-id, 
+    .order-date, 
+    .order-item, 
+    .order-price, 
+    .order-stt, 
+    .order-more-details,
+    .billing-item,
+    .session-number,
+    .session-type,
+    .card-type,
+    .last-digits,
+    .exp-date,
+    .billing-address,
+    .card-actions,
+    .coupon-code,
+    .coupon-exp-date,
+    .coupon-value,
+    .coupon-stt,
+        padding: 1rem
+        vertical-align: top
+        border-top: solid 1px #eee
+        font-size: 1rem
+    .order-item
+        min-width: 350px
+    .billing-item
+        min-width: 200px
+    .session-number, .session-type
+        width: 60px
+    .order-stt, .coupon-stt, .coupon-code
+        font-weight: 600
+    .paid, .available
+        color: #49B158
+    .cancelled, .used 
+        color: #AF2812
+    .processing
+        color: #111
+    .card-type
+        min-width: 110px
+        img
+            display: block
+    .billing-address
+        min-width: 350px
+        line-height: 1.4rem
+        .location span, .zipcode, .country
+            padding-right: 8px
+    .card-actions
+        ul
+            list-style-type: none
+            margin-left: 0px
+    .coupon-code
+        min-width: 520px
+    .coupon-exp-date
+        min-width: 180px
+    .coupon-stt,.coupon-value
+        min-width: 100px
 footer
     margin-top: 4rem
     text-align: center
