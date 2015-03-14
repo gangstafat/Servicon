@@ -22,16 +22,17 @@
         </li>
       </ul>
       <ul class="navigation right">
-        <li><a href="">About</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </section>
   <section class="landing-page-header">
+    <div class="background-slider">
     <div class="content-container">
       <span class="coming-soon  animated fadeIn">Coming in 2015</span>
-      <h1 class="animated fadeInDown">Take the stress out of finding a private teacher</h1>  
-      <span class="animated fadeInUp">We will connect you with one who really befits you</span>
-      <div class="newsletter-signup animated pulse">
+      <h1 class="animated fadeInDown">Tired of lousy Services?</h1>  
+      <span class="animated fadeInUp">Connect with high quality local professionals in minutes</span>
+      <div class="row newsletter-signup animated pulse">
         <div class="large-5 columns">
           <input class="radius" placeholder="Full Name" type="text">
         </div>
@@ -43,9 +44,23 @@
         </div>
       </div>
     </div>
+      <ul class="rslides">
+        <li><img src="css/img/header-hero.jpg" alt=""></li>
+        <li><img src="css/img/header-hero-2.jpg" alt=""></li>
+        <li><img src="css/img/header-hero-3.jpg" alt=""></li>
+        <li><img src="css/img/header-hero-4.jpg" alt=""></li>
+        <li><img src="css/img/header-hero-5.jpg" alt=""></li>
+        <li><img src="css/img/header-hero-6.jpg" alt=""></li>
+        <li><img src="css/img/header-hero-7.jpg" alt=""></li>
+
+      </ul>
+    </div>
   </section>
   <section class="how-we-can-help">
+    <div class="row">
     <h2>We save you from headaches</h2>
+
+    </div>
     <div class="row">
       <div class="large-4 columns item">
         <i class="fa fa-map-marker"></i>
@@ -90,7 +105,13 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="http://responsiveslides.com/responsiveslides.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      $(function() {
+        $(".rslides").responsiveSlides();
+      });
+    </script>
     <script src="js/card.js"></script>
   </body>
 </html>
