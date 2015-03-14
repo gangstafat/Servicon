@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700);
 meta.foundation-version {
   font-family: "/5.5.1/"; }
 
@@ -7380,8 +7380,74 @@ footer {
   text-align: center;
   padding: 2rem;
   background: #212121;
+  color: white; }
+
+.landing-page-header {
+  min-height: 540px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://s3.amazonaws.com/f.cl.ly/items/2E3Z1a2r2s1I1Z1n1A31/header-hero.jpg");
+  text-align: center;
+  position: relative; }
+
+span.coming-soon {
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  font-size: 1.4rem !important;
+  letter-spacing: 3px !important;
+  opacity: 0.7;
+  border-bottom: solid 1px #eee;
+  padding-bottom: 0.5rem; }
+
+.newsletter-signup {
+  display: block;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 2rem; }
+  .newsletter-signup .columns {
+    padding: 0 0.3rem;
+    margin: 0; }
+  .newsletter-signup input, .newsletter-signup a.button {
+    height: 3rem; }
+
+.content-container {
+  color: #fff;
+  padding-top: 5%;
+  z-index: 99; }
+  .content-container h1 {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    max-width: 65%;
+    font-weight: 900;
+    font-size: 4.2rem;
+    line-height: 5.4rem;
+    letter-spacing: 1px;
+    color: #fff; }
+  .content-container span {
+    font-size: 1.8rem;
+    line-height: 4rem;
+    font-weight: 300;
+    letter-spacing: 0.5px; }
+
+.how-we-can-help, .call-to-action {
+  margin-top: 2rem; }
+  .how-we-can-help h2, .call-to-action h2 {
+    text-align: center; }
+  .how-we-can-help i.fa-map-marker, .how-we-can-help i.fa-comments, .how-we-can-help i.fa-user-secret, .call-to-action i.fa-map-marker, .call-to-action i.fa-comments, .call-to-action i.fa-user-secret {
+    font-size: 5rem;
+    color: #314f8c; }
+  .how-we-can-help p, .call-to-action p {
+    color: #999999;
+    text-align: left; }
+  .how-we-can-help .item, .call-to-action .item {
+    margin-top: 3rem;
+    text-align: center; }
+
+.social-media a {
   color: white;
-  height: 60px; }
+  font-size: 1.5rem;
+  padding: 0.4rem; }
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
