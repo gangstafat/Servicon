@@ -2,6 +2,15 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18493",
 "files": {
+	"\/about.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/about.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/ask-a-question.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4520,6 +4529,83 @@
 		"initialSize": 556,
 		"inputAbbreviatedPath": "\/css\/img\/ecommerce_banknotes.png",
 		"outputAbbreviatedPath": "\/css\/img\/ecommerce_banknotes.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/header-hero-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37885,
+		"inputAbbreviatedPath": "\/css\/img\/header-hero-2.jpg",
+		"outputAbbreviatedPath": "\/css\/img\/header-hero-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/header-hero-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41978,
+		"inputAbbreviatedPath": "\/css\/img\/header-hero-3.jpg",
+		"outputAbbreviatedPath": "\/css\/img\/header-hero-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/header-hero-4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 43041,
+		"inputAbbreviatedPath": "\/css\/img\/header-hero-4.jpg",
+		"outputAbbreviatedPath": "\/css\/img\/header-hero-4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/header-hero-5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44239,
+		"inputAbbreviatedPath": "\/css\/img\/header-hero-5.jpg",
+		"outputAbbreviatedPath": "\/css\/img\/header-hero-5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/header-hero-6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20881,
+		"inputAbbreviatedPath": "\/css\/img\/header-hero-6.jpg",
+		"outputAbbreviatedPath": "\/css\/img\/header-hero-6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/header-hero-7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16942,
+		"inputAbbreviatedPath": "\/css\/img\/header-hero-7.jpg",
+		"outputAbbreviatedPath": "\/css\/img\/header-hero-7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/header-hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30848,
+		"inputAbbreviatedPath": "\/css\/img\/header-hero.jpg",
+		"outputAbbreviatedPath": "\/css\/img\/header-hero.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

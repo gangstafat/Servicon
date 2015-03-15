@@ -7467,9 +7467,13 @@ span.coming-soon {
     color: #fff; }
   .content-container span {
     font-size: 0.8rem;
-    line-height: 1.2rem;
+    line-height: 1rem;
     font-weight: 300;
     letter-spacing: 0.5px; }
+    .content-container span i {
+      position: relative;
+      font-size: 4px;
+      bottom: 0.1rem; }
 
 @media only screen and (min-width: 40.063em) {
   .content-container {
@@ -7480,12 +7484,14 @@ span.coming-soon {
       line-height: 5.4rem; }
     .content-container span {
       font-size: 1.8rem;
-      line-height: 4rem;
+      line-height: 3.5rem;
       font-weight: 300;
-      letter-spacing: 0.5px; } }
+      letter-spacing: 0.5px; }
+      .content-container span i {
+        font-size: 0.5rem; } }
 .how-we-can-help, .call-to-action {
   margin-top: 2rem; }
-  .how-we-can-help h2, .call-to-action h2 {
+  .how-we-can-help h2, .how-we-can-help h3, .call-to-action h2, .call-to-action h3 {
     text-align: center; }
   .how-we-can-help i.fa-map-marker, .how-we-can-help i.fa-comments, .how-we-can-help i.fa-user-secret, .call-to-action i.fa-map-marker, .call-to-action i.fa-comments, .call-to-action i.fa-user-secret {
     font-size: 5rem;
