@@ -7569,3 +7569,120 @@ span.coming-soon {
   color: #A9A9A9;
   top: 9px;
   left: 27px; }
+
+#overview {
+  background-image: url("https://s3.amazonaws.com/f.cl.ly/items/3b1x3W0G0U1y3W1Z0p1R/feature-full-bg.png");
+  padding: 2rem; }
+  #overview .brief-introduction {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 2rem;
+    margin: 2rem 0; }
+    #overview .brief-introduction p {
+      font-weight: 300; }
+    #overview .brief-introduction h2 {
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 0.5rem 0;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-bottom: solid 3px #314f8c; }
+
+#meet-the-team hr.div-section-item {
+  width: 50%;
+  margin: 2rem auto; }
+#meet-the-team h2.team-label {
+  color: #314f8c;
+  padding: 1rem;
+  text-align: center; }
+  #meet-the-team h2.team-label span {
+    color: #aaa;
+    display: block;
+    font-size: 1rem;
+    max-width: 50%;
+    margin: 0 auto; }
+#meet-the-team .team-contacts {
+  text-align: center; }
+  #meet-the-team .team-contacts a {
+    font-size: 1.5rem;
+    padding: 0 0.3rem;
+    color: #aaa; }
+    #meet-the-team .team-contacts a:hover {
+      color: #314f8c; }
+#meet-the-team .team {
+  margin-bottom: 2rem; }
+  #meet-the-team .team img {
+    display: block;
+    margin: 0.5rem auto;
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    border: solid 2px transparent;
+    transition: border-color 0.2s ease-in-out; }
+    #meet-the-team .team img:hover {
+      cursor: pointer;
+      border: solid 2px #314f8c; }
+  #meet-the-team .team span.team-member-name, #meet-the-team .team span.team-member-role {
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    font-size: 1.3rem; }
+  #meet-the-team .team span.team-member-role {
+    font-weight: 400;
+    color: #314f8c;
+    font-size: 1rem; }
+  #meet-the-team .team p.team-member-description {
+    text-align: center;
+    margin: 1rem 0; }
+
+#about-how-it-work, #benefits {
+  text-align: center;
+  margin-top: 2rem; }
+  #about-how-it-work a:focus, #benefits a:focus {
+    outline: 0; }
+  #about-how-it-work .hiw-tabs, #benefits .hiw-tabs {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    border: solid 1px #314f8c;
+    border-radius: 4px; }
+    #about-how-it-work .hiw-tabs .hiw-tab-title, #benefits .hiw-tabs .hiw-tab-title {
+      display: block;
+      float: left;
+      margin: 0;
+      min-width: 160px; }
+      #about-how-it-work .hiw-tabs .hiw-tab-title a, #benefits .hiw-tabs .hiw-tab-title a {
+        display: block;
+        padding: 0.5rem 1rem; }
+      #about-how-it-work .hiw-tabs .hiw-tab-title:hover, #benefits .hiw-tabs .hiw-tab-title:hover {
+        text-decoration: underline; }
+      #about-how-it-work .hiw-tabs .hiw-tab-title.active, #benefits .hiw-tabs .hiw-tab-title.active {
+        background: #314f8c; }
+        #about-how-it-work .hiw-tabs .hiw-tab-title.active a, #benefits .hiw-tabs .hiw-tab-title.active a {
+          color: #fff; }
+        #about-how-it-work .hiw-tabs .hiw-tab-title.active:hover, #benefits .hiw-tabs .hiw-tab-title.active:hover {
+          text-decoration: none; }
+
+#press {
+  text-align: center; }
+  #press li {
+    display: inline-block;
+    width: 128px;
+    margin: 18px 14px 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 11px;
+    color: #939393;
+    vertical-align: top; }
+
+#contact {
+  text-align: center; }
+  #contact label {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600; }
+  #contact .contact-form, #contact .map {
+    margin-top: 2rem; }
