@@ -6153,6 +6153,9 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+[data-magellan-expedition-clone] {
+  display: none; }
+
 .none {
   display: none; }
 
