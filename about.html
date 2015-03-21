@@ -13,24 +13,28 @@
   </head>
   <body>
   
-  <section>
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="logo">
-          <img src="css/img/servicon-logo.png" alt="">
-          <h1>Servicon</h1>
-        </li>
+<nav class="top-bar" data-topbar role="navigation" data-magellan-expedition="fixed">
+  <ul class="title-area">
+    <li class="logo">
+      <img src="css/img/servicon-logo.png" alt="">
+      <h1>Servicon</h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+      <ul class="right">
+        <li data-magellan-arrival="overview"><a href="#overview">Overview</a></li>
+        <li data-magellan-arrival="meet-the-team"><a href="#meet-the-team">Team</a></li>
+        <li data-magellan-arrival="about-how-it-work"><a href="#about-how-it-work">How it works</a></li>
+        <li data-magellan-arrival="benefits"><a href="#benefits">Benefits</a></li>
+        <li data-magellan-arrival="press"><a href="#press">Press</a></li>
+        <li data-magellan-arrival="contact"><a href="#contact">Contact us</a></li>
       </ul>
-      <ul class="navigation right">
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#how-it-works">How it works</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#press">Press</a></li>
-        <li><a href="#contact">Contact us</a></li>
-      </ul>
-    </nav>
   </section>
+</nav>
   <section id="overview">
     <div class="row">
       <div class="large-4 columns brief-introduction">
@@ -47,10 +51,42 @@
     </ul>
     <div class="tabs-content">
       <div class="content active" id="service-providers">
-        <p>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.</p>
+        <div class="row">
+          <div class="large-4 columns hiw-item">
+            <h3><span>1</span>
+            <i class="fa fa-asterisk"></i>Be Discovered</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3><span>2</span>
+            <i class="fa fa-money"></i>Make A Living </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3><span>3</span>
+            <i class="fa fa-thumbs-up"></i>Add More Values</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+        </div>
       </div>
       <div class="content" id="customers">
-        <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+        <div class="row">
+          <div class="large-4 columns hiw-item">
+            <h3><span>1</span>
+            <i class="fa fa-street-view"></i>Discover Amazing Services</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3><span>2</span>
+            <i class="fa fa-credit-card"></i>Book A Great One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3><span>3</span>
+            <i class="fa fa-child"></i>Be Better</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -62,10 +98,76 @@
     </ul>
     <div class="tabs-content">
       <div class="content active" id="benefits-service-providers">
-        <p>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.</p>
+        <div class="row">
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-asterisk"></i>Be Discovered</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-money"></i>Make A Living </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-thumbs-up"></i>Add More Values</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-asterisk"></i>Be Discovered</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-money"></i>Make A Living </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-thumbs-up"></i>Add More Values</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+        </div>
       </div>
       <div class="content" id="benefits-customers">
-        <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+        <div class="row">
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-asterisk"></i>Be Discovered</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-money"></i>Make A Living </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-thumbs-up"></i>Add More Values</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-asterisk"></i>Be Discovered</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-money"></i>Make A Living </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+          <div class="large-4 columns hiw-item">
+            <h3>
+            <i class="fa fa-thumbs-up"></i>Add More Values</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ullamcorper aliquet.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -299,14 +401,11 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="http://responsiveslides.com/responsiveslides.min.js"></script>
     <script src="js/app.js"></script>
     <script>
-      $(function() {
-        $(".rslides").responsiveSlides({
-          speed: 1000, 
-        });
-      });
+$( "#toggle-menu" ).click(function() {
+  $( ".about-navigation" ).toggleClass( "none" );
+});
     </script>
     <script src="js/card.js"></script>
   </body>

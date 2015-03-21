@@ -813,7 +813,7 @@ $form-spacing: rem-calc(16);
 // $include-html-magellan-classes: $include-html-classes;
 
 // $magellan-bg: $white;
-// $magellan-padding: 10px;
+$magellan-padding: 0px;
 
 // 18. Off-canvas
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1423,8 +1423,8 @@ $topbar-dropdown-link-bg: $topbar-bg;
 $topbar-dropdown-link-bg-hover: $topbar-bg;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
-$topbar-dropdown-toggle-color: $oil;
-$topbar-dropdown-toggle-alpha: 0.8;
+// $topbar-dropdown-toggle-color: $oil;
+// $topbar-dropdown-toggle-alpha: 0.8;
 
 // $topbar-dropdown-label-color: $monsoon;
 // $topbar-dropdown-label-text-transform: uppercase;
@@ -1436,10 +1436,10 @@ $topbar-dropdown-toggle-alpha: 0.8;
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
-// $topbar-menu-link-color: $white;
-// $topbar-menu-icon-color: $white;
-// $topbar-menu-link-color-toggled: $jumbo;
-// $topbar-menu-icon-color-toggled: $jumbo;
+$topbar-menu-link-color: $primary-color;
+$topbar-menu-icon-color: $primary-color;
+$topbar-menu-link-color-toggled: $primary-color;
+$topbar-menu-icon-color-toggled: $primary-color;
 // $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon
 
 // Transitions and breakpoint styles
