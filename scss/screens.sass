@@ -1088,7 +1088,9 @@ footer
 
 //LANDING PAGE 
 .landing-page-header
-    min-height: 540px
+    display: block
+    margin-bottom: 2rem
+    min-height: 400px
     background-size: cover
     background-position: center
     text-align: center
@@ -1107,27 +1109,21 @@ span.coming-soon
 
 .newsletter-signup
     display: block
-    max-width: 70%
     margin: 0 auto
     margin-top: 2rem
     .columns
         padding: 0 .3rem
-        margin: 0
     input, a.button
         height: 3rem
-@media only screen and (min-width: 40.063em)
-    .newsletter-signup
-        max-width: 60%
 //HEADER SLIDER
 .rslides
     position: relative
     list-style: none
     overflow: hidden
     width: 100%
-    min-height: 540px
+    height: 100%
     padding: 0
     margin: 0
-    margin-bottom: -9rem
     li
         -webkit-backface-visibility: hidden
         position: absolute
@@ -1142,19 +1138,15 @@ span.coming-soon
     img
         display: block
         height: auto
-        min-height: 380px
+        max-height: 520px
+        min-height: 460px
         float: left
         width: 100%
         border: 0
-@media only screen and (min-width: 40.063em)
-    .rslides
-        margin-bottom: 0
-        img
-            max-height: 540px
 .content-container
     position: absolute
     color: #fff
-    top: 5%
+    top: 7%
     left: 0
     right: 0
     margin: 0 auto
@@ -1169,7 +1161,7 @@ span.coming-soon
         letter-spacing: 1px
         color: #fff
     span
-        font-size: .8rem
+        font-size: .9rem
         line-height: 1rem
         font-weight: 300
         letter-spacing: .5px
@@ -1179,20 +1171,19 @@ span.coming-soon
             bottom: .1rem
 @media only screen and (min-width: 40.063em)
     .content-container
-        top: 20%
+        top: 15%
         h1
-            max-width: 65%
-            font-size: 4.2rem
-            line-height: 5.4rem
+            max-width: 90%
+            font-size: 3rem
         span
-            font-size: 1.8rem
+            font-size: 1.4rem
             line-height: 3.5rem
             font-weight: 300
             letter-spacing: .5px
             i
                 font-size: .5rem
 .how-we-can-help,.call-to-action
-    margin-top: 2rem
+    margin-top: 1rem
     h2,h3
         text-align: center
     i.fa-map-marker, i.fa-comments, i.fa-user-secret
