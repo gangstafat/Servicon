@@ -7771,3 +7771,6 @@ fieldset.active:last-of-type ~ .buttons .next {
 
 .upload-ava {
   text-align: center; }
+
+#sign-in .no-account {
+  text-align: center; }

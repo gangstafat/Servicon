@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/screens.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body style="background-color: #F3F6F8">
+  <section>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="logo">
+          <img src="css/img/servicon-logo.png" alt="">
+          <h1>Servicon</h1>
+        </li>
+      </ul>
+      <ul class="navigation right">
+        <li><a href="">Sign In</a></li>
+        <li><a href="" class="sign-up">Sign Up</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section id="sign-in">
+    <div class="heading">
+      <h1>Sign In</h1>
+    </div>
+  <div class="row">
+    <div class="large-6 large-offset-3 columns">
+      <label>Email or Phone
+        <input type="text" class="radius">
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 large-offset-3 columns">
+      <label>Password
+        <input type="text" class="radius">
+      </label>
+      <a href="#" data-reveal-id="forgot-password">Forgot your password?</a>
+      <a href="" class="button radius right tiny">Sign In</a>
+    </div>
+  </div>
+  <div class="row no-account">
+    <div class="large-6 large-offset-3 columns">
+    <hr>
+    <p>Don't have an account yet?</p>
+    <a href="sign-up.html" class="button radius success tiny">Sign Up</a>  
+    </div>  
+  </div>
+ 
+  </section>
+  <footer>
+    © Servicon.
+  </footer>
+  <div id="forgot-password" class="reveal-modal small" data-reveal aria-labelledby="Forgot Password" aria-hidden="true" role="dialog">
+    <h2 id="modalTitle">Forgot your password?</h2>
+    <label>Enter your email here. We will send you new password.
+      <input type="email" class="radius">
+    </label>
+    <a href="" class="button radius tiny right">Submit</a>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
