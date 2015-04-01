@@ -1394,3 +1394,69 @@ span.coming-soon
         font-weight: 600
     .contact-form, .map
         margin-top: 2rem
+
+//SIGN-UP PAGE
+#sign-up
+    .process-wrapper
+        background: $primary-color
+        color: #fff
+        padding: 1rem
+    ul.process-steps
+        list-style-type: none
+        margin: 0
+        li.step
+            display: inline-block
+            opacity: .3
+            .step-number
+                background: transparent
+                border: solid 1px #eee
+                border-radius: 200%
+                padding: .2rem .5rem
+            &.active
+                opacity: 1
+                .step-number
+                    background: #48AB6C
+                    border: none
+
+    .signup-form-wrapper
+        background: #fff
+        padding: 1rem
+fieldset
+    margin: 0
+    border: 0
+
+fieldset:not(.active)
+    display: none
+fieldset.active:first-of-type ~ .buttons
+    .prev,
+    .submit
+        display: none
+fieldset.active:not(:last-of-type) ~ .buttons
+    .submit
+        display: none
+fieldset.active:last-of-type ~ .buttons
+    .next
+        display: none
+.buttons
+    padding-top: 2rem
+.background-info,.coach-profile, .mailing-address
+    h4
+        display: block
+        font-weight: bold
+        margin-bottom: 1rem
+    h4 span
+        display: block
+        font-size: 1rem
+        font-weight: normal
+.questions
+    label span
+        display: block
+        font-size: .9rem
+        color: #888
+        margin-bottom: .5rem
+    label
+        color: #555
+        font-size: 1.1rem
+        line-height: 1.5rem
+.upload-ava
+    text-align: center

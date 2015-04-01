@@ -7705,3 +7705,69 @@ span.coming-soon {
     font-weight: 600; }
   #contact .contact-form, #contact .map {
     margin-top: 2rem; }
+
+#sign-up .process-wrapper {
+  background: #314f8c;
+  color: #fff;
+  padding: 1rem; }
+#sign-up ul.process-steps {
+  list-style-type: none;
+  margin: 0; }
+  #sign-up ul.process-steps li.step {
+    display: inline-block;
+    opacity: 0.3; }
+    #sign-up ul.process-steps li.step .step-number {
+      background: transparent;
+      border: solid 1px #eee;
+      border-radius: 200%;
+      padding: 0.2rem 0.5rem; }
+    #sign-up ul.process-steps li.step.active {
+      opacity: 1; }
+      #sign-up ul.process-steps li.step.active .step-number {
+        background: #48AB6C;
+        border: none; }
+#sign-up .signup-form-wrapper {
+  background: #fff;
+  padding: 1rem; }
+
+fieldset {
+  margin: 0;
+  border: 0; }
+
+fieldset:not(.active) {
+  display: none; }
+
+fieldset.active:first-of-type ~ .buttons .prev,
+fieldset.active:first-of-type ~ .buttons .submit {
+  display: none; }
+
+fieldset.active:not(:last-of-type) ~ .buttons .submit {
+  display: none; }
+
+fieldset.active:last-of-type ~ .buttons .next {
+  display: none; }
+
+.buttons {
+  padding-top: 2rem; }
+
+.background-info h4, .coach-profile h4, .mailing-address h4 {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+.background-info h4 span, .coach-profile h4 span, .mailing-address h4 span {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal; }
+
+.questions label span {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem; }
+.questions label {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.5rem; }
+
+.upload-ava {
+  text-align: center; }
