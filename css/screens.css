@@ -6153,6 +6153,12 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+.stacktable.small-only {
+  display: table; }
+
+.stacktable.large-only {
+  display: none; }
+
 [data-magellan-expedition-clone] {
   display: none; }
 
@@ -7405,7 +7411,13 @@ span.coming-soon {
 
 @media only screen and (min-width: 40.063em) {
   span.coming-soon {
-    font-size: 1.4rem !important; } }
+    font-size: 1.4rem !important; }
+
+  .stacktable.small-only {
+    display: none; }
+
+  .stacktable.large-only {
+    display: table; } }
 .newsletter-signup {
   display: block;
   margin: 0 auto;
@@ -7750,11 +7762,19 @@ fieldset.active:last-of-type ~ .buttons .next {
 .buttons {
   padding-top: 2rem; }
 
-.background-info h4, .coach-profile h4, .mailing-address h4 {
+.background-info h4,
+.coach-profile h4,
+.mailing-address h4,
+.qualification h4,
+.skill-specific-item h4 {
   display: block;
   font-weight: bold;
   margin-bottom: 1rem; }
-.background-info h4 span, .coach-profile h4 span, .mailing-address h4 span {
+.background-info h4 span,
+.coach-profile h4 span,
+.mailing-address h4 span,
+.qualification h4 span,
+.skill-specific-item h4 span {
   display: block;
   font-size: 1rem;
   font-weight: normal; }
@@ -7771,6 +7791,24 @@ fieldset.active:last-of-type ~ .buttons .next {
 
 .upload-ava {
   text-align: center; }
+
+#basic-information,
+#background-information,
+#set-availability,
+#skill-specifics {
+  margin-bottom: 1rem; }
+
+#time-table td.available {
+  background: green;
+  color: #fff; }
+  #time-table td.available::before {
+    content: attr(stt) " "; }
+#time-table td.time:hover {
+  background: #ccc;
+  color: #111;
+  cursor: pointer; }
+#time-table th {
+  min-width: 105px; }
 
 #sign-in .no-account {
   text-align: center; }

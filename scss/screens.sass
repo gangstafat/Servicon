@@ -1,5 +1,9 @@
 @import settings
 @import foundation
+.stacktable.small-only
+    display: table
+.stacktable.large-only
+    display: none
 [data-magellan-expedition-clone]
     display: none
 .none
@@ -1106,6 +1110,11 @@ span.coming-soon
 @media only screen and (min-width: 40.063em)
     span.coming-soon
         font-size: 1.4rem !important
+    .stacktable.small-only
+        display: none
+    .stacktable.large-only
+        display: table
+
 
 .newsletter-signup
     display: block
@@ -1439,7 +1448,11 @@ fieldset.active:last-of-type ~ .buttons
         display: none
 .buttons
     padding-top: 2rem
-.background-info,.coach-profile, .mailing-address
+.background-info,
+.coach-profile,
+.mailing-address,
+.qualification,
+.skill-specific-item
     h4
         display: block
         font-weight: bold
@@ -1460,6 +1473,24 @@ fieldset.active:last-of-type ~ .buttons
         line-height: 1.5rem
 .upload-ava
     text-align: center
+#basic-information,
+#background-information,
+#set-availability,
+#skill-specifics
+    margin-bottom: 1rem
+#time-table
+    td.available
+        background: green
+        color: #fff
+        &::before
+            content: attr(stt) " "
+    td.time
+        &:hover
+            background: #ccc
+            color: #111
+            cursor: pointer
+    th
+        min-width: 105px
 #sign-in
     .no-account
         text-align: center
