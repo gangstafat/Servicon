@@ -59,7 +59,7 @@
               <div class="row">
                 <div class="large-4 columns">
                   <label>Password
-                    <input type="email" class="radius">
+                    <input type="password" class="radius">
                   </label>
                 </div>
               </div> 
@@ -602,34 +602,6 @@
                 </label>
               </div>
             </div>
-            <div class="row hide" id="home-free">
-              <div class="large-6 columns questions">
-                <label>Home Free?</label>
-                <input type="radio" name="home-free" value="yes" id="home-free-yes"><label for="home-free-yes">Yes</label>
-                <input type="radio" name="home-free" value="no" id="home-free-no"><label for="home-free-no">No</label>
-              </div>
-            </div>
-            <div class="row hide" id="other-service-locations">
-              <div class="large-6 columns questions">
-                <label>Have Other Service Locations?</label>
-                <input type="radio" name="other-service-locations" value="yes" id="other-service-locations-yes"><label for="other-service-locations-yes">Yes</label>
-                <input type="radio" name="other-service-locations" value="no" id="other-service-locations-no"><label for="other-service-locations-no">No</label>
-              </div>
-            </div>
-            <div class="row hide" id="address-1">
-              <div class="large-6 columns">
-                <label>Address Line #1
-                  <input type="text" class="radius">
-                </label>
-              </div>
-            </div>
-            <div class="row hide" id="address-2">
-              <div class="large-6 columns">
-                <label>Address Line #2
-                  <input type="text" class="radius">
-                </label>
-              </div>
-            </div>
             <div class="row hide" id="currency">
               <div class="large-6 columns">
                 <label>Currency
@@ -655,6 +627,34 @@
                     <option value="3">3hrs</option>
                     <option value="4">4hrs</option>
                   </select>
+                </label>
+              </div>
+            </div>
+            <div class="row hide" id="home-free">
+              <div class="large-6 columns questions">
+                <label>Home Free?</label>
+                <input type="radio" name="home-free" value="yes" id="home-free-yes"><label for="home-free-yes">Yes</label>
+                <input type="radio" name="home-free" value="no" id="home-free-no"><label for="home-free-no">No</label>
+              </div>
+            </div>
+            <div class="row hide" id="other-service-locations">
+              <div class="large-6 columns questions">
+                <label>Have Other Service Locations?</label>
+                <input type="radio" name="other-service-locations" value="yes" id="other-service-locations-yes"><label for="other-service-locations-yes">Yes</label>
+                <input type="radio" name="other-service-locations" value="no" id="other-service-locations-no"><label for="other-service-locations-no">No</label>
+              </div>
+            </div>
+            <div class="row hide" id="address-1">
+              <div class="large-6 columns">
+                <label>Address Line #1
+                  <input type="text" class="radius">
+                </label>
+              </div>
+            </div>
+            <div class="row hide" id="address-2">
+              <div class="large-6 columns">
+                <label>Address Line #2
+                  <input type="text" class="radius">
                 </label>
               </div>
             </div>
@@ -744,21 +744,18 @@
         $('#age').removeClass('hide');
         $('#home-free').removeClass('hide');
         $('#other-service-locations').removeClass('hide');
+        $('#currency').removeClass('hide');
+        $('#price-per-session').removeClass('hide');
+        $('#duration').removeClass('hide');
+        $('#group-sessions').removeClass('hide');
           $('#other-service-locations-yes').click(function() {
             $('#address-1').removeClass('hide');
             $('#address-2').removeClass('hide');
-            $('#currency').removeClass('hide');
-            $('#price-per-session').removeClass('hide');
-            $('#duration').removeClass('hide');
             $('#group-sessions').removeClass('hide');
           });
           $('#other-service-locations-no').click(function() {
             $('#address-1').addClass('hide');
             $('#address-2').addClass('hide');
-            $('#currency').addClass('hide');
-            $('#price-per-session').addClass('hide');
-            $('#duration').addClass('hide');
-            $('#group-sessions').addClass('hide');
             $('#number-per-group').addClass('hide');
             $('#discount-for-group-2').addClass('hide');
             $('#discount-for-group-3').addClass('hide');
