@@ -1090,6 +1090,88 @@ footer
     background: #212121
     color: white
 
+//SESSIONS-PAGE
+.session-requests
+    display: block
+    text-align: center
+    margin: 0 auto
+    padding: 1rem
+    background: RGBA(14, 127, 17, .1)
+    color: #333
+    a
+        font-weight: 400
+        background: RGBA(14, 127, 17, 1)
+        color: #fff
+        padding: .2rem .8rem
+        border-radius: 4px
+        margin-left: 1rem
+.session-request-item-description
+    span.weekly-schedule, span.session-number, span.session-people
+        display: inline-block
+        margin-top: .5rem
+        margin-right: 1rem
+.session-history
+    h3
+        text-align: center
+        margin: 1.5rem
+    table
+        border: none
+        border-spacing: 1px
+    table td
+        border-bottom: solid 1px #eee
+    table ul
+        margin: 0
+        padding: 0
+        list-style: none
+        &.student-list li span
+            font-size: .9rem
+    .complete
+        font-weight: bold
+        color: RGBA(14, 127, 17, 1)
+    .on-going
+        font-weight: bold
+        color: $primary-color
+    @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)
+        table, thead, tbody, th, td, tr
+            display: block
+        thead tr
+            position: absolute
+            top: -9999px
+            left: -9999px
+        tr
+            border-top: 2px solid #eee
+            border-bottom: 2px solid #eee
+            margin: 1rem 0
+        td
+            border: none
+            border-bottom: 1px solid #eee
+            position: relative
+            padding-left: 50%
+            &:before
+                position: absolute
+                top: 6px
+                left: 6px
+                width: 45%
+                padding-right: 10px
+                white-space: nowrap
+            &:nth-of-type(1):before
+                content: "Type"
+            &:nth-of-type(2):before
+                content: "Teacher"
+            &:nth-of-type(3):before
+                content: "Student"
+            &:nth-of-type(4):before
+                content: "Start"
+            &:nth-of-type(5):before
+                content: "End"
+            &:nth-of-type(6):before
+                content: "Involved"
+            &:nth-of-type(7):before
+                content: "Status"
+            &:nth-of-type(8):before
+                content: "Log"
+
+
 //LANDING PAGE 
 .landing-page-header
     display: block

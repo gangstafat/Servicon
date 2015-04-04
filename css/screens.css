@@ -7391,6 +7391,86 @@ footer {
   background: #212121;
   color: white; }
 
+.session-requests {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  background: RGBA(14, 127, 17, 0.1);
+  color: #333; }
+  .session-requests a {
+    font-weight: 400;
+    background: RGBA(14, 127, 17, 1);
+    color: #fff;
+    padding: 0.2rem 0.8rem;
+    border-radius: 4px;
+    margin-left: 1rem; }
+
+.session-request-item-description span.weekly-schedule, .session-request-item-description span.session-number, .session-request-item-description span.session-people {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-right: 1rem; }
+
+.session-history h3 {
+  text-align: center;
+  margin: 1.5rem; }
+.session-history table {
+  border: none;
+  border-spacing: 1px; }
+.session-history table td {
+  border-bottom: solid 1px #eee; }
+.session-history table ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .session-history table ul.student-list li span {
+    font-size: 0.9rem; }
+.session-history .complete {
+  font-weight: bold;
+  color: RGBA(14, 127, 17, 1); }
+.session-history .on-going {
+  font-weight: bold;
+  color: #314f8c; }
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  .session-history table, .session-history thead, .session-history tbody, .session-history th, .session-history td, .session-history tr {
+    display: block; }
+  .session-history thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+  .session-history tr {
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    margin: 1rem 0; }
+  .session-history td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%; }
+    .session-history td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap; }
+    .session-history td:nth-of-type(1):before {
+      content: "Type"; }
+    .session-history td:nth-of-type(2):before {
+      content: "Teacher"; }
+    .session-history td:nth-of-type(3):before {
+      content: "Student"; }
+    .session-history td:nth-of-type(4):before {
+      content: "Start"; }
+    .session-history td:nth-of-type(5):before {
+      content: "End"; }
+    .session-history td:nth-of-type(6):before {
+      content: "Involved"; }
+    .session-history td:nth-of-type(7):before {
+      content: "Status"; }
+    .session-history td:nth-of-type(8):before {
+      content: "Log"; } }
+
 .landing-page-header {
   display: block;
   margin-bottom: 2rem;
