@@ -6207,11 +6207,11 @@ hr {
     padding: 0.6rem; }
     .sub-bar ul li a,
     .sub-bar span a {
-      color: white; }
-      .sub-bar ul li a:hover, .sub-bar ul li a:active,
+      color: #ccc; }
+      .sub-bar ul li a:hover, .sub-bar ul li a.active,
       .sub-bar span a:hover,
-      .sub-bar span a:active {
-        color: #eee; }
+      .sub-bar span a.active {
+        color: #fff; }
 
 .navigation {
   position: relative;
