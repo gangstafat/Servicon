@@ -1,0 +1,534 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/screens.css">
+    <link rel="stylesheet" href="css/wtf-forms.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.multilevelpushmenu.css">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body style="background-color: #F3F6F8">
+    <div id="pushobj">
+  <section>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="logo">
+          <img src="css/img/servicon-logo.png" alt="">
+          <h1>Servicon</h1>
+        </li>
+      </ul>
+      <ul class="navigation right">
+        <li><a href="dashboard-messages.html" class="counter" data-badge="6"><i class="fa fa-envelope-o"></i> Inbox</a></li>
+        <li><a href=""><i class="fa fa-cog"></i> Dashboard</a></li>
+        <li><a href="">Sign Out</a></li>
+      </ul>
+    </nav>
+    <nav class="sub-bar">
+      <div class="row">
+        <div class="large-4 columns">
+          <span>Hello, <a href="">Godswill</a></span>
+        </div>
+        <ul class="large-5 columns account-settings">
+          <!-- <li><a href="">My Servicon</a></li> -->
+          <li><a href="dashboard-account.html">Profile</a></li>
+          <li><a href="dashboard-billing.html">Billing</a></li>
+          <li><a href="dashboard-sessions.html">Sessions</a></li>
+          <li><a href="dashboard-circles.html">Circles</a></li>
+
+          <!-- <li><a href="dashboard-coaches.html">Coaches</a></li> -->
+          <!-- <li><a href="dashboard-coaches-requests.html">Coaching Requests</a></li> -->
+          <li><a href="dashboard-notifications.html" class="counter" data-badge="12"><i class="fa fa-bell"></i></a></li>
+          <li>
+            <a data-dropdown="profile-dropdown" aria-controls="profile-dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
+            <ul id="profile-dropdown" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#">Invitations</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Account Settings</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </li>
+        </ul> 
+      </div>    
+    </nav>
+  </section>
+        <span class="session-requests"><i class="fa fa-bullhorn"></i>  You have 20 session requests<a href="" data-reveal-id="session-requests">Click to see</a></span>
+        <section class="dashboard">
+            <div class="row item session-history">
+                <h3>Session History</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th width="150">Type</th>
+                      <th width="180">Teacher</th>
+                      <th width="180">Student</th>
+                      <th width="100">Start</th>
+                      <th width="100">End</th>
+                      <th width="100">Involved</th>
+                      <th width="120">Status</th>
+                      <th>Log</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td><i class="fa fa-book"></i> Learning</td>
+                        <td>Huy Nguyen</td>
+                        <td>
+                            <ul class="student-list">
+                                <li><span>David</span></li>
+                                <li><span>John Doe</span></li>
+                                <li><span>Chuck</span></li>
+                            </ul>
+                        </td>
+                        <td><span>03/27/2015</span></td>
+                        <td><span>04/02/2015</span></td>
+                        <td>15 sessions</td>
+                        <td><span class="complete">Completed</span></td>
+                        <td><a href="" data-reveal-id="learning-complete">View</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-graduation-cap"></i> Teaching</td>
+                        <td>Huy Nguyen</td>
+                        <td>
+                            <ul class="student-list">
+                                <li><span>Jimmy</span></li>
+                            </ul>
+                        </td>
+                        <td><span>03/27/2015</span></td>
+                        <td><span>---</span></td>
+                        <td>15 sessions</td>
+                        <td><span class="complete">Complete</span></td>
+                        <td><a href="" data-reveal-id="teaching-complete">View</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-graduation-cap"></i> Teaching</td>
+                        <td>Huy Nguyen</td>
+                        <td>
+                            <ul class="student-list">
+                                <li><span>Jimmy</span></li>
+                            </ul>
+                        </td>
+                        <td><span>03/27/2015</span></td>
+                        <td><span>---</span></td>
+                        <td>15 sessions</td>
+                        <td><span class="on-going">On Going</span></td>
+                        <td><a href="" data-reveal-id="teaching-going">View</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-book"></i> Learning</td>
+                        <td>Huy Nguyen</td>
+                        <td>
+                            <ul class="student-list">
+                                <li><span>David</span></li>
+                                <li><span>John Doe</span></li>
+                                <li><span>Chuck</span></li>
+                            </ul>
+                        </td>
+                        <td><span>03/27/2015</span></td>
+                        <td><span>04/02/2015</span></td>
+                        <td>15 sessions</td>
+                        <td><span class="on-going">On Going</span></td>
+                        <td><a href="" data-reveal-id="learning-going">View</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <div id="menu" class="right">
+        <nav>
+            <h2><i class="fa fa-reorder"></i>Menu</h2>
+            <ul>
+                <li><a href=""><i class="fa fa-users"></i> Circles</a></li>
+                <li><a href=""><i class="fa fa-credit-card"></i>Billing</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-user"></i>Profile</a>
+                    <h2><i class="fa fa-laptop"></i>Profile Settings</h2>
+                    <ul>
+                        <li>
+                            <a href="#">Invitations</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonials</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="session-requests" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <h2 id="modalTitle">Session Requests</h2>
+        <div class="session-request-item row">
+          <div class="session-request-item-ava large-2 columns">
+            <a href="" class="tiny-pp th radius">
+              <img src="https://pbs.twimg.com/profile_images/464139419792850944/C-aQBzot.jpeg" alt="">
+            </a>         
+          </div>
+          <div class="session-request-item-description large-8 columns">
+            <span>
+              <strong>Soda</strong>
+            </span>
+            <p class="session-description">
+              Morbi non risus sollicitudin, iaculis dolor nec, luctus lacus. Proin scelerisque vestibulum cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+              <div class="row">
+                <div class="large-12 columns">
+                    <span class="weekly-schedule"><i class="fa fa-calendar-o"></i> <a data-reveal-id="date-picker" data-tooltip aria-haspopup="true" class="has-tip tip-top round" title="Click to edit" data-options="show_on:large"><strong>Mon</strong> (9AM - 11AM)</a> - <a data-reveal-id="date-picker" data-tooltip aria-haspopup="true" class="has-tip tip-top round" title="Click to edit" data-options="show_on:large"><strong>Wed</strong> (9AM - 11AM)</a> - <a data-reveal-id="date-picker" data-tooltip aria-haspopup="true" class="has-tip tip-top round" title="Click to edit" data-options="show_on:large"><strong>Fri</strong> (9AM - 11AM)</a></span>  
+                    <span class="session-people"><i class="fa fa-users"></i> Huy Nguyen, GodsWill, Max</span>  
+                    <span class="session-number"><i class="fa fa-database"></i> 23 sessions</span>                
+                </div>
+
+                
+              </div>
+
+            </p>
+          </div>
+          <div class="session-request-item-actions large-2 columns">
+            <a href="" class="follow button radius success tiny">Book</a>
+            <a href="" class="follow button radius alert tiny">Reject</a>
+          </div>
+        </div>
+        <hr>
+        <div class="session-request-item row">
+          <div class="session-request-item-ava large-2 columns">
+            <a href="" class="tiny-pp th radius">
+              <img src="https://pbs.twimg.com/profile_images/464139419792850944/C-aQBzot.jpeg" alt="">
+            </a>         
+          </div>
+          <div class="session-request-item-description large-8 columns">
+            <span>
+              <strong>Soda</strong>
+            </span>
+            <p class="session-description">
+              Morbi non risus sollicitudin, iaculis dolor nec, luctus lacus. Proin scelerisque vestibulum cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+              <div class="row">
+                <div class="large-12 columns">
+                    <span class="weekly-schedule"><i class="fa fa-calendar-o"></i> <a data-reveal-id="date-picker" data-tooltip aria-haspopup="true" class="has-tip tip-top round" title="Click to edit" data-options="show_on:large"><strong>Mon</strong> (9AM - 11AM)</a> - <a data-reveal-id="date-picker" data-tooltip aria-haspopup="true" class="has-tip tip-top round" title="Click to edit" data-options="show_on:large"><strong>Wed</strong> (9AM - 11AM)</a> - <a data-reveal-id="date-picker" data-tooltip aria-haspopup="true" class="has-tip tip-top round" title="Click to edit" data-options="show_on:large"><strong>Fri</strong> (9AM - 11AM)</a></span>  
+                    <span class="session-people"><i class="fa fa-users"></i> Huy Nguyen, GodsWill, Max</span>  
+                    <span class="session-number"><i class="fa fa-database"></i> 23 sessions</span>                
+                </div>
+
+                
+              </div>
+
+            </p>
+          </div>
+          <div class="session-request-item-actions large-2 columns">
+            <a href="" class="follow button radius success tiny">Book</a>
+            <a href="" class="follow button radius alert tiny">Reject</a>
+          </div>
+        </div>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>    
+    <div id="date-picker" class="reveal-modal small" data-reveal aria-hidden="true" role="dialog">
+      <div class="row">
+        <div class="large-3 columns">
+          <label>Date
+            <select name="" id="" class="radius">
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+            </select>
+          </label>
+        </div>
+        <div class="large-3 columns">
+          <label>From
+            <select name="" id="" class="radius">
+              <option>1 AM</option>
+              <option>2 AM</option>
+              <option>3 AM</option>
+              <option>4 AM</option>
+              <option>5 AM</option>
+              <option>6 AM</option>
+              <option>7 AM</option>
+              <option>8 AM</option>
+              <option>9 AM</option>
+              <option>10 AM</option>
+              <option>11 AM</option>
+              <option>Noon</option>
+              <option>1 PM</option>
+              <option>2 PM</option>
+              <option>3 PM</option>
+              <option>4 PM</option>
+              <option>5 PM</option>
+              <option>6 PM</option>
+              <option>7 PM</option>
+              <option>8 PM</option>
+              <option>9 PM</option>
+              <option>10 PM</option>
+              <option>11 PM</option>
+            </select>
+          </label>
+        </div>
+        <div class="large-3 columns">
+          <label>To
+            <select name="" id="" class="radius">
+              <option>1 AM</option>
+              <option>2 AM</option>
+              <option>3 AM</option>
+              <option>4 AM</option>
+              <option>5 AM</option>
+              <option>6 AM</option>
+              <option>7 AM</option>
+              <option>8 AM</option>
+              <option>9 AM</option>
+              <option>10 AM</option>
+              <option>11 AM</option>
+              <option>Noon</option>
+              <option>1 PM</option>
+              <option>2 PM</option>
+              <option>3 PM</option>
+              <option>4 PM</option>
+              <option>5 PM</option>
+              <option>6 PM</option>
+              <option>7 PM</option>
+              <option>8 PM</option>
+              <option>9 PM</option>
+              <option>10 PM</option>
+              <option>11 PM</option>
+            </select>
+          </label>
+        </div>
+        <div class="large-3 columns">
+          <button data-reveal-id="session-requests" class="radius success expand">Submit</button>
+        </div>
+      </div>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="learning-going" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+      <div class="row">
+        <div class="remaining-sessions panel callout radius">
+          You only have <strong>7 sessions</strong> left. <a href="">Book More</a>
+        </div>
+      </div>
+      <div class="row">
+        <h4>Ask Your Teacher</h4>
+        <textarea name="" id="" cols="30" rows="4" class="radius"></textarea>
+        <button class="button success radius tiny right">Submit</button>
+      </div>
+      <div class="row">
+        <h4>Your Progress Report</h4>
+        <table>
+          <thead>
+            <tr>
+              <th width="200">Grade</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+          <tbody class="progress-reports">
+            <tr>
+                <td class="grade high">80%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="grade medium">60%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="grade low">30%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+          </tbody>
+        </table>        
+      </div>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="teaching-going" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+      <div class="row">
+        <div class="remaining-sessions panel callout radius">
+          You only have <strong>7 sessions</strong> left.
+        </div>
+      </div>
+      <div class="row">
+        <h4>Add New Report</h4>
+        <div class="row">
+          <div class="large-3 columns">
+            <label>Session #</label>
+            <input type="text" class="radius">
+          </div>
+          <div class="large-3 columns left">
+            <label>Grade</label>
+            <input type="text" class="radius">
+          </div>
+        </div>
+        <label>Comment
+          <textarea name="" id="" cols="30" rows="4" class="radius"></textarea>
+        </label>
+        <button class="button success radius tiny right">Submit</button>
+      </div>
+      <div class="row">
+        <h4>Previous Rates Of Your Student</h4>
+        <table>
+          <thead>
+            <tr>
+              <th width="200">Grade</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+          <tbody class="progress-reports">
+            <tr>
+                <td class="grade high">80%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="grade medium">60%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="grade low">30%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+          </tbody>
+        </table>        
+      </div>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="learning-complete" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+      <div class="row">
+      <div class="row">
+        <div class="remaining-sessions panel callout radius">
+          <span>Do you think you want to continue from where you stopped or make more progress? You can book more sessions.</span> 
+          <a class="button success radius tiny">Book Now</a>
+        </div>
+      </div>
+        <h4>Previous Rates Of Your Student</h4>
+        <table>
+          <thead>
+            <tr>
+              <th width="200">Grade</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+          <tbody class="progress-reports">
+            <tr>
+                <td class="grade high">80%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="grade medium">60%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="grade low">30%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+          </tbody>
+        </table>        
+      </div>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="teaching-complete" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+      <div class="row">
+        <h4>Previous Rates Of Your Student</h4>
+        <table>
+          <thead>
+            <tr>
+              <th width="200">Grade</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+          <tbody class="progress-reports">
+            <tr>
+                <td class="grade high">80%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="grade medium">60%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="grade low">30%</td>
+                <td>
+                  <p>Quisque ultricies mi et dui interdum pretium. Praesent placerat et magna non tempus. Vestibulum at ex ut quam eleifend imperdiet. Donec convallis nulla neque, quis vestibulum mi iaculis sit amet. Suspendisse fermentum pharetra scelerisque. Praesent dolor nisi, blandit eget mauris non, efficitur rutrum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim auctor dui non rhoncus.
+                  
+                  <span class="date">March 25</span>
+                  </p>
+                </td>
+            </tr>
+          </tbody>
+        </table>        
+      </div>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.multilevelpushmenu.min.js"></script>
+<script>
+  $(document).ready(function(){
+    // HTML markup implementation, overlap mode, initilaize collapsed
+    $( '#menu' ).multilevelpushmenu({
+      containersToPush: [$( '#pushobj' )],
+      collapsed: true,
+      menuHeight: '100%',
+      direction: 'rtl',
+        backItemIcon: 'fa fa-angle-left',
+        groupIcon: 'fa fa-angle-right',
+        overlapWidth: 50, 
+    });
+  });
+</script>
+  </body>
+</html>

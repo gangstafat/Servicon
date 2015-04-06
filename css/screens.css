@@ -6178,10 +6178,23 @@ hr {
   margin-right: auto;
   max-width: initial; }
 
+@media only screen and (min-width: 64.063em) {
+  .navigation.right {
+    display: block !important; }
+
+  .sub-bar {
+    display: block !important; }
+
+  #menu {
+    display: none !important; } }
 .top-bar {
   border-bottom: solid 1px #ccc; }
 
+.navigation.right {
+  display: none; }
+
 .sub-bar {
+  display: none;
   background: #314f8c;
   color: white; }
   .sub-bar ul {
@@ -7384,13 +7397,6 @@ table.payment-history, table.card-management, table.coupon-list, table tr.even, 
   table.payment-history .coupon-stt, table.payment-history .coupon-value, table.card-management .coupon-stt, table.card-management .coupon-value, table.coupon-list .coupon-stt, table.coupon-list .coupon-value, table tr.even .coupon-stt, table tr.even .coupon-value, table tr:nth-of-type(even) .coupon-stt, table tr:nth-of-type(even) .coupon-value {
     min-width: 100px; }
 
-footer {
-  margin-top: 4rem;
-  text-align: center;
-  padding: 2rem;
-  background: #212121;
-  color: white; }
-
 .session-requests {
   display: block;
   text-align: center;
@@ -7406,7 +7412,13 @@ footer {
     border-radius: 4px;
     margin-left: 1rem; }
 
-.session-request-item-description span.weekly-schedule, .session-request-item-description span.session-number, .session-request-item-description span.session-people {
+#date-picker button {
+  padding: 8px;
+  margin-top: 20px; }
+
+.session-request-item-description span.weekly-schedule {
+  display: block; }
+.session-request-item-description span.session-number, .session-request-item-description span.session-people {
   display: inline-block;
   margin-top: 0.5rem;
   margin-right: 1rem; }
@@ -7470,6 +7482,29 @@ footer {
       content: "Status"; }
     .session-history td:nth-of-type(8):before {
       content: "Log"; } }
+
+.remaining-sessions {
+  text-align: center;
+  margin-top: 2rem; }
+
+.progress-reports td {
+  border-bottom: solid 1px #eee; }
+.progress-reports .grade {
+  vertical-align: top;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bold; }
+  .progress-reports .grade.high {
+    color: RGBA(14, 127, 17, 1); }
+  .progress-reports .grade.medium {
+    color: RGBA(244, 187, 70, 1); }
+  .progress-reports .grade.low {
+    color: RGBA(153, 12, 28, 1); }
+
+span.date {
+  display: block;
+  margin-top: 1rem;
+  color: #bbb; }
 
 .landing-page-header {
   display: block;
