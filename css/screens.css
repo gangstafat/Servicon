@@ -7489,6 +7489,9 @@ table.payment-history, table.card-management, table.coupon-list, table tr.even, 
 
 .progress-reports td {
   border-bottom: solid 1px #eee; }
+.progress-reports .session-number {
+  vertical-align: top;
+  font-weight: bold; }
 .progress-reports .grade {
   vertical-align: top;
   font-size: 2rem;
@@ -7500,6 +7503,13 @@ table.payment-history, table.card-management, table.coupon-list, table tr.even, 
     color: RGBA(244, 187, 70, 1); }
   .progress-reports .grade.low {
     color: RGBA(153, 12, 28, 1); }
+
+#stars-existing {
+  margin-bottom: 0.5rem; }
+  #stars-existing i {
+    color: RGBA(253, 198, 65, 1);
+    font-size: 2rem;
+    margin-right: 0.2rem; }
 
 span.date {
   display: block;

@@ -1,506 +1,670 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
     <title>Foundation</title>
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/screens.css">
-    <link rel="stylesheet" href="css/wtf-forms.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/jquery.multilevelpushmenu.css">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/screens.css" rel="stylesheet">
+    <link href="css/wtf-forms.css" rel="stylesheet">
+    <link href=
+    "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    rel="stylesheet">
+    <link href="css/jquery.multilevelpushmenu.css" rel="stylesheet">
     <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body style="background-color: #F3F6F8">
-  
-  <div id="pushobj">
-    
-  
-  <section>
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="logo">
-          <img src="css/img/servicon-logo.png" alt="">
-          <h1>Servicon</h1>
-        </li>
-      </ul>
-      <ul class="navigation right">
-        <li><a href="dashboard-messages.html" class="counter" data-badge="6"><i class="fa fa-envelope-o"></i> Inbox</a></li>
-        <li><a href=""><i class="fa fa-cog"></i> Dashboard</a></li>
-        <li><a href="">Sign Out</a></li>
-      </ul>
-    </nav>
-    <nav class="sub-bar">
-      <div class="row">
-        <div class="large-4 columns">
-          <span>Hello, <a href="">Godswill</a></span>
-        </div>
-        <ul class="large-5 columns account-settings">
-          <!-- <li><a href="">My Servicon</a></li> -->
-          <li><a href="dashboard-account.html">Profile</a></li>
-          <li><a href="dashboard-billing.html">Billing</a></li>
-          <li><a href="dashboard-sessions.html">Sessions</a></li>
-          <li><a href="dashboard-circles.html">Circles</a></li>
+</head>
 
-          <!-- <li><a href="dashboard-coaches.html">Coaches</a></li> -->
-          <!-- <li><a href="dashboard-coaches-requests.html">Coaching Requests</a></li> -->
-          <li><a href="dashboard-notifications.html" class="counter" data-badge="12"><i class="fa fa-bell"></i></a></li>
-          <li>
-            <a data-dropdown="profile-dropdown" aria-controls="profile-dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
-            <ul id="profile-dropdown" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
-              <li><a href="#">Edit Profile</a></li>
-              <li><a href="#">Invitations</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Account Settings</a></li>
-              <li><a href="#">Log Out</a></li>
-            </ul>
-          </li>
-        </ul> 
-      </div>    
-    </nav>
-  </section>
-  <section class="dashboard">
-    <div class="row account-wrapper">
-      <div class="large-3 columns left-sidebar">
-        <div class="profile-picture row">
-          <div class="cover-bg" style="background-image: url('https://pbs.twimg.com/profile_banners/93328058/1425372854/600x200');">
-            <a href="" class="th radius">
-              <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
-            </a>
-          </div>
-          <a href="" class="edit-avatar tiny button radius">Change Avatar</a>
-        </div>
-        <div class="profile-stats">
-          <div class="statItem row">
-            <span class="statLabel small-10 columns">Connections</span>
-            <span class="statNumber small-2 columns">50</span>
-          </div>
-          <div class="statItem row">
-            <span class="statLabel small-10 columns">Following</span>
-            <span class="statNumber small-2 columns">50</span>
-          </div>
-          <div class="statItem row">
-            <span class="statLabel small-10 columns">Followers</span>
-            <span class="statNumber small-2 columns">50</span>
-            <div class="related-profile large-12">
-              <div class="small-4 columns">
-                <a href="" class="tiny-pp th radius">
-                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
-                </a>                
-              </div>
-              <div class="small-4 columns">
-                <a href="" class="tiny-pp th radius">
-                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
-                </a>                
-              </div>
-              <div class="small-4 columns">
-                <a href="" class="tiny-pp th radius">
-                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
-                </a>                
-              </div>
-            </div>
-            <div class="related-profile large-12">
-              <div class="small-4 columns">
-                <a href="" class="tiny-pp th radius">
-                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
-                </a>                
-              </div>
-              <div class="small-4 columns">
-                <a href="" class="tiny-pp th radius">
-                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
-                </a>                
-              </div>
-              <div class="small-4 columns">
-                <a href="" class="tiny-pp th radius">
-                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
-                </a>                
-              </div>
-            </div>
-            <a href="#" data-reveal-id="all-related-profile" class="view-more right">View More</a>
-          </div>
-        </div>
-      </div>
-      <div class="large-9 circle-feeds columns">
-        <div class="large-8 columns">
-          <div class="row update-stt">
-            <div class="large-12 columns">
-              <textarea class="radius" placeholder="What's on your mind?"></textarea>
-              <a href="" class="button radius tiny right"><i class="fa fa-pencil-square-o"></i> Add Post</a>
-            </div>
-          </div>     
-          <hr>       
-            <div class="user-post-item">
-              <div class="row">
-              <div class="large-2 columns user-ava">
-                <a href="">
-                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
-                </a> 
-              </div>
-              <div class="large-10 columns user-post-content">
-                <span><a href="" class="profile-link">Huy Nguyễn</a></span>
-                <div class="user-post-content-detail">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis nisl, tempor et lectus bibendum, sollicitudin condimentum velit. Sed sagittis magna enim.</p>
-                  <div class="user-post-actions">
-                    <span>
-                      <a href="" class="approve">Approve</a>
-                    </span>
-                    <span>
-                      <a href="" class="approve">Comment</a>
-                    </span>
-                  </div>
+<body style="background-color: #F3F6F8">
+    <div id="pushobj">
+        <section>
+            <nav class="top-bar" data-topbar="">
+                <ul class="title-area">
+                    <li class="logo">
+                        <img alt="" src="css/img/servicon-logo.png">
+
+                        <h1>Servicon</h1>
+                    </li>
+                </ul>
+
+                <ul class="navigation right">
+                    <li>
+                        <a class="counter" data-badge="6" href=
+                        "dashboard-messages.html"><i class=
+                        "fa fa-envelope-o"></i> Inbox</a>
+                    </li>
+
+                    <li>
+                        <a href=""><i class="fa fa-cog"></i> Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="">Sign Out</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="sub-bar">
+                <div class="row">
+                    <div class="large-4 columns">
+                        <span>Hello, <a href="">Godswill</a></span>
+                    </div>
+
+                    <ul class="large-5 columns account-settings">
+                        <!-- <li><a href="">My Servicon</a></li> -->
+
+                        <li>
+                            <a href="dashboard-account.html">Profile</a>
+                        </li>
+
+                        <li>
+                            <a href="dashboard-billing.html">Billing</a>
+                        </li>
+
+                        <li>
+                            <a href="dashboard-sessions.html">Sessions</a>
+                        </li>
+
+                        <li>
+                            <a href="dashboard-circles.html">Circles</a>
+                        </li>
+                        <!-- <li><a href="dashboard-coaches.html">Coaches</a></li> -->
+                        <!-- <li><a href="dashboard-coaches-requests.html">Coaching Requests</a></li> -->
+
+                        <li>
+                            <a class="counter fa fa-bell" data-badge="12" href=
+                            "dashboard-notifications.html" style=
+                            "font-style: italic"></a>
+                        </li>
+
+                        <li>
+                            <a class="fa fa-user" data-dropdown=
+                            "profile-dropdown" style="font-style: italic"></a>
+
+                            <ul class="f-dropdown" data-dropdown-content="" id=
+                            "profile-dropdown" tabindex="-1">
+                                <li>
+                                    <a href="#">Edit Profile</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Invitations</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Testimonials</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Account Settings</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Log Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-              </div>                
-              </div>
+            </nav>
+        </section>
 
-              <div class="row">
-                <div class="user-post-stats">
-                  <div class="approve-number">
-                    <span><a href=""><i class="fa fa-thumbs-o-up"></i> 46 people approve this.</a></span>
-                  </div>
-                  <div class="comments">
-                    <div class="row comment-item">
-                      <div class="large-1 columns user-comment-ava ">
-                        <a href="">
-                          <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg" alt="">
-                        </a>                   
-                      </div>
-                      <div class="large-11 columns">
-                        <p class="user-comment-content">
-                          <a href=""><span>Gods</span></a>Hi, this is a comment
-                        </p>
-                      </div>
+        <section class="dashboard">
+            <div class="row account-wrapper">
+                <div class="large-3 columns left-sidebar">
+                    <div class="profile-picture row">
+                        <div class="cover-bg" style=
+                        "background-image: url('https://pbs.twimg.com/profile_banners/93328058/1425372854/600x200');">
+                        <a class="th radius" href=""><img alt="" src=
+                        "https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png"></a>
+                        </div><a class="edit-avatar tiny button radius" href=
+                        "">Change Avatar</a>
                     </div>
-                    <div class="row comment-item">
-                      <div class="large-1 columns user-comment-ava ">
-                        <a href="">
-                          <img src="https://instagramimages-a.akamaihd.net/profiles/profile_259220806_75sq_1388631209.jpg" alt="">
-                        </a>                   
-                      </div>
-                      <div class="large-11 columns">
-                        <p class="user-comment-content">
-                          <a href=""><span>Gony</span></a>Yeah, and this is another comment :D
-                        </p>
-                      </div>
+
+                    <div class="profile-stats">
+                        <div class="statItem row">
+                            <span class=
+                            "statLabel small-10 columns">Connections</span>
+                            <span class="statNumber small-2 columns">50</span>
+                        </div>
+
+                        <div class="statItem row">
+                            <span class=
+                            "statLabel small-10 columns">Following</span>
+                            <span class="statNumber small-2 columns">50</span>
+                        </div>
+
+                        <div class="statItem row">
+                            <span class=
+                            "statLabel small-10 columns">Followers</span>
+                            <span class="statNumber small-2 columns">50</span>
+
+                            <div class="related-profile large-12">
+                                <div class="small-4 columns">
+                                    <a class="tiny-pp th radius" href=
+                                    ""><img alt="" src=
+                                    "https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png"></a>
+                                </div>
+
+                                <div class="small-4 columns">
+                                    <a class="tiny-pp th radius" href=
+                                    ""><img alt="" src=
+                                    "https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png"></a>
+                                </div>
+
+                                <div class="small-4 columns">
+                                    <a class="tiny-pp th radius" href=
+                                    ""><img alt="" src=
+                                    "https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png"></a>
+                                </div>
+                            </div>
+
+                            <div class="related-profile large-12">
+                                <div class="small-4 columns">
+                                    <a class="tiny-pp th radius" href=
+                                    ""><img alt="" src=
+                                    "https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png"></a>
+                                </div>
+
+                                <div class="small-4 columns">
+                                    <a class="tiny-pp th radius" href=
+                                    ""><img alt="" src=
+                                    "https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png"></a>
+                                </div>
+
+                                <div class="small-4 columns">
+                                    <a class="tiny-pp th radius" href=
+                                    ""><img alt="" src=
+                                    "https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png"></a>
+                                </div>
+                            </div><a class="view-more right" data-reveal-id=
+                            "all-related-profile" href="#">View More</a>
+                        </div>
                     </div>
-                    <div class="row comment-item">
-                      <div class="large-1 columns user-comment-ava ">
-                        <a href="">
-                          <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg" alt="">
-                        </a>                   
-                      </div>
-                      <div class="large-11 columns">
-                        <p class="user-comment-content">
-                          <a href=""><span>Huy</span></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        </p>
-                      </div>
-                    </div>
-                    <div class="row comment-item">
-                      <div class="large-1 columns user-comment-ava">
-                        <a href="">
-                          <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg" alt="">
-                        </a>                   
-                      </div>
-                      <div class="large-8 columns comment-box">
-                        <input class="radius" type="text" placeholder="Your Comment">
-                      </div>
-                      <div class="large-3 columns">
-                        <a href="" class="comment-submit button success tiny radius">Send</a>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-              </div>
-            </div>
-            <hr>
-            <div class="user-post-item">
-              <div class="row">
-              <div class="large-2 columns user-ava">
-                <a href="">
-                  <img src="https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png" alt="">
-                </a> 
-              </div>
-              <div class="large-10 columns user-post-content">
-                <span><a href="" class="profile-link">Huy Nguyễn</a></span>
-                <div class="user-post-content-detail">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis nisl, tempor et lectus bibendum, sollicitudin condimentum velit. Sed sagittis magna enim.</p>
-                  <div class="user-post-actions">
-                    <span>
-                      <a href="" class="approve">Approve</a>
-                    </span>
-                    <span>
-                      <a href="" class="approve">Comment</a>
-                    </span>
-                  </div>
                 </div>
-              </div>                
-              </div>
 
-              <div class="row">
-                <div class="user-post-stats">
-                  <div class="approve-number">
-                    <span><a href=""><i class="fa fa-thumbs-o-up"></i> 46 people approve this.</a></span>
-                  </div>
-                  <div class="comments">
-                    <div class="row comment-item">
-                      <div class="large-1 columns user-comment-ava ">
-                        <a href="">
-                          <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg" alt="">
-                        </a>                   
-                      </div>
-                      <div class="large-11 columns">
-                        <p class="user-comment-content">
-                          <a href=""><span>Gods</span></a>Hi, this is a comment
-                        </p>
-                      </div>
+                <div class="large-9 circle-feeds columns">
+                    <div class="large-8 columns">
+                        <div class="row update-stt">
+                            <div class="large-12 columns">
+                                <textarea class="radius" placeholder=
+                                "What's on your mind?">
+</textarea> <a class="button radius tiny right" href="">
+                                <i class="fa fa-pencil-square-o"></i> Add
+                                Post</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="user-post-item">
+                            <div class="row">
+                                <div class="large-2 columns user-ava">
+                                    <a href=""><img alt="" src=
+                                    "https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png"></a>
+                                </div>
+
+                                <div class=
+                                "large-10 columns user-post-content">
+                                    <span><a class="profile-link" href="">Huy
+                                    Nguyễn</a></span>
+
+                                    <div class="user-post-content-detail">
+                                        <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. Etiam
+                                        felis nisl, tempor et lectus bibendum,
+                                        sollicitudin condimentum velit. Sed
+                                        sagittis magna enim.</p>
+
+                                        <div class="user-post-actions">
+                                            <span><a class="approve" href=
+                                            "">Approve</a></span>
+                                            <span><a class="approve" href=
+                                            "">Comment</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="user-post-stats">
+                                    <div class="approve-number">
+                                        <span><a href=""><i class=
+                                        "fa fa-thumbs-o-up"></i> 46 people
+                                        approve this.</a></span>
+                                    </div>
+
+                                    <div class="comments">
+                                        <div class="row comment-item">
+                                            <div class=
+                                            "large-1 columns user-comment-ava">
+                                                <a href=""><img alt="" src=
+                                                "https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg"></a>
+                                            </div>
+
+                                            <div class="large-11 columns">
+                                                <p class=
+                                                "user-comment-content"><a href=
+                                                ""><span>Gods</span></a>Hi,
+                                                this is a comment</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row comment-item">
+                                            <div class=
+                                            "large-1 columns user-comment-ava">
+                                                <a href=""><img alt="" src=
+                                                "https://instagramimages-a.akamaihd.net/profiles/profile_259220806_75sq_1388631209.jpg"></a>
+                                            </div>
+
+                                            <div class="large-11 columns">
+                                                <p class=
+                                                "user-comment-content"><a href=
+                                                ""><span>Gony</span></a>Yeah,
+                                                and this is another comment
+                                                :D</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row comment-item">
+                                            <div class=
+                                            "large-1 columns user-comment-ava">
+                                                <a href=""><img alt="" src=
+                                                "https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg"></a>
+                                            </div>
+
+                                            <div class="large-11 columns">
+                                                <p class=
+                                                "user-comment-content"><a href=
+                                                ""><span>Huy</span></a>Lorem
+                                                ipsum dolor sit amet,
+                                                consectetur adipiscing
+                                                elit.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row comment-item">
+                                            <div class=
+                                            "large-1 columns user-comment-ava">
+                                                <a href=""><img alt="" src=
+                                                "https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg"></a>
+                                            </div>
+
+                                            <div class=
+                                            "large-8 columns comment-box">
+                                                <input class="radius"
+                                                placeholder="Your Comment"
+                                                type="text">
+                                            </div>
+
+                                            <div class="large-3 columns">
+                                                <a class=
+                                                "comment-submit button success tiny radius"
+                                                href="">Send</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="user-post-item">
+                            <div class="row">
+                                <div class="large-2 columns user-ava">
+                                    <a href=""><img alt="" src=
+                                    "https://pbs.twimg.com/profile_images/555814087167205376/7sPnaA_u_bigger.png"></a>
+                                </div>
+
+                                <div class=
+                                "large-10 columns user-post-content">
+                                    <span><a class="profile-link" href="">Huy
+                                    Nguyễn</a></span>
+
+                                    <div class="user-post-content-detail">
+                                        <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. Etiam
+                                        felis nisl, tempor et lectus bibendum,
+                                        sollicitudin condimentum velit. Sed
+                                        sagittis magna enim.</p>
+
+                                        <div class="user-post-actions">
+                                            <span><a class="approve" href=
+                                            "">Approve</a></span>
+                                            <span><a class="approve" href=
+                                            "">Comment</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="user-post-stats">
+                                    <div class="approve-number">
+                                        <span><a href=""><i class=
+                                        "fa fa-thumbs-o-up"></i> 46 people
+                                        approve this.</a></span>
+                                    </div>
+
+                                    <div class="comments">
+                                        <div class="row comment-item">
+                                            <div class=
+                                            "large-1 columns user-comment-ava">
+                                                <a href=""><img alt="" src=
+                                                "https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg"></a>
+                                            </div>
+
+                                            <div class="large-11 columns">
+                                                <p class=
+                                                "user-comment-content"><a href=
+                                                ""><span>Gods</span></a>Hi,
+                                                this is a comment</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row comment-item">
+                                            <div class=
+                                            "large-1 columns user-comment-ava">
+                                                <a href=""><img alt="" src=
+                                                "https://instagramimages-a.akamaihd.net/profiles/profile_259220806_75sq_1388631209.jpg"></a>
+                                            </div>
+
+                                            <div class="large-11 columns">
+                                                <p class=
+                                                "user-comment-content"><a href=
+                                                ""><span>Gony</span></a>Yeah,
+                                                and this is another comment
+                                                :D</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row comment-item">
+                                            <div class=
+                                            "large-1 columns user-comment-ava">
+                                                <a href=""><img alt="" src=
+                                                "https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg"></a>
+                                            </div>
+
+                                            <div class="large-11 columns">
+                                                <p class=
+                                                "user-comment-content"><a href=
+                                                ""><span>Huy</span></a>Lorem
+                                                ipsum dolor sit amet,
+                                                consectetur adipiscing
+                                                elit.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row comment-item">
+                                            <div class=
+                                            "large-1 columns user-comment-ava">
+                                                <a href=""><img alt="" src=
+                                                "https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg"></a>
+                                            </div>
+
+                                            <div class=
+                                            "large-8 columns comment-box">
+                                                <input class="radius"
+                                                placeholder="Your Comment"
+                                                type="text">
+                                            </div>
+
+                                            <div class="large-3 columns">
+                                                <a class=
+                                                "comment-submit button success tiny radius"
+                                                href="">Send</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row comment-item">
-                      <div class="large-1 columns user-comment-ava ">
-                        <a href="">
-                          <img src="https://instagramimages-a.akamaihd.net/profiles/profile_259220806_75sq_1388631209.jpg" alt="">
-                        </a>                   
-                      </div>
-                      <div class="large-11 columns">
-                        <p class="user-comment-content">
-                          <a href=""><span>Gony</span></a>Yeah, and this is another comment :D
-                        </p>
-                      </div>
+
+                    <div class="large-4 columns right-side">
+                        <div class="row"><img alt="" src=
+                        "https://storage.googleapis.com/support-kms-prod/SNP_2922277_en_v0"></div>
                     </div>
-                    <div class="row comment-item">
-                      <div class="large-1 columns user-comment-ava ">
-                        <a href="">
-                          <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg" alt="">
-                        </a>                   
-                      </div>
-                      <div class="large-11 columns">
-                        <p class="user-comment-content">
-                          <a href=""><span>Huy</span></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        </p>
-                      </div>
-                    </div>
-                    <div class="row comment-item">
-                      <div class="large-1 columns user-comment-ava ">
-                        <a href="">
-                          <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10979577_400115150166751_949201430_a.jpg" alt="">
-                        </a>                   
-                      </div>
-                      <div class="large-8 columns comment-box">
-                        <input class="radius" type="text" placeholder="Your Comment">
-                      </div>
-                      <div class="large-3 columns">
-                        <a href="" class="comment-submit button success tiny radius">Send</a>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-              </div>
+
+                    <div class="row"></div>
+                </div>
             </div>
 
+            <div class="row item">
+                <div class="heading">
+                    <h3>Let Us Find Your Perfect Service</h3><span class=
+                    "sub-heading">Answer some basic question, and we will
+                    recommend the perfect private coach for you.</span>
+                </div>
+
+                <div class="row full-width" id="search-tool">
+                    <div class="search-tool animated pulse">
+                        <div class="large-4 columns">
+                            <input class="radius" placeholder=
+                            "What do you want to find?" type="text">
+                        </div>
+
+                        <div class="large-4 columns">
+                            <i class=
+                            "location-icon fa fa-map-marker fa-2x"></i>
+                            <input class="radius location" placeholder=
+                            "Your Location" type="text">
+                        </div>
+
+                        <div class="large-4 columns">
+                            <a class="button expand radius" href=
+                            "process-page.html">Search</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row item">
+                <div class="heading">
+                    <h3>Share & Win</h3><span class="sub-heading">Send a friend
+                    $20 Servicon credit. You'll get $20!</span>
+                </div>
+
+                <div class="row">
+                    <div class="large-4 large-offset-4">
+                        <div class="panel radius refcode">
+                            huyn1
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-4 column">
+                        <a class="button share facebook expand" href=
+                        ""><i class="fa fa-facebook-official"></i> Share On
+                        Facebook</a>
+                    </div>
+
+                    <div class="large-4 column">
+                        <a class="button share twitter expand" href=
+                        ""><i class="fa fa-twitter-square"></i> Share On
+                        twitter</a>
+                    </div>
+
+                    <div class="large-4 column">
+                        <a class="button share mail expand" href=""><i class=
+                        "fa fa-envelope-o"></i> Share Via Mail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div><!-- all-related-profile-modal -->
+
+    <div class="reveal-modal" data-reveal="" id="all-related-profile">
+        <div class="profile-item row">
+            <div class="profile-item-ava large-2 columns">
+                <a class="tiny-pp th radius" href=""><img alt="" src=
+                "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847"></a>
+            </div>
+
+            <div class="profile-item-description large-8 columns">
+                <span class="user-name">Huy Nguyễn</span>
+
+                <p class="user-self-description">Designer. Illustrator. Human.
+                Friend of science. Reader of comics.</p><span class=
+                "user-skills"></span>
+
+                <ul>
+                    <li><span class="user-skills"><a href=
+                    "">Ruby</a></span></li>
+
+                    <li><span class="user-skills"><a href=
+                    "">HTML/CSS</a></span></li>
+
+                    <li><span class="user-skills"><a href=
+                    "">Javascript</a></span></li>
+                </ul><span class="user-location"><i class=
+                "fa fa-map-marker"></i> San Diego</span>
+            </div>
+
+            <div class="profile-item-actions large-2 columns">
+                <a class="follow" href=""><i class="fa fa-user-plus"></i>
+                Follow</a>
+            </div>
         </div>
-        <div class="large-4 columns right-side">
-          <div class="row">
-            <img src="https://storage.googleapis.com/support-kms-prod/SNP_2922277_en_v0" alt="">  
-          </div>
+
+        <div class="profile-item row">
+            <div class="profile-item-ava large-2 columns">
+                <a class="tiny-pp th radius" href=""><img alt="" src=
+                "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847"></a>
+            </div>
+
+            <div class="profile-item-description large-8 columns">
+                <span class="user-name">Huy Nguyễn</span>
+
+                <p class="user-self-description">Designer. Illustrator. Human.
+                Friend of science. Reader of comics.</p><span class=
+                "user-skills"></span>
+
+                <ul>
+                    <li><span class="user-skills"><a href=
+                    "">Ruby</a></span></li>
+
+                    <li><span class="user-skills"><a href=
+                    "">HTML/CSS</a></span></li>
+
+                    <li><span class="user-skills"><a href=
+                    "">Javascript</a></span></li>
+                </ul><span class="user-location"><i class=
+                "fa fa-map-marker"></i> San Diego</span>
+            </div>
+
+            <div class="profile-item-actions large-2 columns">
+                <a class="follow" href=""><i class="fa fa-user-plus"></i>
+                Follow</a>
+            </div>
         </div>
+
+        <div class="profile-item row">
+            <div class="profile-item-ava large-2 columns">
+                <a class="tiny-pp th radius" href=""><img alt="" src=
+                "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847"></a>
+            </div>
+
+            <div class="profile-item-description large-8 columns">
+                <span class="user-name">Huy Nguyễn</span>
+
+                <p class="user-self-description">Designer. Illustrator. Human.
+                Friend of science. Reader of comics.</p><span class=
+                "user-skills"></span>
+
+                <ul>
+                    <li><span class="user-skills"><a href=
+                    "">Ruby</a></span></li>
+
+                    <li><span class="user-skills"><a href=
+                    "">HTML/CSS</a></span></li>
+
+                    <li><span class="user-skills"><a href=
+                    "">Javascript</a></span></li>
+                </ul><span class="user-location"><i class=
+                "fa fa-map-marker"></i> San Diego</span>
+            </div>
+
+            <div class="profile-item-actions large-2 columns">
+                <a class="unfollow" href=""><i class="fa fa-user-times"></i>
+                Unfollow</a>
+            </div>
+        </div>
+
+        <div class="profile-item row">
+            <div class="profile-item-ava large-2 columns">
+                <a class="tiny-pp th radius" href=""><img alt="" src=
+                "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847"></a>
+            </div>
+
+            <div class="profile-item-description large-8 columns">
+                <span class="user-name">Huy Nguyễn</span>
+
+                <p class="user-self-description">Designer. Illustrator. Human.
+                Friend of science. Reader of comics.</p><span class=
+                "user-skills"></span>
+
+                <ul>
+                    <li><span class="user-skills"><a href=
+                    "">Ruby</a></span></li>
+
+                    <li><span class="user-skills"><a href=
+                    "">HTML/CSS</a></span></li>
+
+                    <li><span class="user-skills"><a href=
+                    "">Javascript</a></span></li>
+                </ul><span class="user-location"><i class=
+                "fa fa-map-marker"></i> San Diego</span>
+            </div>
+
+            <div class="profile-item-actions large-2 columns">
+                <a class="follow" href=""><i class="fa fa-user-plus"></i>
+                Follow</a>
+            </div>
+        </div>
+
         <div class="row">
+            <a class="expand button secondary radius" href="">Load More</a>
+        </div>
+    </div>
 
-        </div>
-      </div>
-    </div>
-    <div class="row item">
-      <div class="heading">
-        <h3>Let Us Find Your Perfect Service</h3>
-        <span class="sub-heading">Answer some basic question, and we will recommend the perfect private coach for you.</span>
-      </div>
-      <div id="search-tool" class="row full-width">
-        <div class="search-tool animated pulse">
-          <div class="large-4 columns">
-              <input class="radius" type="text" placeholder="What do you want to find?" />
-          </div>
-          <div class="large-4 columns">
-              <i class="location-icon fa fa-map-marker fa-2x"></i>
-              <input class="radius location" type="text" placeholder="Your Location" >
-          </div>
-          <div class="large-4 columns">
-              <a href="process-page.html" class="button expand radius">Search</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row item">
-      <div class="heading">
-        <h3>Share & Win</h3>
-        <span class="sub-heading">Send a friend $20 Servicon credit. You'll get $20!</span>
-      </div>
-      <div class="row">
-        <div class="large-4 large-offset-4">
-          <div class="panel radius refcode">
-            huyn1
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 column">
-          <a href="" class="button share facebook expand"><i class="fa fa-facebook-official"></i> Share On Facebook</a>
-        </div>
-        <div class="large-4 column">
-          <a href="" class="button share twitter expand"><i class="fa fa-twitter-square"></i> Share On twitter</a>
-        </div>
-        <div class="large-4 column">
-          <a href="" class="button share mail expand"><i class="fa fa-envelope-o"></i> Share Via Mail</a>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
-  </div>
-<!-- all-related-profile-modal -->
-  <div id="all-related-profile" class="reveal-modal" data-reveal>
-    <div class="profile-item row">
-      <div class="profile-item-ava large-2 columns">
-        <a href="" class="tiny-pp th radius">
-          <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847" alt="">
-        </a>         
-      </div>
-      <div class="profile-item-description large-8 columns">
-        <span class="user-name">
-          Huy Nguyễn
-        </span>
-        <p class="user-self-description">
-          Designer. Illustrator. Human. Friend of science. Reader of comics.
-        </p>
-        <span class="user-skills">
-          <ul>
-            <li><a href="">Ruby</a></li>
-            <li><a href="">HTML/CSS</a></li>
-            <li><a href="">Javascript</a></li>
-          </ul>
-        </span>
-        <span class="user-location">
-          <i class="fa fa-map-marker"></i> San Diego
-        </span>
-      </div>
-      <div class="profile-item-actions large-2 columns">
-        <a href="" class="follow"><i class="fa fa-user-plus"></i> Follow</a>
-      </div>
-    </div>
-    <div class="profile-item row">
-      <div class="profile-item-ava large-2 columns">
-        <a href="" class="tiny-pp th radius">
-          <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847" alt="">
-        </a>         
-      </div>
-      <div class="profile-item-description large-8 columns">
-        <span class="user-name">
-          Huy Nguyễn
-        </span>
-        <p class="user-self-description">
-          Designer. Illustrator. Human. Friend of science. Reader of comics.
-        </p>
-        <span class="user-skills">
-          <ul>
-            <li><a href="">Ruby</a></li>
-            <li><a href="">HTML/CSS</a></li>
-            <li><a href="">Javascript</a></li>
-          </ul>
-        </span>
-        <span class="user-location">
-          <i class="fa fa-map-marker"></i> San Diego
-        </span>
-      </div>
-      <div class="profile-item-actions large-2 columns">
-        <a href="" class="follow"><i class="fa fa-user-plus"></i> Follow</a>
-      </div>
-    </div>
-    <div class="profile-item row">
-      <div class="profile-item-ava large-2 columns">
-        <a href="" class="tiny-pp th radius">
-          <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847" alt="">
-        </a>         
-      </div>
-      <div class="profile-item-description large-8 columns">
-        <span class="user-name">
-          Huy Nguyễn
-        </span>
-        <p class="user-self-description">
-          Designer. Illustrator. Human. Friend of science. Reader of comics.
-        </p>
-        <span class="user-skills">
-          <ul>
-            <li><a href="">Ruby</a></li>
-            <li><a href="">HTML/CSS</a></li>
-            <li><a href="">Javascript</a></li>
-          </ul>
-        </span>
-        <span class="user-location">
-          <i class="fa fa-map-marker"></i> San Diego
-        </span>
-      </div>
-      <div class="profile-item-actions large-2 columns">
-        <a href="" class="unfollow"><i class="fa fa-user-times"></i> Unfollow</a>
-      </div>
-    </div>
-    <div class="profile-item row">
-      <div class="profile-item-ava large-2 columns">
-        <a href="" class="tiny-pp th radius">
-          <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11022631_908845959159131_7132335870051482791_n.jpg?oh=ce4b5db759a144b7f1274622f79005f0&oe=5581C6C3&__gda__=1435288357_433e821b5314de801c4a61335805a847" alt="">
-        </a>         
-      </div>
-      <div class="profile-item-description large-8 columns">
-        <span class="user-name">
-          Huy Nguyễn
-        </span>
-        <p class="user-self-description">
-          Designer. Illustrator. Human. Friend of science. Reader of comics.
-        </p>
-        <span class="user-skills">
-          <ul>
-            <li><a href="">Ruby</a></li>
-            <li><a href="">HTML/CSS</a></li>
-            <li><a href="">Javascript</a></li>
-          </ul>
-        </span>
-        <span class="user-location">
-          <i class="fa fa-map-marker"></i> San Diego
-        </span>
-      </div>
-      <div class="profile-item-actions large-2 columns">
-        <a href="" class="follow"><i class="fa fa-user-plus"></i> Follow</a>
-      </div>
-    </div>
-    <div class="row">
-      <a href="" class="expand button secondary radius">Load More</a>
-    </div>
-  </div>
-  <div id="menu" class="right">
+    <div class="right" id="menu">
         <nav>
             <h2><i class="fa fa-reorder"></i>Menu</h2>
+
             <ul>
-                <li><a href=""><i class="fa fa-users"></i> Circles</a></li>
-                <li><a href=""><i class="fa fa-credit-card"></i>Billing</a></li>
+                <li>
+                    <a href=""><i class="fa fa-users"></i> Circles</a>
+                </li>
+
+                <li>
+                    <a href=""><i class="fa fa-credit-card"></i>Billing</a>
+                </li>
+
                 <li>
                     <a href="#"><i class="fa fa-user"></i>Profile</a>
+
                     <h2><i class="fa fa-laptop"></i>Profile Settings</h2>
+
                     <ul>
                         <li>
                             <a href="#">Invitations</a>
                         </li>
+
                         <li>
                             <a href="#">Testimonials</a>
                         </li>
                     </ul>
                 </li>
-                <li><a href="#">Sign Out</a></li>
+
+                <li>
+                    <a href="#">Sign Out</a>
+                </li>
             </ul>
         </nav>
-    </div>
-
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/card.js"></script>
-<script src="js/jquery.multilevelpushmenu.min.js"></script>
-<script>
-  $(document).ready(function(){
+    </div><script src="bower_components/jquery/dist/jquery.min.js"></script> <script src="bower_components/foundation/js/foundation.min.js"></script> <script src="js/app.js"></script> <script src="js/card.js"></script> <script src="js/jquery.multilevelpushmenu.min.js"></script> <script>
+$(document).ready(function(){
     // HTML markup implementation, overlap mode, initilaize collapsed
     $( '#menu' ).multilevelpushmenu({
       containersToPush: [$( '#pushobj' )],
@@ -511,7 +675,7 @@
         groupIcon: 'fa fa-angle-right',
         overlapWidth: 50, 
     });
-  });
-</script>
-  </body>
+    });
+    </script>
+</body>
 </html>
