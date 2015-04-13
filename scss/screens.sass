@@ -1,89 +1,12 @@
 @import settings
 @import foundation
-.stacktable.small-only
-    display: table
-.stacktable.large-only
-    display: none
-[data-magellan-expedition-clone]
-    display: none
-.none
-    display: none
-span.center
-    display: block
-    text-align: center
-hr
-    border: solid 1px #eee
 .full-width 
     width: 100%
     margin-left: auto
     margin-right: auto
     max-width: initial
-@media only screen and (min-width: 64.063em)
-    .navigation.right
-        display: block !important
-    .sub-bar
-        display: block !important
-    #menu
-        display: none !important
 .top-bar
     border-bottom: solid 1px #ccc
-.navigation.right
-    display: none
-.sub-bar
-    display: none
-    background: $primary-color
-    color: white
-    ul
-        margin: 0
-        padding: 0
-    ul li,
-    span
-        display: inline-block
-        list-style: none
-        padding: .6rem
-        a 
-            color: #ccc
-            &:hover,
-            &.active
-                color: #fff
-.navigation
-    position: relative
-    top: -3rem
-    right: 1rem
-    li 
-        display: inline-block
-        margin-top: 1.1rem
-        margin-right: 1rem
-        &:last-child
-            margin-right: 0
-    a.sign-up
-        background: $primary-color
-        color: $white
-        padding: 0.4rem 1.5rem
-        border-radius: 4px
-.counter
-    position: relative
-.counter[data-badge]:after 
-    content: attr(data-badge)
-    position: absolute
-    top: -10px
-    right: -10px
-    font-size: .7em
-    background: #AF2812
-    color: white
-    width: 18px
-    height: 18px
-    text-align: center
-    line-height: 18px
-    border-radius: 50%
-    box-shadow: 0 0 1px #111
-#profile-dropdown
-    li a
-        color: #333
-    li:hover
-        background-color: transparent !important
-        a
-            color: $primary-color
 
 .logo
     h1
@@ -112,13 +35,11 @@ hr
     letter-spacing: 2px
 
 .heading
-    margin: 2rem 0
+    margin: 3rem 0
     text-align: center
-    color: $primary-color
 
 .sub-heading
     display: block
-    text-align: center
     font-size: 1.125rem
 
 .header-hero .intro,
@@ -153,8 +74,6 @@ hr
     .sub-heading
         color: white
 
-#search-tool
-    padding: 1rem 0rem
 .search-tool,
 .updates
     position: relative
@@ -229,13 +148,12 @@ input.location
         color: #8D8F92
 
 // FILTER FORM
-.filter,
-.checkout,
+.filter
     .item
         margin: 1rem 0
     .form-heading
         background-color: $primary-color
-        border-radius: 4px 4px 0 0
+        border-radius: 20px 20px 0 0
         padding: 0.725rem
         h3
             color: $white
@@ -245,251 +163,10 @@ input.location
         padding: 2rem 0
         border-right: solid 1px $smoke
         border-left: solid 1px $smoke
-// CHECKOUT
-.checkout
-    label
-        font-size: 1rem
-        margin: .5rem 1rem
-    .control-indicator
-        top: .1rem
-    .packages
-        .columns
-            padding: 0 .2rem
-            .pricing-table 
-                .most-popular
-                    color: #F77109
-                .best-value
-                    color: $primary-color
-                .description
-                    height: 1rem !important
-                .price
-                    font-weight: 900
-                .pack-price,
-                .save-rate
-                    font-size: 1rem
-                    font-weight: 400
-                    color: #ccc
-                .save-rate
-                    color: #43AC6A
-.user-cards
-    .heading
-        border: solid 0px #ccc !important
-        padding: 0
-        text-align: left
-        font-size: .8rem
-        text-transform: uppercase
-        color: #aaa
-        h3
-            font-size: .8rem
-            font-weight: 900
-            text-transform: uppercase
-            margin: 0
-            padding: 0
-    .item
-        img
-            position: relative
-            top: -.1rem
-        border-bottom: solid 1px #ccc
-        padding: .7rem 0
-        border-radius: 5px
-        &:first-child
-            padding: 0
-        &:last-child
-            border-bottom: none
-    .card-wrapper
-        margin-bottom: 1rem
-    .columns
-        padding-left: 0
-        padding-right: 0
-    font-size: 1rem
-    .control-indicator
-        top: -.25rem
-        width: 1rem
-        height: 1rem
-.group-name
-    .columns
-        padding-left: 0
-        padding-right: 0
-        label
-            margin: .5rem .7rem !important
-ul.checkout-cost
-    margin-left: 0
-    li
-        list-style: none
-    li.sub-item
-        margin-left: 2rem
-        font-style: italic
-.subtotal
-    font-weight: 900
-.right-bar
-    margin-top: 1rem
-    ul.qualification
-        margin-left: 0
-        li
-            list-style: none
-
-    .columns
-        padding: .5rem
-    .checkout-wrapper
-        padding: -.9rem
-    .accordion-navigation
-        margin: 0
-        padding: .1rem 0
-    .accordion-navigation a
-        color: #333
-        background: #eee
-        border-radius: 0
-        padding: .5rem
-        &:hover
-            color: #fff
-    li.accordion-navigation 
-        &.active a
-            color: #fff
-    .testimonial
-        margin-top: 1rem
-        background: #fff
-        padding: 1rem
-        h4
-            font-size: 1rem
-            font-weight: 900
-
-.checkout-heading,
-.panel-heading
-    background: $primary-color
-    border-radius: 4px 4px 0 0
-    border: solid 1px #3D6089
-    border-bottom: 0
-    h3
-        font-size: 1.2rem
-        padding: 1rem
-        color: white
-        margin: 0
-.checkout-wrapper
-    background: #fff
-    border: solid 1px #3D6089
-.checkout-content
-    padding: 1rem
-    h4
-        text-transform: uppercase
-        font-size: 1rem
-        font-weight: 900
 
 //RECOMMENDATION
-.profile
-    padding-top: 2rem
-.return
-    padding: 1rem 0
 .recommendation,
 .profile
-    .label
-        padding: .5rem
-        font-size: .8rem
-        letter-spacing: 1px
-        margin-bottom: .5rem
-        text-transform: uppercase
-        &:hover
-            cursor: pointer
-    .label-list
-        opacity: 0
-        position: absolute
-        z-index: 999
-        background: #eee
-        margin-left: -15px
-        padding: .7rem
-        border-radius: 4px
-        transition: all .3s ease
-        &:before
-            position: absolute
-            top: -25px
-            left: 120px
-            color: #eee
-            font-size: 1.8rem
-            content: ""
-            font-family: FontAwesome
-    .enable
-        opacity: 1
-    .legend
-        background-color: #F39A35
-    .hall
-        background-color: #E6413D
-    .super
-        background-color: $primary-color
-    .all-star
-        background-color: #1A7C7B
-    .pro
-        background-color: #55C1CB
-    .tabs-content
-        margin-bottom: 0
-    .left-sidebar
-        border-right: solid 1px #eee
-        .qualification,
-        .teaching,
-        .other-details,
-            h3
-                text-transform: uppercase
-                font-size: .8rem
-                font-weight: 700
-                background: #f3f3f3
-                padding: .5rem
-                padding-left: 1.2rem
-                position: relative
-                margin-bottom: 0
-                &:before
-                    position: absolute
-                    font-family: FontAwesome
-                    top: 9px
-                    left: 8px
-                    content: ""
-            .details
-                border-bottom: dashed 1px #eee
-                padding-top: .6rem
-                padding-left: .8rem
-                &:last-child
-                    border-bottom: 0px
-                h4
-                    font-size: 1rem
-                ul
-                    margin-left: 0
-                ul li 
-                    list-style: none
-                    i
-                        position: relative
-                        color: #ccc
-                        font-size: .8rem
-                        top: -2px
-                        margin-right: 3px
-    .price
-        color: $primary-color
-        font-size: 2.4rem
-        text-align: center
-        span
-            font-size: .8rem
-            text-transform: uppercase
-            letter-spacing: 1px
-    .client-reviews
-        border-bottom: 0
-        h3
-            text-transform: uppercase
-            font-weight: 700
-            font-size: 1rem
-            margin: 0
-            padding-top: 1rem
-        border-top: solid 1px #eee
-        .item
-            border: 0
-            border-bottom: solid 1px #eee
-            margin: 0
-            padding-bottom: 0
-            .review-title
-                display: inline-block
-                margin-left: 0.4rem
-            .review-meta
-                display: block
-                color: #838991
-                font-size: .9rem
-                a
-                    display: inline-block
-
     .item
         background: $white
         padding: 1rem 0
@@ -505,40 +182,9 @@ ul.checkout-cost
             font-weight: 500
             margin: 0
         .location
-            margin-bottom: 1rem
-            border-bottom: solid 1px #eee
-            padding-bottom: 2rem
-            span
-                padding: .5rem 0
             .address
                 color: $aluminum 
                 display: block
-        .availability
-            h4
-                text-transform: uppercase
-                font-size: .8rem
-                font-weight: 900
-                letter-spacing: 1px
-            .tabs
-                border: 0
-            .tabs-content
-                padding-left: 1rem
-            ul
-                margin-left: 0px
-                margin-top: 1rem
-            ul li
-                display: inline-block
-                color: $white
-                padding: .3rem .7rem
-                &.tab-title:hover a
-                    background: $primary-color
-                &.tab-title a
-                    background: green
-                    color: #fff
-                &.un-available a
-                    background: grey
-                    color: #fff
-                    pointer: disabled
         .description
             p
                 margin-bottom: 0.725rem
@@ -551,21 +197,23 @@ ul.checkout-cost
             margin-bottom: 0.725rem
             a
                 display: block
+            i
+                color: #FEC72E
         .view-profile
             display: block
             text-align: center
         .no-price
             margin-top: 1.5rem
-.rating
-    i
-        color: #FEC72E
+    .more
+        text-align: center
+        margin-top: 2rem
         span
             display: block
             line-height: 2.125rem
     .best-match
         .heading
             background-color: $primary-color
-            border-radius: 4px 4px 0 0
+            border-radius: 20px 20px 0 0
             padding: 0.125rem
             text-align: left
             h3
@@ -574,15 +222,12 @@ ul.checkout-cost
                 margin: 0.425rem 2rem
                 i
                     color: yellow
-.more
-    text-align: center
-    margin-top: 2rem
 .sorter
     background: $smoke
     padding-top: 1.125rem
     border: solid 1px #ccc
     border-bottom: none
-    border-radius: 4px 4px 0 0
+    border-radius: 20px 20px 0 0
 ul.pagination
     float: right
     margin-right: 5%
@@ -601,9 +246,9 @@ ul.accordion
 .accordion li
     padding: 0.325rem 0
     .content
-        border-radius: 4px
+        border-radius: 8px
 .accordion li > a 
-    border-radius: 4px
+    border-radius: 8px
 .other-question label
     line-height: 3rem
     font-size: 1.2rem
@@ -612,7 +257,7 @@ ul.accordion
     position: relative
     right: 1rem
     top: 0.295rem
-//SERVICE-DETAILS-PAGE
+//PROFILE-PAGE
 .book
     margin: 1rem 0
     .button
@@ -639,700 +284,16 @@ ul.accordion
 //     .content
 //         border-radius: 0 0 8px 8px
 
-// DASHBOARD
-.dashboard
-    label
-        font-size: 1rem
-    input[type="checkbox"]
-        font-size: 2rem
-        margin-bottom: .5rem
-    .item
-        margin: 2rem auto
-        border: solid 1px #eee
-        background: #fff
-        padding: 0 2rem
-    .heading
-        margin: 0
-        margin-top: 1rem
-    .faq
-        ul li
-            list-style: none
-            padding: .5rem
-            text-align: center
-.dashboard-panel
-    margin: 2rem 0
-.reminder
-    border: solid 1px #FDB92B
-    background-color: #FFF9EA
-    h5,p
-        color: #95721F
-.update
-    margin-top: 1rem
-.share
-    margin-top: 1rem
-    border-radius: 5px
-    color: #fff
-    padding: .7rem
-a.share:hover
-    color: #fff
-.facebook
-    background: #3C5A96
-    &:hover
-        background: #3C5A96
-.twitter
-    background: #55ACEE
-    &:hover
-        background: #55ACEE
-.mail
-    background: #FC5B63
-    &:hover
-        background: #FC5B63
-.refcode
-    padding: 0rem !important
-    background: #fff
-    margin-top: 1rem
-    text-align: center
-    font-weight: 900
-    font-size: 3rem
-    color: #44B254
-//CONVERSATIONS
-.messages-wrapper
-    margin-top: 2rem
-    .conversation-types
-        ul
-            list-style-type: none
-            li a
-                color: #aaa
-                &.active,
-                &:hover
-                    color: #111
-    .conversation-list
-        background: #fff
-        border: solid 1px #eee
-        padding-top: 1rem
-    .messages-item
-        table, table tr.even, table tr:nth-of-type(even)
-            border-spacing: 0px
-            background: #fff
-        table tr:hover
-            background: #fbfbfb
-        a
-            color: #333
-        td
-            border-bottom: solid 1px #eee
-        tr:last-child 
-            td
-                border-bottom: 0px
-        .sender,
-        .last-message,
-        .update-time
-            cursor: pointer
-        .sender
-            a.th
-                border: 0
-                margin-right: 5px
-        .last-message
-            overflow: hidden
-            white-space: nowrap
-            text-overflow: ellipsis
-            max-width: 460px
-//PROFILE
-.profile-details
-    border-left: solid 1px #eee
-    h3
-        font-size: .8rem
-        text-transform: uppercase
-        font-weight: 700
-        i
-            position: relative
-            top: -1px
-            left: -3px
-            font-size: .2rem !important
-    .item-detail
-        font-size: .9rem
-        display: block
-        margin: 1rem 0
-    .personal-details
-    .services-details
-        border-left: dashed 1px #eee
-        padding-top: 1rem
-    .full-name,
-    .personal-details,
-        padding: 1rem
-    .full-name
-        border-bottom: solid 1px #eee
-.account-wrapper
-    border: solid 1px #eee
-    border-top: 0px
-    background: #fff
-    padding-top: 0
-.left-sidebar
-.profile-picture
-    border-bottom: solid 1px #eee
-    .edit-avatar
-        display: block
-        margin: 3.5rem auto 1rem auto
-        max-width: 60%
-    .cover-bg
-        text-align: center
-        margin: 0 
-        height: 80px
-        margin-bottom: 2.5rem
-    a
-        margin: 1rem 0
-    a.th
-        margin-bottom: -.5rem
-        img
-            width: 100px
-.phone-number, .emails, .locations
-    .number-item, .emails-item, .locations-item
-        display: block
-    .edit-link
-        display: inline-block
-        padding: .5rem
-        padding-left: 0rem
-//CIRCLES
-.circle-feeds
-    border-left: solid 1px #eee
-    padding: 1rem
-    .update-stt
-        textarea
-            min-height: 5rem
-            margin-bottom: .5rem
-        .columns
-            padding: .5rem
-            margin: 0
-    .user-post-item
-        .columns
-            padding: 0 .2rem
-        .user-ava
-            padding: .5rem
-            img
-                display: block
-                margin: 0 auto
-                border-radius: 4px
-        .user-post-content-detail
-            p
-                font-size: 1rem
-                margin-bottom: .3rem
-        .user-post-actions
-            span a
-                font-size: .8rem
-                margin-right: 1rem
-                &:hover
-                    border-bottom: solid 1px $primary-color
-    .user-post-stats
-        font-size: .8rem
-        margin-top: .5rem
-        border-top: solid 1px #eee
-        padding-top: .5rem
-        i
-            margin-right: .3rem
-    .comments
-        .comment-item
-            margin-top: .7rem
-            padding-left: 1rem
-            .columns
-                padding: 0
-            .user-comment-ava
-                a
-                    display: block
-                    padding: 0
-                img
-                    border-radius: 2px
-                    width: 30px
-                    height: 30px
-            p.user-comment-content
-                padding: 4px 0 0 0 
-                font-size: .9rem
-                margin-bottom: 0
-                span
-                    margin-right: .3rem
-            .comment-box
-                padding-right: .5rem
-.related-profile
-    display: block
-    margin: 0 auto
-    .columns
-        padding: 0
-        margin: 0
-    a.tiny-pp
-        width: 60px
-        margin: 7.5px
-    a.th
-        border: 0px
-        box-shadow: none
-        border-radius: 4px
-        img
-            border-radius: 4px
-    a.view-more
-        font-size: .7rem
-#all-related-profile
-    width: 60%
-    padding: .5rem
-    .profile-item
-        padding: 1rem 0
-        border-bottom: solid 1px #eee
-        .columns
-            padding: 0 .5rem
-            margin: 0
-    .profile-item-description
-        .user-name
-            font-weight: 700
-        .user-self-description
-            margin-bottom: .1rem
-        .user-skills
-            ul
-                list-style-type: none
-                margin-left: 0
-                margin-bottom: .5rem
-            li
-                font-size: .7rem
-                letter-spacing: 1px
-                text-transform: uppercase
-                background: #617891
-                display: inline-block
-                color: #fff
-                padding: 4px 8px
-                border-radius: 4px
-                transition: all .2s ease-in-out
-                a
-                    color: #fff
-                &:hover
-                    background: $primary-color
-    a.follow, a.unfollow
-        color: #fff
-        display: block
-        text-align: center
-        padding: 8px 10px
-        border-radius: 4px
-        transition: all .2s ease-in-out
-        margin-top: 1rem
-    a.follow
-        background: #49B158
-        &:hover
-            background: #489759
-    a.unfollow
-        background: #AD291B
-        &:hover
-            background: #922D1E
-//PIE 
-.profile-completion
+
+footer
+    margin-top: 4rem
     text-align: center
     padding: 2rem
-    span
-        display: block
-.pie
-    display: inline-block
-    position: relative
-    width: 1em
-    height: 1em
-    background-color: white
-    font-size: 7em
-    text-align: center
-    border-radius: 50%
+    background: #212121
+    color: white
+    height: 60px
 
-.slice-right
-    position: absolute
-    z-index: 11
-    background-color: #44B254
-    width: 100%
-    height: 100%
-    clip: rect(0, 0.5em, 0.5em, 0.5em)
-    border-radius: 50%
-
-.slice-left
-    position: absolute
-    z-index: 11
-    background-color: #44B254
-    width: 100%
-    height: 100%
-    clip: rect(0.5em, 0.5em, 1em, 0.5em)
-    border-radius: 50%
-
-.percent
-    position: absolute
-    z-index: 20
-    top: 3px
-    right: 3px
-    bottom: 3px
-    left: 3px
-    background: white
-    border-radius: 50%
-
-.number
-    position: absolute
-    z-index: 30
-    width: 100%
-    height: 100%
-    padding-top: 50%
-    line-height: 0
-    font-size: .3em
-    color: #44B254
-
-$animation-speed: 0.3s
-
-.slice-right
-    -webkit-animation-delay: $animation-speed * 4
-    -webkit-animation-duration: $animation-speed
-    -webkit-animation-name: right-slice
-    -webkit-animation-iteration-count: 1
-    -webkit-animation-fill-mode: forwards
-
-.slice-left
-    -webkit-animation-delay: $animation-speed * 5
-    -webkit-animation-duration: $animation-speed
-    -webkit-animation-name: left-slice
-    -webkit-animation-iteration-count: 1
-    -webkit-animation-timing-function: ease-out
-    -webkit-animation-fill-mode: forwards
-
-@-webkit-keyframes right-slice
-    from
-        clip: rect(0, 50%, 0.5em, 0.5em)
-    50%
-        clip: rect(0, 1em, 0.5em, 0.5em)
-    to
-        clip: rect(0, 1em, 1em, 0.5em)
-
-
-@-webkit-keyframes left-slice
-    from
-        clip: rect(0.5em, 0.5em, 1em, 0.5em)
-    50%
-        clip: rect(0.5em, 0.5em, 1em, 0)
-    to
-        clip: rect(0.3em, 0.5em, 1em, 0)
-
-.profile-stats
-    .statItem
-        padding: .5rem
-        border-bottom: solid 1px #eee
-        .statLabel
-            padding: .1rem 0 
-        .statNumber
-            padding: 0
-            text-align: center
-            border-radius: 4px
-            border: solid 1px #eee
-.services-details
-    h3
-        border-bottom: dashed 1px #eee
-        padding-bottom: .5rem
-    h4
-        font-size: .9rem
-        font-weight: bold
-    a.th
-        border: 0px
-    .columns
-        padding-left: 0
-        padding-right: 0
-    .job-details
-        strong
-            display: block
-//PAYMENT-HISTORY
-table.payment-history, table.card-management, table.coupon-list, table tr.even, table tr:nth-of-type(even)
-    margin: 0 auto
-    border-spacing: 0px
-    background: #fff
-    border: 0px
-    thead
-        background: transparent
-    .order-id, 
-    .order-date, 
-    .order-item, 
-    .order-price, 
-    .order-stt, 
-    .order-more-details,
-    .billing-item,
-    .session-number,
-    .session-type,
-    .card-type,
-    .last-digits,
-    .exp-date,
-    .billing-address,
-    .card-actions,
-    .coupon-code,
-    .coupon-exp-date,
-    .coupon-value,
-    .coupon-stt,
-        padding: 1rem
-        vertical-align: top
-        border-top: solid 1px #eee
-        font-size: 1rem
-    .order-item
-        min-width: 350px
-    .billing-item
-        min-width: 200px
-    .session-number, .session-type
-        width: 60px
-    .order-stt, .coupon-stt, .coupon-code
-        font-weight: 600
-    .paid, .available
-        color: #49B158
-    .cancelled, .used 
-        color: #AF2812
-    .processing
-        color: #111
-    .card-type
-        min-width: 110px
-        img
-            display: block
-    .billing-address
-        min-width: 350px
-        line-height: 1.4rem
-        .location span, .zipcode, .country
-            padding-right: 8px
-    .card-actions
-        ul
-            list-style-type: none
-            margin-left: 0px
-    .coupon-code
-        min-width: 520px
-    .coupon-exp-date
-        min-width: 180px
-    .coupon-stt,.coupon-value
-        min-width: 100px
-
-//SESSIONS-PAGE
-.session-requests
-    display: block
-    text-align: center
-    margin: 0 auto
-    padding: 1rem
-    background: RGBA(14, 127, 17, .1)
-    color: #333
-    a
-        font-weight: 400
-        background: RGBA(14, 127, 17, 1)
-        color: #fff
-        padding: .2rem .8rem
-        border-radius: 4px
-        margin-left: 1rem
-#date-picker
-    button
-        padding: 8px
-        margin-top: 20px
-.session-request-item-description
-    span.weekly-schedule
-        display: block
-    span.session-number, span.session-people
-        display: inline-block
-        margin-top: .5rem
-        margin-right: 1rem
-.session-history
-    h3
-        text-align: center
-        margin: 1.5rem
-    table
-        border: none
-        border-spacing: 1px
-    table td
-        border-bottom: solid 1px #eee
-    table ul
-        margin: 0
-        padding: 0
-        list-style: none
-        &.student-list li span
-            font-size: .9rem
-    .complete
-        font-weight: bold
-        color: RGBA(14, 127, 17, 1)
-    .on-going
-        font-weight: bold
-        color: $primary-color
-    @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)
-        table, thead, tbody, th, td, tr
-            display: block
-        thead tr
-            position: absolute
-            top: -9999px
-            left: -9999px
-        tr
-            border-top: 2px solid #eee
-            border-bottom: 2px solid #eee
-            margin: 1rem 0
-        td
-            border: none
-            border-bottom: 1px solid #eee
-            position: relative
-            padding-left: 50%
-            &:before
-                position: absolute
-                top: 6px
-                left: 6px
-                width: 45%
-                padding-right: 10px
-                white-space: nowrap
-            &:nth-of-type(1):before
-                content: "Type"
-            &:nth-of-type(2):before
-                content: "Teacher"
-            &:nth-of-type(3):before
-                content: "Student"
-            &:nth-of-type(4):before
-                content: "Start"
-            &:nth-of-type(5):before
-                content: "End"
-            &:nth-of-type(6):before
-                content: "Involved"
-            &:nth-of-type(7):before
-                content: "Status"
-            &:nth-of-type(8):before
-                content: "Log"
-
-.remaining-sessions
-    text-align: center
-    margin-top: 2rem
-.progress-reports
-    td
-        border-bottom: solid 1px #eee
-    .session-number
-        vertical-align: top
-        font-weight: bold
-    .grade
-        vertical-align: top
-        font-size: 2rem
-        padding: 1rem
-        font-weight: bold
-        &.high
-            color: RGBA(14, 127, 17, 1)
-        &.medium
-            color: RGBA(244, 187, 70, 1)
-        &.low 
-            color: RGBA(153, 12, 28, 1)
-#stars-existing
-    margin-bottom: .5rem
-    i
-        color: RGBA(253, 198, 65, 1)
-        font-size: 2rem
-        margin-right: .2rem
-span.date
-    display: block
-    margin-top: 1rem
-    color: #bbb
-
-//LANDING PAGE 
-.landing-page-header
-    display: block
-    margin-bottom: 2rem
-    min-height: 400px
-    background-size: cover
-    background-position: center
-    text-align: center
-    position: relative
-span.coming-soon
-    text-transform: uppercase
-    font-weight: 300 !important
-    font-size: 1rem !important
-    letter-spacing: 3px !important
-    opacity: .4
-    border-bottom: solid 1px #fff
-    padding-bottom: .5rem
-@media only screen and (min-width: 40.063em)
-    span.coming-soon
-        font-size: 1.4rem !important
-    .stacktable.small-only
-        display: none
-    .stacktable.large-only
-        display: table
-
-
-.newsletter-signup
-    display: block
-    margin: 0 auto
-    margin-top: 2rem
-    .columns
-        padding: 0 .3rem
-    input, a.button
-        height: 3rem
-//HEADER SLIDER
-.rslides
-    position: relative
-    list-style: none
-    overflow: hidden
-    width: 100%
-    height: 100%
-    padding: 0
-    margin: 0
-    li
-        -webkit-backface-visibility: hidden
-        position: absolute
-        display: none
-        width: 100%
-        left: 0
-        top: 0
-        &:first-child
-            position: relative
-            display: block
-            float: left
-    img
-        display: block
-        height: auto
-        max-height: 520px
-        min-height: 460px
-        float: left
-        width: 100%
-        border: 0
-.content-container
-    position: absolute
-    color: #fff
-    top: 7%
-    left: 0
-    right: 0
-    margin: 0 auto
-    z-index: 99
-    h1
-        display: block
-        margin: auto
-        margin-top: 1rem
-        font-weight: 900
-        font-size: 2rem
-        line-height: 3rem
-        letter-spacing: 1px
-        color: #fff
-    span
-        font-size: .9rem
-        line-height: 1rem
-        font-weight: 300
-        letter-spacing: .5px
-        i
-            position: relative
-            font-size: 4px
-            bottom: .1rem
-@media only screen and (min-width: 40.063em)
-    .content-container
-        top: 15%
-        h1
-            max-width: 90%
-            font-size: 3rem
-        span
-            font-size: 1.4rem
-            line-height: 3.5rem
-            font-weight: 300
-            letter-spacing: .5px
-            i
-                font-size: .5rem
-.how-we-can-help,.call-to-action
-    margin-top: 1rem
-    h2,h3
-        text-align: center
-    i.fa-map-marker, i.fa-comments, i.fa-user-secret
-        font-size: 5rem
-        color: $primary-color
-    p
-        color: #999999
-        text-align: left
-    .item
-        margin-top: 3rem
-        text-align: center
-.social-media
-    a
-        color: white
-        font-size: 1.5rem
-        padding: .4rem
-
-@media only screen and (min-width: 40.063em)
+@media only screen and (min-width: 64.063em)
     .top-bar
         padding: 0 9rem
     .top-bar-section ul li
@@ -1342,7 +303,7 @@ span.coming-soon
         &:before
             height: 440px
     .intro
-        margin: 2rem 0
+        margin: 3rem 0
         h1
             padding: 0 4rem
     .items
@@ -1355,26 +316,19 @@ span.coming-soon
     .right-filter
         padding-left: 2rem
         .heading
-            border-radius: 4px 4px 0 0
+            border-radius: 20px 20px 0 0
     .map
         margin-top: 0rem
-    #search-tool
-        padding: 1rem 5rem
     .stuck 
         display: block
         position: fixed
         top: 0
-        left: 0
         z-index: 999
+        left: 45%
         background: $white
-        margin: 0 auto
+        padding: 1rem
+        margin-left: -35.60rem
         border-bottom: solid 1px #ccc
-    .navigation
-        position: relative
-        top: 0
-        right: 0
-    .right-bar
-        margin-top: 0rem
 
 
 // ICONS
@@ -1384,235 +338,3 @@ span.coming-soon
     color: #A9A9A9
     top: 9px
     left: 27px
-
-//ABOUT-PAGE
-.about-top-bar
-    ul
-        li
-            list-style-type: none !important
-.about-navigation
-    position: absolute
-    ul
-        background: #fff
-#overview
-    background-image: url('https://s3.amazonaws.com/f.cl.ly/items/3b1x3W0G0U1y3W1Z0p1R/feature-full-bg.png')
-    padding: 2rem
-    .brief-introduction
-        background-color: rgba(0,0,0,0.5)
-        color: #fff
-        padding: 2rem
-        margin: 2rem 0
-        p
-            font-weight: 300
-        h2
-            color: #fff
-            font-size: 1.5rem
-            padding: .5rem 0
-            margin-bottom: 1rem
-            font-weight: 600
-            text-transform: uppercase
-            border-bottom: solid 3px $primary-color
-#meet-the-team
-    hr.div-section-item
-        width: 50%
-        margin: 2rem auto
-    h2.team-label
-        color: $primary-color
-        padding: 1rem
-        text-align: center
-        span
-            color: #aaa
-            display: block
-            font-size: 1rem
-            max-width: 50%
-            margin: 0 auto
-    .team-contacts
-        text-align: center
-        a
-            font-size: 1.5rem
-            padding: 0 .3rem
-            color: #aaa
-            &:hover
-                color: $primary-color
-    .team
-        margin-bottom: 2rem
-        img
-            display: block
-            margin: .5rem auto
-            height: 70%
-            width: 70%
-            border-radius: 50%
-            border: solid 2px transparent
-            transition: border-color .2s ease-in-out
-            &:hover
-                cursor: pointer
-                border: solid 2px $primary-color
-        span.team-member-name, span.team-member-role
-            font-weight: 600
-            text-align: center
-            display: block
-            font-size: 1.3rem
-        span.team-member-role
-            font-weight: 400
-            color: $primary-color
-            font-size: 1rem
-        p.team-member-description
-            text-align: center
-            margin: 1rem 0
-#about-how-it-work, #benefits
-    text-align: center
-    margin-top: 2rem
-    a:focus
-        outline: 0
-    .hiw-tabs
-        list-style-type: none
-        display: inline-block
-        text-align: center
-        margin: 0 auto
-        padding: 0
-        border: solid 1px $primary-color
-        border-radius: 4px
-        .hiw-tab-title
-            display: block
-            float: left
-            margin: 0
-            min-width: 160px
-            a
-                display: block
-                padding: .5rem 1rem
-            &:hover
-                text-decoration: underline
-            &.active
-                background: $primary-color
-                a
-                    color: #fff
-                &:hover
-                    text-decoration: none
-    .hiw-item
-        h3
-            color: #43AC6A
-            i
-                display: block
-                font-size: 5rem
-                margin-bottom: 2rem
-                color: $primary-color
-            span
-                font-weight: bold
-                font-family: 'Impact', sans-serif
-                font-size: 2.5rem
-                display: block
-                position: relative
-                top: 2rem
-                left: -3rem
-        p
-            opacity: .6
-#press 
-    text-align: center
-    li
-        display: inline-block
-        width: 128px
-        margin: 18px 14px 0
-        padding-top: 3px
-        padding-bottom: 3px
-        font-size: 11px
-        color: #939393
-        vertical-align: top
-#contact
-    text-align: center
-    label
-        text-align: left
-        font-size: 1rem
-        font-weight: 600
-    .contact-form, .map
-        margin-top: 2rem
-
-//SIGN-UP PAGE
-#sign-up
-    .process-wrapper
-        background: $primary-color
-        color: #fff
-        padding: 1rem
-    ul.process-steps
-        list-style-type: none
-        margin: 0
-        li.step
-            display: inline-block
-            opacity: .3
-            .step-number
-                background: transparent
-                border: solid 1px #eee
-                border-radius: 200%
-                padding: .2rem .5rem
-            &.active
-                opacity: 1
-                .step-number
-                    background: #48AB6C
-                    border: none
-
-    .signup-form-wrapper
-        background: #fff
-        padding: 1rem
-fieldset
-    margin: 0
-    border: 0
-
-fieldset:not(.active)
-    display: none
-fieldset.active:first-of-type ~ .buttons
-    .prev,
-    .submit
-        display: none
-fieldset.active:not(:last-of-type) ~ .buttons
-    .submit
-        display: none
-fieldset.active:last-of-type ~ .buttons
-    .next
-        display: none
-.buttons
-    padding-top: 2rem
-.background-info,
-.coach-profile,
-.mailing-address,
-.qualification,
-.skill-specific-item
-    h4
-        display: block
-        font-weight: bold
-        margin-bottom: 1rem
-    h4 span
-        display: block
-        font-size: 1rem
-        font-weight: normal
-.questions
-    label span
-        display: block
-        font-size: .9rem
-        color: #888
-        margin-bottom: .5rem
-    label
-        color: #555
-        font-size: 1.1rem
-        line-height: 1.5rem
-.upload-ava
-    text-align: center
-#basic-information,
-#background-information,
-#set-availability,
-#skill-specifics
-    margin-bottom: 1rem
-#time-table
-    td.available
-        background: green
-        color: #fff
-        &::before
-            content: attr(stt) " "
-    td.time
-        &:hover
-            background: #ccc
-            color: #111
-            cursor: pointer
-    th
-        min-width: 105px
-#sign-in
-    .no-account
-        text-align: center
