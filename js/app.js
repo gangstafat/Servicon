@@ -1,9 +1,12 @@
 $(document).foundation();
 
 
-/*$(document).ready(function() {
-	$(".availability .tab-title a").hover(function() {
-		var href = $(this).attr('href');
-       	$(".availability .tabs-content "+"href").addClass('active');
+$(document).ready(function() {
+	$("#top-bar li a").click(function(event){
+		//event.preventDefault();
+	    $("#top-bar li a.active").removeClass('active');
+	    $(this).addClass('active');
 	});
-});*/
+});
+
+
